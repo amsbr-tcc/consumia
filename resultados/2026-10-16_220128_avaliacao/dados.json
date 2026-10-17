@@ -1,0 +1,441 @@
+[
+  {
+    "caso_id": "real_01",
+    "rotulo_esperado": "fora_de_escopo",
+    "rotulos_obtidos": [
+      "fora_de_escopo",
+      "fora_de_escopo",
+      "fora_de_escopo"
+    ],
+    "justificativas": [
+      "O relato trata de um serviço (atendimento em restaurante, com demora e cobrança de gorjeta), e não de vício em um produto, o que foge do escopo deste sistema.",
+      "O relato trata de um serviço (atendimento em restaurante, com demora e cobrança de gorjeta), não de vício em um produto, o que foge do escopo deste sistema.",
+      "O relato trata de um serviço (atendimento em restaurante, com demora e cobrança de gorjeta), não de vício em um produto, o que foge do escopo deste sistema."
+    ],
+    "dias_restantes_esperado": null,
+    "dias_restantes_calculado_gabarito": null,
+    "dias_restantes_fluxo": null,
+    "situacao_esperada": "fora_de_escopo",
+    "situacao_fluxo": "fora_de_escopo",
+    "situacao_calculada_gabarito": "fora_de_escopo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_02",
+    "rotulo_esperado": "aparente/duravel",
+    "rotulos_obtidos": [
+      "aparente/duravel",
+      "aparente/duravel",
+      "aparente/duravel"
+    ],
+    "justificativas": [
+      "A costura aberta e o zíper que não fechava foram percebidos logo ao tirar a calça da sacola, ou seja, de imediato, e roupa é um bem durável.",
+      "A costura aberta e o zíper que não fecha foram percebidos de imediato, ao tirar a calça da sacola, e roupa é um bem durável.",
+      "Os defeitos (costura aberta e zíper que não fecha) foram percebidos assim que o consumidor tirou a calça da sacola, sendo perceptíveis de imediato, e roupa é um bem durável."
+    ],
+    "dias_restantes_esperado": 75,
+    "dias_restantes_calculado_gabarito": 75,
+    "dias_restantes_fluxo": 75,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Local], 16 de outubro de 2026.\n\nÀ\nHR2 COMERCIO VAREJISTA DE ROUPAS EM GERAL LTDA\n[endereço do fornecedor]\n\n**Assunto: Reclamação por vício de qualidade em produto adquirido**\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF do consumidor], [endereço do consumidor], [telefone e e-mail de contato].\n\nFornecedor: HR2 COMERCIO VAREJISTA DE ROUPAS EM GERAL LTDA, [CNPJ do fornecedor], [endereço do fornecedor].\n\n**2. Dos fatos**\n\nEm 1º de outubro de 2026, adquiri do estabelecimento o produto descrito como \"CALCA FEM RLHSN 040 LHSN0 40\", conforme nota fiscal emitida na mesma data, no valor total de R$ 289,99. O produto foi entregue a mim também em 1º de outubro de 2026.\n\nAo retirar a calça da sacola, em casa, constatei que a costura da perna esquerda estava aberta e que o zíper não fechava. Trata-se de vício aparente, que torna o produto impróprio para o uso a que se destina.\n\n**3. Do fundamento legal**\n\nOs fatos acima estão amparados pela Lei nº 8.078/1990 (Código de Defesa do Consumidor):\n\n- Art. 18, caput e §1º: o fornecedor responde pelos vícios de qualidade que tornem o produto impróprio ao uso a que se destina, devendo sanar o vício no prazo máximo de 30 dias.\n- Art. 26, inciso II: o prazo para reclamar de vícios aparentes em produtos duráveis é de 90 dias.\n- Art. 26, §1º: no vício aparente, o prazo é contado da entrega efetiva do produto. Considerando a entrega em 1º de outubro de 2026, o prazo se encerra em 30 de dezembro de 2026. Esta reclamação, portanto, é tempestiva.\n\n**4. Do pedido**\n\nRequeiro que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, poderei exigir, à minha escolha:\n\nI - a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII - a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII - o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nSolicito resposta do fornecedor no prazo de 30 (trinta) dias, contados do recebimento desta carta (art. 18, §1º, do CDC).\n\nAtenciosamente,\n\n______________________________\n[nome do consumidor]\n[CPF do consumidor]\n[telefone e e-mail de contato]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_03",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "O lacre rompido e a cor e o cheiro estranhos foram percebidos ao abrir o produto, o que caracteriza vício aparente. Creme é um cosmético consumível, portanto bem não durável, e o relato não menciona dano à saúde.",
+      "O lacre rompido e a cor e o cheiro estranhos são perceptíveis assim que o produto é aberto, e creme (cosmético consumível) é um bem não durável. O relato não menciona dano à saúde, então permanece no âmbito do art. 26.",
+      "O lacre rompido e a cor e o cheiro estranhos foram percebidos logo ao abrir o produto, o que caracteriza vício aparente, e creme é um bem de consumo não durável. O relato não menciona dano à saúde ou à segurança."
+    ],
+    "dias_restantes_esperado": 15,
+    "dias_restantes_calculado_gabarito": 15,
+    "dias_restantes_fluxo": 15,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Local], 16 de outubro de 2026.\n\nÀ\nDROGARIA SAO PAULO SA\n[endereço do fornecedor]\n\nAssunto: Reclamação por vício de qualidade em produto adquirido\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF do consumidor], [endereço do consumidor], [telefone/e-mail do consumidor].\n\nFornecedor: DROGARIA SAO PAULO SA, [CNPJ do fornecedor], [endereço do fornecedor].\n\n**2. Dos fatos**\n\nEm 1º de outubro de 2026, adquiri junto a esse estabelecimento os produtos CR CALMING CREAM 40G e AP DEP SUAVE SENS 2UNI, no valor total de R$ 83,98, conforme nota fiscal emitida na mesma data. Os produtos foram entregues também em 1º de outubro de 2026.\n\nAo abrir o creme em casa, constatei que o lacre já estava rompido e que o produto apresentava cor e cheiro estranhos. Trata-se, portanto, de vício aparente de qualidade em produto não durável.\n\n**3. Do fundamento legal**\n\nConforme a Lei nº 8.078/1990 (Código de Defesa do Consumidor):\n\n- O art. 18, caput e §1º, estabelece a responsabilidade do fornecedor pelos vícios de qualidade dos produtos, que os tornem impróprios ou diminuam seu valor.\n- O art. 26, inciso I, fixa em 30 dias o prazo para reclamar de vícios aparentes em produtos não duráveis.\n- O art. 26, §1º, determina que, no caso de vício aparente, esse prazo é contado a partir da entrega efetiva do produto.\n\nComo o produto foi entregue em 1º de outubro de 2026, o prazo para reclamar vence em 31 de outubro de 2026. Esta reclamação é feita dentro do prazo legal, restando 15 dias na data desta carta.\n\n**4. Do pedido**\n\nRequeiro que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, poderei exigir, à minha escolha:\n\nI – a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII – a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII – o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nSolicito resposta no prazo de 30 (trinta) dias, contados do recebimento desta carta (art. 18, §1º, do CDC).\n\nAtenciosamente,\n\n[nome do consumidor]\n[assinatura]\n\nAnexos: [cópia da nota fiscal] e [fotos do produto, se houver].",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_04",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "A tampa quebrada é um defeito perceptível de imediato, já no dia da compra, e álcool gel é um produto de higiene consumido com o uso, portanto bem não durável.",
+      "A tampa quebrada é um defeito perceptível de imediato, já no dia da compra, e álcool gel é um produto de higiene consumido com o uso, portanto não durável.",
+      "A tampa quebrada é um defeito perceptível de imediato, já no dia da compra, e álcool gel é um produto de higiene consumido com o uso, portanto bem não durável. O relato não menciona dano à saúde ou à segurança."
+    ],
+    "dias_restantes_esperado": 0,
+    "dias_restantes_calculado_gabarito": 0,
+    "dias_restantes_fluxo": 0,
+    "situacao_esperada": "fora_do_prazo",
+    "situacao_fluxo": "fora_do_prazo",
+    "situacao_calculada_gabarito": "fora_do_prazo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "fora_do_prazo: o sistema não gera carta"
+  },
+  {
+    "caso_id": "real_05",
+    "rotulo_esperado": "aparente/duravel",
+    "rotulos_obtidos": [
+      "aparente/duravel",
+      "aparente/duravel",
+      "aparente/duravel"
+    ],
+    "justificativas": [
+      "O defeito (bloco de páginas em branco) é perceptível logo ao folhear o livro, caracterizando vício aparente, e um dicionário é um bem durável que não se consome com o primeiro uso.",
+      "As páginas em branco são perceptíveis logo ao folhear o dicionário, caracterizando vício aparente. O dicionário não se consome com o uso e dura por longo período, sendo bem durável.",
+      "O defeito (bloco de páginas em branco) é perceptível de imediato ao folhear o dicionário, caracterizando vício aparente. Um dicionário não é consumido com o primeiro uso, então é um bem durável."
+    ],
+    "dias_restantes_esperado": 9,
+    "dias_restantes_calculado_gabarito": 9,
+    "dias_restantes_fluxo": 9,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Local], 16 de outubro de 2026.\n\nÀ\nARMARINHOS FERNANDO LTDA\n[endereço do fornecedor]\n\n**Assunto: Reclamação por vício de produto – Nota fiscal emitida em 11/07/2026**\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF], [endereço do consumidor], [e-mail/telefone de contato].\n\nFornecedor: ARMARINHOS FERNANDO LTDA, [CNPJ do fornecedor], [endereço do fornecedor].\n\n**2. Dos fatos**\n\nEm 11 de julho de 2026, adquiri no estabelecimento da empresa os seguintes produtos: PINCEL CONDOR ARTISTICO, BLOCO STARCOLOR 65FLS R, ALCOOL GEL GIOVANNA BAB e MINI DICIONARIO ESCOLAR, no valor total de R$ 18,29, conforme nota fiscal emitida na mesma data. Os produtos foram entregues também em 11 de julho de 2026.\n\nO mini dicionário escolar veio com um bloco de páginas em branco, sem nada impresso. Trata-se de vício aparente em produto durável.\n\nEm 20 de julho de 2026, reclamei do problema ao fornecedor e solicitei a troca do produto. Em 5 de agosto de 2026, recebi resposta negativa, com a recusa em trocar o item.\n\n**3. Do fundamento legal**\n\nOs fatos se enquadram na Lei nº 8.078/1990 (Código de Defesa do Consumidor – CDC):\n\n- Art. 18, caput e §1º: o fornecedor responde pelos vícios de qualidade que tornem o produto impróprio ao uso a que se destina e deve saná-los no prazo máximo de 30 dias.\n- Art. 26, inciso II: o prazo para reclamar de vícios aparentes em produtos duráveis é de 90 dias.\n- Art. 26, §1º: no vício aparente, esse prazo é contado da entrega efetiva do produto, ou seja, a partir de 11 de julho de 2026, com vencimento em 25 de outubro de 2026.\n- Art. 26, §2º, inciso I: a reclamação comprovadamente formulada ao fornecedor obsta a decadência até a resposta negativa inequívoca, que ocorreu em 5 de agosto de 2026.\n\n**4. Do pedido**\n\nSolicito que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, poderei exigir, à minha escolha:\n\nI – a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII – a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII – o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nConcedo ao fornecedor o prazo de 30 (trinta) dias, contados do recebimento desta carta, para resposta e solução do problema (art. 18, §1º, do CDC).\n\nAtenciosamente,\n\n[nome do consumidor]\n[assinatura]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_06",
+    "rotulo_esperado": "oculto/duravel",
+    "rotulos_obtidos": [
+      "oculto/duravel",
+      "oculto/duravel",
+      "oculto/duravel"
+    ],
+    "justificativas": [
+      "O vazamento só apareceu após duas semanas de uso normal, sem como ser percebido antes, e uma garrafa squeeze é um bem durável que não se consome com o uso.",
+      "O vazamento só surgiu após duas semanas de uso normal, sem que fosse possível percebê-lo antes, o que caracteriza vício oculto. A garrafa squeeze não se consome com o uso e é um bem durável.",
+      "O vazamento só apareceu após duas semanas de uso normal, sem como ser percebido antes, e uma garrafa squeeze é um bem durável, que não se consome com o uso."
+    ],
+    "dias_restantes_esperado": 88,
+    "dias_restantes_calculado_gabarito": 88,
+    "dias_restantes_fluxo": 88,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Nome do consumidor]\n[Endereço do consumidor]\n[CPF do consumidor]\n[E-mail e telefone do consumidor]\n\n[Local], 16 de outubro de 2026.\n\nÀ\nRIACHUELO\n[Endereço do fornecedor / setor de atendimento ao cliente]\n\n**Assunto: Reclamação por vício de qualidade em produto – Garrafa squeeze de metal 1L – vinho**\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF do consumidor], residente em [endereço do consumidor].\n\nFornecedor: RIACHUELO, [CNPJ do fornecedor], com sede em [endereço do fornecedor].\n\n**2. Dos fatos**\n\nEm 1º de outubro de 2026, adquiri na RIACHUELO os seguintes produtos, conforme nota fiscal emitida nessa mesma data, no valor total de R$ 229,97:\n\n- Polo feminina canelada – rosa;\n- Camiseta baby look estampada feminina – azul claro;\n- Garrafa squeeze de metal 1L – vinho.\n\nOs produtos foram entregues em 1º de outubro de 2026. Utilizei a garrafa squeeze normalmente por duas semanas. Em 14 de outubro de 2026, ela começou a vazar pela rosca da tampa, mesmo estando bem fechada. Trata-se de defeito que não era aparente no momento da compra e só se evidenciou com o uso, caracterizando vício oculto em produto durável.\n\n**3. Do fundamento legal**\n\nNos termos da Lei nº 8.078/1990 (Código de Defesa do Consumidor):\n\n- O art. 18, caput e §1º, estabelece a responsabilidade do fornecedor pelos vícios de qualidade que tornem o produto impróprio ao uso a que se destina, devendo o vício ser sanado no prazo máximo de 30 dias.\n- O art. 26, inciso II, fixa em 90 dias o prazo para reclamar de vícios em produtos duráveis.\n- O art. 26, §3º, determina que, no caso de vício oculto, o prazo conta do momento em que o defeito ficou evidenciado. Como o defeito se evidenciou em 14 de outubro de 2026, o prazo para reclamar vai até 12 de janeiro de 2027, de modo que esta reclamação é tempestiva.\n\n**4. Do pedido**\n\nSolicito que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, poderei exigir, à minha escolha:\n\nI – a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII – a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII – o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nFico no aguardo de resposta no prazo de 30 (trinta) dias, contados do recebimento desta carta, conforme o art. 18, §1º, do CDC. Para contato, utilizo os dados informados acima.\n\nAtenciosamente,\n\n[Assinatura]\n[Nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_07",
+    "rotulo_esperado": "oculto/duravel",
+    "rotulos_obtidos": [
+      "oculto/duravel",
+      "oculto/duravel",
+      "oculto/duravel"
+    ],
+    "justificativas": [
+      "O defeito (costura aberta e tecido desfiado) só surgiu após três lavagens seguindo a etiqueta, ou seja, depois de uso normal e sem como ser percebido antes; calça é um bem durável.",
+      "O defeito (costura aberta e tecido desfiado) só apareceu após três lavagens seguindo a etiqueta, sem como ser percebido antes, e roupa é um bem durável.",
+      "O defeito (costura aberta e tecido desfiado) só apareceu após três lavagens seguindo a etiqueta, sem como ser percebido antes, e calça é um bem durável."
+    ],
+    "dias_restantes_esperado": 86,
+    "dias_restantes_calculado_gabarito": 86,
+    "dias_restantes_fluxo": 86,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Local], 16 de outubro de 2026.\n\nÀ\nC&A MODAS S.A.\n[endereço do fornecedor]\nA/C: Serviço de Atendimento ao Consumidor\n\n**Assunto: Reclamação por vício oculto em produto durável – pedido de reparo**\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF], [endereço], [telefone e e-mail de contato]\n\nFornecedor: C&A MODAS S.A., [CNPJ], [endereço do fornecedor]\n\n**2. Dos fatos**\n\nEm 1º de outubro de 2026, adquiri na loja da empresa os seguintes produtos: MINDSET- SLIM FIT INTERLOCK:BRANCO:P e CALÇA WIDE LEG SLIM CINTURA SUPER ALTA:VINHO ESCU, no valor total de R$ 249,98, conforme nota fiscal emitida na mesma data. Os produtos foram entregues também em 1º de outubro de 2026.\n\nA calça parecia estar em perfeito estado. No entanto, em 12 de outubro de 2026, depois de três lavagens realizadas conforme as instruções da etiqueta, a costura do gancho abriu e o tecido desfiou. O defeito, portanto, não era perceptível no momento da compra e só se evidenciou com o uso regular e os cuidados indicados pelo próprio fabricante.\n\n**3. Do fundamento legal**\n\nTrata-se de vício oculto em produto durável, regido pela Lei nº 8.078/1990 (Código de Defesa do Consumidor – CDC):\n\n- O art. 18, caput, estabelece a responsabilidade do fornecedor pelos vícios de qualidade que tornem o produto impróprio ou inadequado ao consumo ou lhe diminuam o valor. O art. 18, §1º, prevê que, não sendo o vício sanado no prazo máximo de 30 dias, o consumidor pode exigir as alternativas indicadas no pedido abaixo.\n- O art. 26, inciso II, fixa em 90 dias o prazo para reclamar de vícios em produtos duráveis.\n- O art. 26, §3º, determina que, no caso de vício oculto, esse prazo é contado a partir do momento em que o defeito ficou evidenciado, ou seja, 12 de outubro de 2026. Esta reclamação, feita em 16 de outubro de 2026, está dentro do prazo legal, que se encerra em 10 de janeiro de 2027.\n\n**4. Do pedido**\n\nRequeiro que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, poderei exigir, à minha escolha:\n\nI – a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII – a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII – o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nSolicito resposta no prazo de 30 (trinta) dias, contados do recebimento desta carta (art. 18, §1º, do CDC), pelos meios de contato indicados acima.\n\nAtenciosamente,\n\n______________________________\n[nome do consumidor]\n\nAnexos: [cópia da nota fiscal] e [fotografias do defeito, se houver]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_08",
+    "rotulo_esperado": "oculto/duravel",
+    "rotulos_obtidos": [
+      "oculto/duravel",
+      "oculto/duravel",
+      "oculto/duravel"
+    ],
+    "justificativas": [
+      "O defeito (sola descolando) só apareceu após duas semanas de uso normal, o que caracteriza vício oculto, e tênis é um bem durável.",
+      "A sola só começou a descolar após duas semanas de uso normal, o que caracteriza vício oculto, e tênis é um bem durável.",
+      "O defeito (sola descolando) só apareceu após duas semanas de uso normal, o que caracteriza vício oculto, e tênis é um bem durável."
+    ],
+    "dias_restantes_esperado": 135,
+    "dias_restantes_calculado_gabarito": 135,
+    "dias_restantes_fluxo": 135,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Nome do consumidor]\n[Endereço do consumidor]\n[CPF do consumidor]\n[E-mail e telefone do consumidor]\n\n[Local], 1º de março de 2027.\n\nÀ\nPUMA SPORTS LTDA\n[Endereço do fornecedor]\n[CNPJ do fornecedor]\n\n**Assunto: Reclamação por vício de qualidade em produto – pedido de reparo**\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF do consumidor], residente em [endereço do consumidor].\n\nFornecedor: PUMA SPORTS LTDA, [CNPJ do fornecedor], com sede em [endereço do fornecedor].\n\n**2. Dos fatos**\n\nEm 15 de outubro de 2026, adquiri da PUMA SPORTS LTDA o produto descrito na nota fiscal como \"CALCADOSPUMA WIRED RUN SLIPON INF BDP Puma BlackCASTLEROCK 21\", pelo valor total de R$ 100,00. A nota fiscal foi emitida e o produto foi entregue na mesma data.\n\nMeu filho usou o tênis normalmente. Em 1º de novembro de 2026, cerca de duas semanas após a compra, a sola começou a descolar na ponta. Trata-se de defeito que não era aparente no momento da compra e que só se evidenciou com o uso.\n\nA loja informou que o produto tem garantia de fábrica de seis meses, com término em 15 de abril de 2027.\n\n**3. Do fundamento legal**\n\nOs fatos descritos configuram vício oculto em produto durável, nos termos da Lei nº 8.078/1990 (Código de Defesa do Consumidor – CDC):\n\n- O art. 18, caput e §1º, do CDC prevê que os fornecedores respondem pelos vícios de qualidade que tornem os produtos impróprios ao uso a que se destinam ou lhes diminuam o valor. Prevê também que, não sendo o vício sanado no prazo de 30 dias, o consumidor pode exigir as alternativas indicadas no pedido abaixo.\n- O art. 26, inciso II, do CDC estabelece o prazo de 90 dias para reclamar de vícios em produtos duráveis.\n- O art. 26, §3º, do CDC dispõe que, no caso de vício oculto, esse prazo é contado a partir do momento em que o defeito ficou evidenciado.\n- O art. 50 do CDC determina que a garantia contratual é complementar à legal. A garantia de fábrica de seis meses oferecida não afasta, portanto, a responsabilidade do fornecedor prevista em lei.\n\nEsta reclamação é apresentada dentro do prazo legal. Considerando o prazo de 90 dias contado a partir de 15 de abril de 2027, o vencimento ocorre em 14 de julho de 2027.\n\n**4. Do pedido**\n\nRequeiro que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, o consumidor poderá exigir, à sua escolha:\n\nI – a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII – a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII – o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nSolicito resposta no prazo de 30 (trinta) dias, contados do recebimento desta carta (art. 18, §1º, do CDC), informando como e onde o produto será reparado.\n\nAtenciosamente,\n\n[Nome do consumidor]\n[Assinatura do consumidor]\n\nAnexos: [cópia da nota fiscal] e [fotografias do defeito, se houver].",
+    "artigos_citados": [
+      "18",
+      "26",
+      "50"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_09",
+    "rotulo_esperado": "aparente/duravel",
+    "rotulos_obtidos": [
+      "aparente/duravel",
+      "aparente/duravel",
+      "aparente/duravel"
+    ],
+    "justificativas": [
+      "A alça descosturada e o regulador quebrado foram percebidos assim que o produto saiu da embalagem, o que caracteriza vício aparente, e sutiã (roupa) é um bem durável.",
+      "Os defeitos (alça descosturada e regulador quebrado) foram percebidos assim que o produto foi retirado da embalagem, o que caracteriza vício aparente; sutiã é peça de vestuário, um bem durável.",
+      "A alça descosturada e o regulador quebrado foram percebidos assim que o produto saiu da embalagem, o que caracteriza vício aparente, e sutiã é uma peça de vestuário, bem durável."
+    ],
+    "dias_restantes_esperado": 43,
+    "dias_restantes_calculado_gabarito": 43,
+    "dias_restantes_fluxo": 43,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Cidade/UF], 1º de dezembro de 2026.\n\nÀ\nRIACHUELO\n[endereço do fornecedor]\n\nAssunto: Reclamação por vício de qualidade em produto – Nota fiscal emitida em 15/10/2026\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF], [endereço do consumidor], [e-mail/telefone de contato].\n\nFornecedor: RIACHUELO, [CNPJ], [endereço do fornecedor].\n\n**2. Dos fatos**\n\nEm 15 de outubro de 2026, adquiri na RIACHUELO os seguintes produtos: \"Sutin base triÂngulo Daily altas regulÂveis | Trif\" e \"Kit calcinha tradicional 3 pecas estampada - multi\", no valor total de R$ 109,98, conforme nota fiscal emitida na mesma data. Os produtos foram entregues também em 15 de outubro de 2026.\n\nAo retirar o sutiã da embalagem, constatei que a alça estava descosturada e o regulador, quebrado. O defeito já existia no momento da entrega e foi percebido imediatamente. Apresento esta reclamação nesta data, dentro do prazo legal.\n\n**3. Do fundamento legal**\n\nDe acordo com a Lei nº 8.078/1990 (Código de Defesa do Consumidor):\n\n- O art. 18, caput, estabelece a responsabilidade do fornecedor pelos vícios de qualidade que tornem o produto impróprio ao uso a que se destina ou lhe diminuam o valor. O art. 18, §1º, determina que, não sendo o vício sanado no prazo máximo de 30 dias, o consumidor pode exigir as alternativas descritas no pedido abaixo.\n- O art. 26, inciso II, fixa em 90 dias o prazo para reclamar de vícios aparentes em produtos duráveis.\n- O art. 26, §1º, determina que, no caso de vício aparente, o prazo conta a partir da entrega efetiva do produto.\n\nComo o produto foi entregue em 15/10/2026, o prazo de 90 dias termina em 13/01/2027. Esta reclamação, feita em 01/12/2026, é tempestiva.\n\n**4. Do pedido**\n\nSolicito que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, o consumidor poderá exigir, à sua escolha:\n\nI – a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII – a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII – o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nSolicito resposta no prazo de 30 (trinta) dias, contados do recebimento desta carta, conforme o art. 18, §1º, do CDC.\n\nAtenciosamente,\n\n[nome do consumidor]\n[assinatura]\n\nAnexos: [cópia da nota fiscal] e [fotografias do defeito, se houver].",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_10",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "A embalagem estufada e o azedume foram percebidos logo ao abrir o produto, o que caracteriza vício aparente, e iogurte é um alimento, ou seja, bem não durável. O relato não menciona dano à saúde.",
+      "A embalagem estufada e o gosto azedo foram percebidos logo ao abrir o produto, o que caracteriza vício aparente, e iogurte é um alimento, bem não durável. O relato não menciona dano à saúde, então permanece no escopo do art. 26.",
+      "A embalagem estufada e o gosto azedo foram percebidos logo ao abrir o produto, o que caracteriza vício aparente, e iogurte é um alimento, ou seja, bem não durável. O relato não menciona dano à saúde."
+    ],
+    "dias_restantes_esperado": 29,
+    "dias_restantes_calculado_gabarito": 29,
+    "dias_restantes_fluxo": 29,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Cidade], [data do envio]\n\nÀ\nSupermercado e Restaurante Jva\n[endereço do fornecedor]\n\n**Assunto: Reclamação por vício de qualidade em produto adquirido (Iogurte Atilatt 448g)**\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF do consumidor], [endereço do consumidor], [telefone e e-mail do consumidor].\n\nFornecedor: Supermercado e Restaurante Jva, [CNPJ do fornecedor], [endereço do fornecedor].\n\n**2. Dos fatos**\n\nEm 15 de outubro de 2026, adquiri no estabelecimento acima, com nota fiscal emitida nessa mesma data no valor total de R$ 68,02, os seguintes produtos: Iogurte Atilatt 448g, Bisc Pol Cassini 100, Pao Qjo Forno Minas, Uva Passa 200g Preta, Laranja Pera e Pera Willian s Kg. Os produtos foram entregues na mesma data.\n\nAo abrir o iogurte em casa, constatei que a embalagem estava estufada e que o produto estava azedo, embora dentro do prazo de validade. O produto, portanto, não está apto ao consumo.\n\n**3. Do fundamento legal**\n\nOs fatos descritos configuram vício aparente de qualidade em produto não durável, nos termos da Lei nº 8.078/1990 (Código de Defesa do Consumidor, CDC):\n\n- Art. 18, caput e §1º: o fornecedor responde pelos vícios de qualidade que tornem o produto impróprio ao consumo ou diminuam seu valor, e deve saná-los no prazo máximo de 30 dias.\n- Art. 26, inciso I: o prazo para reclamar de vícios aparentes em produtos não duráveis é de 30 dias.\n- Art. 26, §1º: no caso de vício aparente, esse prazo é contado a partir da entrega efetiva do produto, ocorrida em 15 de outubro de 2026. Esta reclamação é feita dentro do prazo, que vence em 14 de novembro de 2026.\n\n**4. Do pedido**\n\nRequeiro que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, poderei exigir, à minha escolha:\n\nI – a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII – a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII – o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nSolicito resposta no prazo de 30 (trinta) dias, contados do recebimento desta carta (art. 18, §1º, do CDC).\n\nAnexo cópia da nota fiscal.\n\nAtenciosamente,\n\n[nome do consumidor]\n[assinatura]\n\nData desta carta: 16 de outubro de 2026",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_11",
+    "rotulo_esperado": "fora_de_escopo",
+    "rotulos_obtidos": [
+      "fora_de_escopo",
+      "fora_de_escopo",
+      "fora_de_escopo"
+    ],
+    "justificativas": [
+      "O corpo estranho (plástico) no chocolate causou dano à saúde do consumidor (corte na gengiva e necessidade de dentista), o que configura fato do produto (arts. 12 a 17 do CDC), e não vício regido pelo art. 26.",
+      "O corpo estranho no chocolate causou dano à saúde do consumidor (corte na gengiva e ida ao dentista), o que configura fato do produto (arts. 12 a 17 do CDC), e não vício regido pelo art. 26.",
+      "O corpo estranho (plástico duro) no chocolate causou dano à saúde do consumidor (corte na gengiva e necessidade de dentista), o que é fato do produto (arts. 12 a 17 do CDC), e não vício regido pelo art. 26."
+    ],
+    "dias_restantes_esperado": null,
+    "dias_restantes_calculado_gabarito": null,
+    "dias_restantes_fluxo": null,
+    "situacao_esperada": "fora_de_escopo",
+    "situacao_fluxo": "fora_de_escopo",
+    "situacao_calculada_gabarito": "fora_de_escopo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_12",
+    "rotulo_esperado": "oculto/nao_duravel",
+    "rotulos_obtidos": [
+      "oculto/nao_duravel",
+      "oculto/nao_duravel",
+      "oculto/nao_duravel"
+    ],
+    "justificativas": [
+      "O defeito (cheiro de estragado por dentro) só foi percebido ao fritar, semanas depois, pois os croquetes pareciam normais por fora e estavam na validade, o que caracteriza vício oculto. Alimento é um bem não durável.",
+      "O estrago só foi percebido ao fritar, semanas depois, e não era visível por fora, mesmo dentro da validade, o que caracteriza vício oculto. Croquete é alimento, ou seja, bem não durável, e o relato não menciona dano à saúde.",
+      "O estrago só foi percebido ao fritar, semanas depois, e não era visível por fora, o que caracteriza vício oculto. Croquetes são alimento, ou seja, bem não durável, e o relato não menciona dano à saúde."
+    ],
+    "dias_restantes_esperado": 0,
+    "dias_restantes_calculado_gabarito": 0,
+    "dias_restantes_fluxo": 0,
+    "situacao_esperada": "fora_do_prazo",
+    "situacao_fluxo": "fora_do_prazo",
+    "situacao_calculada_gabarito": "fora_do_prazo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "fora_do_prazo: o sistema não gera carta"
+  },
+  {
+    "caso_id": "real_13",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "O furo na embalagem, o pó empedrado e os insetos são perceptíveis de imediato, ao abrir ou examinar o pacote, e café é um alimento, ou seja, um bem não durável. O relato não menciona dano à saúde do consumidor.",
+      "O furo na embalagem e a presença de insetos no pó são perceptíveis de imediato ao abrir o pacote, e café é um alimento, ou seja, um bem não durável. O relato não menciona dano à saúde do consumidor.",
+      "O furo na embalagem, o pó empedrado e a presença de insetos são perceptíveis de imediato, e café é um alimento, bem não durável. O relato não menciona dano à saúde do consumidor."
+    ],
+    "dias_restantes_esperado": 1,
+    "dias_restantes_calculado_gabarito": 1,
+    "dias_restantes_fluxo": 1,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Local], 20 de setembro de 2026.\n\nÀ\nINFANGER E CIA. LTDA.\n[endereço do fornecedor]\n\n**Assunto: Reclamação por vício de qualidade em produto adquirido**\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF do consumidor], [endereço do consumidor], [telefone e e-mail do consumidor].\n\nFornecedor: INFANGER E CIA. LTDA., [CNPJ do fornecedor], [endereço do fornecedor].\n\n**2. Dos fatos**\n\nEm 22 de agosto de 2026, adquiri produtos no estabelecimento do fornecedor, com nota fiscal emitida na mesma data, no valor total de R$ 349,55. Os produtos foram entregues também em 22 de agosto de 2026.\n\nEntre os itens da compra, constava o café MELITTA 500G (descrito na nota como \"CAFE MELITTA 500G VA\"). O pacote veio com um furo na embalagem, e o pó estava empedrado e com insetos, o que torna o produto impróprio para o consumo.\n\n**3. Do fundamento legal**\n\nNos termos da Lei nº 8.078/1990 (Código de Defesa do Consumidor):\n\n- O art. 18, caput, estabelece a responsabilidade do fornecedor pelos vícios de qualidade que tornem os produtos impróprios ao consumo ou lhes diminuam o valor.\n- O art. 18, §1º, determina que, não sendo o vício sanado no prazo máximo de 30 dias, o consumidor pode exigir, à sua escolha, a substituição do produto, a restituição da quantia paga ou o abatimento proporcional do preço.\n- O art. 26, inciso I, fixa em 30 dias o prazo para reclamar de vícios aparentes em produtos não duráveis.\n- O art. 26, §1º, dispõe que, no vício aparente, o prazo conta da entrega efetiva do produto. Como a entrega ocorreu em 22 de agosto de 2026, o prazo vence em 21 de setembro de 2026, de modo que esta reclamação é apresentada dentro do prazo legal.\n\n**4. Do pedido**\n\nSolicito que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, poderei exigir, à minha escolha:\n\nI - a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII - a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII - o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nFica o fornecedor notificado para responder a esta reclamação no prazo de 30 (trinta) dias, contados do recebimento desta carta, conforme o art. 18, §1º, do CDC.\n\nAtenciosamente,\n\n[nome do consumidor]\n[assinatura]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_14",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "O mofo era perceptível assim que a embalagem foi aberta, e queijo é um alimento, ou seja, um bem não durável. O relato não menciona dano à saúde, então permanece no âmbito do art. 26.",
+      "O mofo era perceptível assim que a embalagem foi aberta, o que caracteriza vício aparente, e queijo é alimento, ou seja, bem não durável. O relato não menciona dano à saúde, então permanece no escopo do art. 26.",
+      "O mofo era perceptível assim que a embalagem foi aberta, caracterizando vício aparente, e queijo é um alimento, ou seja, bem não durável."
+    ],
+    "dias_restantes_esperado": 0,
+    "dias_restantes_calculado_gabarito": 0,
+    "dias_restantes_fluxo": 0,
+    "situacao_esperada": "indeterminado",
+    "situacao_fluxo": "indeterminado",
+    "situacao_calculada_gabarito": "indeterminado",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "indeterminado: o sistema não gera carta"
+  },
+  {
+    "caso_id": "real_15",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "A cartela violada e os comprimidos faltando são perceptíveis de imediato ao abrir a caixa, e remédio é um bem consumido com o uso, portanto não durável. O relato não menciona dano à saúde.",
+      "A cartela violada e os comprimidos faltando são perceptíveis de imediato ao abrir a caixa, e remédio é um bem não durável, consumido com o uso. O relato não menciona dano à saúde ou à segurança do consumidor.",
+      "A cartela violada e os comprimidos faltando são perceptíveis de imediato ao abrir a caixa, e remédio é um bem consumido com o uso, portanto não durável. O relato não menciona dano à saúde."
+    ],
+    "dias_restantes_esperado": 14,
+    "dias_restantes_calculado_gabarito": 14,
+    "dias_restantes_fluxo": 14,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[Local], 5 de agosto de 2026.\n\nÀ\nPAULO AUGUSTO KIGIATO DROGARIA LTDA\n[endereço do fornecedor]\n\n**Assunto: Reclamação por vício de qualidade em produto adquirido – Nota fiscal emitida em 20/07/2026**\n\n**1. Identificação das partes**\n\nConsumidor: [nome do consumidor], [CPF do consumidor], [endereço do consumidor], [telefone/e-mail do consumidor].\n\nFornecedor: PAULO AUGUSTO KIGIATO DROGARIA LTDA, [CNPJ do fornecedor], [endereço do fornecedor].\n\n**2. Dos fatos**\n\nEm 20 de julho de 2026, adquiri junto a esse estabelecimento os seguintes itens: BISSULFATO DE CLOPIDROGUEL 75 CTX 28 e TAXA ENTREGA, no valor total de R$ 34,67, conforme nota fiscal emitida na mesma data. O produto foi entregue em 20 de julho de 2026.\n\nAo receber o produto, constatei que a caixa do medicamento veio com a cartela violada e com dois comprimidos faltando. Trata-se de vício aparente, verificado já no momento da entrega.\n\n**3. Do fundamento legal**\n\nNos termos da Lei nº 8.078/1990 (Código de Defesa do Consumidor):\n\n- O art. 18, caput e §1º, estabelece a responsabilidade do fornecedor pelos vícios de qualidade dos produtos que os tornem impróprios ou diminuam seu valor, ou que apresentem disparidade em relação às indicações do recipiente ou da embalagem.\n- O art. 26, inciso I, fixa em 30 dias o prazo para reclamar de vícios aparentes em produtos não duráveis.\n- O art. 26, §1º, determina que, no caso de vício aparente, o prazo conta da entrega efetiva do produto.\n\nEsta reclamação é feita dentro do prazo legal, que se encerra em 19 de agosto de 2026, contado a partir da entrega em 20 de julho de 2026.\n\n**4. Do pedido**\n\nSolicito que o fornecedor sane o vício do produto no prazo máximo de 30 (trinta) dias, conforme o art. 18, §1º, do CDC.\n\nNão sendo o vício sanado nesse prazo, poderei exigir, à minha escolha:\n\nI – a substituição do produto por outro da mesma espécie, em perfeitas condições de uso;\n\nII – a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou\n\nIII – o abatimento proporcional do preço.\n\n**5. Do prazo para resposta**\n\nPeço que o fornecedor responda a esta carta no prazo de 30 (trinta) dias, contados do recebimento desta, conforme o art. 18, §1º, do CDC.\n\nAtenciosamente,\n\n[nome do consumidor]\n[assinatura]\n\nAnexos: [cópia da nota fiscal] e [fotos do produto e da embalagem, se houver].",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_16",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "O mofo foi percebido assim que o pacote foi aberto, no mesmo dia, o que caracteriza vício aparente, e pão de forma é um alimento, ou seja, um bem não durável.",
+      "O mofo foi percebido assim que o pacote foi aberto, no mesmo dia, e pão de forma é um alimento, ou seja, um bem não durável.",
+      "O mofo foi percebido assim que o pacote foi aberto, no mesmo dia, e pão de forma é um alimento, ou seja, um bem não durável."
+    ],
+    "dias_restantes_esperado": 27,
+    "dias_restantes_calculado_gabarito": 27,
+    "dias_restantes_fluxo": 27,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "foto recusada na extração (ilegivel)"
+  },
+  {
+    "caso_id": "real_17",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "A validade vencida está impressa na caixa e é perceptível de imediato, e o remédio é um bem consumido com o uso, portanto não durável. O relato não menciona dano à saúde, então permanece no âmbito do art. 26.",
+      "A validade vencida está impressa na caixa e é perceptível de imediato, e medicamento é um bem consumido com o uso, portanto não durável. O relato não menciona dano à saúde, então permanece no âmbito do art. 26.",
+      "A validade vencida está impressa na caixa e é perceptível de imediato, e medicamento é um bem consumido com o uso, portanto não durável. O relato não menciona dano à saúde, então não se enquadra nos arts. 12 a 17."
+    ],
+    "dias_restantes_esperado": 25,
+    "dias_restantes_calculado_gabarito": 25,
+    "dias_restantes_fluxo": 25,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "foto recusada na extração (ilegivel)"
+  }
+]

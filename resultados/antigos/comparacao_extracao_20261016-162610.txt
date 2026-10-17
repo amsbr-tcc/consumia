@@ -1,0 +1,36 @@
+arquivo_de_casos: /Users/amanda.brunelli/Downloads/consumia-backend/tests/casos/casos_sinteticos.json
+extratores: ['tesseract']
+
+=== tesseract ===
+Tempo médio por imagem: 0.20s
+Taxa de erro de caracteres (CER) média: 1.7%
+Fotos ruins recusadas (pedindo nova foto): 2/2
+Checagem da foto (linhas = gabarito, colunas = sistema):
+  gabarito \ sistema       aceitou   recusou
+  legivel                        3         0
+  ilegivel                       0         2
+Acurácia por campo:
+  estabelecimento      100%
+  data_emissao         100%
+  produtos             67%
+  valor_total          100%
+Matriz de resultados (notas com foto boa; linhas = campo):
+  campo                     correto      incorreto   não extraído  foto recusada  precisão  revocação     F1
+  estabelecimento                 3              0              0              0      100%       100%   1.00
+  data_emissao                    3              0              0              0      100%       100%   1.00
+  produtos                        2              1              0              0       67%        67%   0.67
+  valor_total                     3              0              0              0      100%       100%   1.00
+  TOTAL                          11              1              0              0       92%        92%   0.92
+Erros por caso (extraído ≠ esperado):
+  caso_02 produtos: [CAFE TORRADO 5006; LIQUIDIFICADOR soow] ≠ [CAFE TORRADO 500G; LIQUIDIFICADOR 600W]
+
+=== Comparação lado a lado ===
+campo                     tesseract
+estabelecimento                100%
+data_emissao                   100%
+produtos                        67%
+valor_total                    100%
+MÉDIA                           92%
+tempo médio                   0.20s
+
+Maior acurácia média: tesseract

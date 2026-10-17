@@ -1,0 +1,5 @@
+esperado \ previsto;dentro_do_prazo;fora_do_prazo;indeterminado;fora_de_escopo
+dentro_do_prazo;12;0;0;0
+fora_do_prazo;0;2;0;0
+indeterminado;0;0;1;0
+fora_de_escopo;0;0;0;2

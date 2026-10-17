@@ -1,0 +1,616 @@
+{
+  "metadados": {
+    "arquivo_de_casos": "tests/casos/casos.json",
+    "data_execucao": "2026-10-16T16:24:59",
+    "extratores": [
+      "tesseract"
+    ],
+    "checagem_de_qualidade": true
+  },
+  "extratores": {
+    "tesseract": {
+      "nome": "tesseract",
+      "resultados_por_caso": [
+        {
+          "caso_id": "real_01",
+          "duracao_segundos": 1.4330212500062771,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "JURDIAI 3E 13215900",
+              "Outback Steakhouse Restaurantes Brasil S A"
+            ],
+            "data_emissao": [
+              "2026-10-01",
+              "2026-10-01"
+            ],
+            "produtos": [
+              [],
+              [
+                "TEA CRANB",
+                "TEA REFIL",
+                "TILAPIA LM",
+                "GORJETA CONCE"
+              ]
+            ],
+            "valor_total": [
+              null,
+              89.98
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_02",
+          "duracao_segundos": 1.5175189159926958,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "UNEM LE UI. 165 “UU GI HIRZ COMERCIO",
+              "HR2 COMERCIO VAREJISTA DE ROUPAS EM GERAL LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-01"
+            ],
+            "produtos": [
+              [],
+              [
+                "CALCA FEM HLHSN 040"
+              ]
+            ],
+            "valor_total": [
+              269.99,
+              289.99
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_03",
+          "duracao_segundos": 2.4863504999957513,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "DROGARIA SAO PAULO SA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-01"
+            ],
+            "produtos": [
+              null,
+              [
+                "CR CALMING CREAM 40G",
+                "AP DEP SUAVE SENS 2UNI"
+              ]
+            ],
+            "valor_total": [
+              null,
+              83.98
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_04",
+          "duracao_segundos": 1.3000986670085695,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "CENTRO = SAO PAULO -",
+              "ARMARINHOS FERNANDO LTDA"
+            ],
+            "data_emissao": [
+              "2026-07-11",
+              "2026-07-11"
+            ],
+            "produtos": [
+              [],
+              [
+                "PINCEL CONDOR ARTISTICO",
+                "BLOCO STARCOLOR 65FLS R",
+                "ALCOOL GEL GIOVANNA BAB",
+                "MINI DICIONARIO ESCOLAR"
+              ]
+            ],
+            "valor_total": [
+              8.28,
+              18.29
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_05",
+          "duracao_segundos": 1.3214832079829648,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "CENTRO - SAO PAULO -",
+              "ARMARINHOS FERNANDO LTDA"
+            ],
+            "data_emissao": [
+              "2026-07-11",
+              "2026-07-11"
+            ],
+            "produtos": [
+              [],
+              [
+                "PINCEL CONDOR ARTISTICO",
+                "BLOCO STARCOLOR 65FLS R",
+                "ALCOOL GEL GIOVANNA BAB",
+                "MINI DICIONARIO ESCOLAR"
+              ]
+            ],
+            "valor_total": [
+              8.98,
+              18.29
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_06",
+          "duracao_segundos": 1.9075269999739248,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Razao Social: Lojas Riachuelo SA",
+              "Lojas Riachuelo SA"
+            ],
+            "data_emissao": [
+              "2026-11-05",
+              "2026-10-01"
+            ],
+            "produtos": [
+              [],
+              [
+                "Polo feminina canelada - rosa",
+                "Camiseta baby look estampada feminina - Azul Claro",
+                "Garrafa squeeze de metal 1L - vinho"
+              ]
+            ],
+            "valor_total": [
+              229.91,
+              229.97
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_07",
+          "duracao_segundos": 1.8553644159983378,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Brasil",
+              "C&A MODAS S.A."
+            ],
+            "data_emissao": [
+              "2026-10-01",
+              "2026-10-01"
+            ],
+            "produtos": [
+              [],
+              [
+                "MINDSET- SLIM FIT INTERLOCK:BRANCO:P",
+                "CALÇA WIDE LEG SLIM CINTURA SUPER ALTA:VINHO ESCU"
+              ]
+            ],
+            "valor_total": [
+              null,
+              249.98
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_08",
+          "duracao_segundos": 1.4455270000034943,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Joaquia: Buena Neto, 9999 Na - $P",
+              "PUMA SPORTS LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-15"
+            ],
+            "produtos": [
+              [],
+              [
+                "CALCADOSPUMA WIRED RUN SLIPON INF BDP Puma BlackCASTLEROCK 21"
+              ]
+            ],
+            "valor_total": [
+              100.0,
+              100.0
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_09",
+          "duracao_segundos": 2.3405275410041213,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Razao Social: Lojas Riachuelo SÁ",
+              "Lojas Riachuelo SA"
+            ],
+            "data_emissao": [
+              "2026-10-15",
+              "2026-10-15"
+            ],
+            "produtos": [
+              [],
+              [
+                "Sutiã base triângulo Daily alças reguláveis | Trif",
+                "Kit calcinha tradicional 3 peças estampada - multi"
+              ]
+            ],
+            "valor_total": [
+              109.98,
+              109.98
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_10",
+          "duracao_segundos": 2.0387229999760166,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "CHRJ:07.013.199/0007-77 Supermercado e Restaurante Jua",
+              "Supermercado e Restaurante Jva"
+            ],
+            "data_emissao": [
+              "2026-10-15",
+              "2026-10-15"
+            ],
+            "produtos": [
+              [],
+              [
+                "Iogurte Atilatt 448g",
+                "Bisc Pol Cassini 100",
+                "Pao Qjo Forno Minas",
+                "Uva Passa 200g Preta",
+                "Laranja Pera",
+                "Pera Willian s Kg"
+              ]
+            ],
+            "valor_total": [
+              null,
+              68.02
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_11",
+          "duracao_segundos": 1.5452898330113385,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Lindt é Sprongl: Brazil Covercio de Al",
+              "Lindt & Sprungli Brazil Comercio de Al"
+            ],
+            "data_emissao": [
+              "9096-06-28",
+              "2026-06-28"
+            ],
+            "produtos": [
+              [],
+              [
+                "GENERICO PICK AND MIX"
+              ]
+            ],
+            "valor_total": [
+              45.89,
+              45.89
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_12",
+          "duracao_segundos": 3.1558614170062356,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "JOTACE COMERCIO DE SALGADOS LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-06-24"
+            ],
+            "produtos": [
+              null,
+              [
+                "KIT COPA - TORCIDA",
+                "ITALIANINHO DE CALABRESA COM REQUEIJÃO FRITO/CONGE",
+                "CROQUETE DE JAMON FRITO/CONGE 400G"
+              ]
+            ],
+            "valor_total": [
+              null,
+              136.8
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_13",
+          "duracao_segundos": 4.4934086249850225,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "INFANGER E CIA. LTDA."
+            ],
+            "data_emissao": [
+              null,
+              "2026-08-22"
+            ],
+            "produtos": [
+              null,
+              [
+                "TOMATE ITALIANO KG",
+                "L PIRACANJUBA 1L C T",
+                "CAFE MELITTA 500G VA",
+                "DET YPE 500ML COCO",
+                "MOLHO TOM QUERO 240G",
+                "CR LEITE PIRACANJUBA",
+                "SABAO PO OMO 700G CX",
+                "GELEIA ARCOR 454G PE",
+                "PAO PANCO FORMA 500G",
+                "MACA GALA KG",
+                "SAB DOVE 90G ORIGINA",
+                "LIMAO KG",
+                "SALG DORITOS 183G NA",
+                "OVOS CALDANA PVC BCO",
+                "PERNIL C OSSO KG",
+                "LING SADIA TOSCANA K",
+                "LING SADIA CALAB DEF",
+                "BIFE ANCHO DI PRIMA",
+                "REQUEIJAO CRIOULO 40",
+                "REF FEBRASP 2L TURBA",
+                "H2OH 500ML LIMONETO",
+                "QJO LA SERENISSIMA M",
+                "PRES SAD COZ S CAPA"
+              ]
+            ],
+            "valor_total": [
+              null,
+              349.55
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_14",
+          "duracao_segundos": 7.115971499995794,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "SUPERMERCADO SARTORATO XAVIER LTDA EPP"
+            ],
+            "data_emissao": [
+              null,
+              "2026-08-13"
+            ],
+            "produtos": [
+              null,
+              [
+                "QJO RALA VALE CA",
+                "ENERG MONSTER JU",
+                "AZEITO D PEPE VE",
+                "QJO MUSSAR LA PA",
+                "PRESUN PERDIGAO",
+                "AGUA MIN PONPEIA"
+              ]
+            ],
+            "valor_total": [
+              null,
+              53.27
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_15",
+          "duracao_segundos": 2.7560127080068924,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "PAULO AUGUSTO KIGIATO DROGARIA LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-07-20"
+            ],
+            "produtos": [
+              null,
+              [
+                "BISSULFATO DE CLOPIDOGREL 75 CPR 28",
+                "TAXA ENTREGA"
+              ]
+            ],
+            "valor_total": [
+              null,
+              34.67
+            ]
+          },
+          "cer": null
+        },
+        {
+          "caso_id": "real_16",
+          "duracao_segundos": 1.4162082910188474,
+          "foto_ilegivel_esperado": true,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {},
+          "cer": null
+        },
+        {
+          "caso_id": "real_17",
+          "duracao_segundos": 3.0849074160214514,
+          "foto_ilegivel_esperado": true,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {},
+          "cer": null
+        }
+      ],
+      "acuracia_por_campo": {
+        "estabelecimento": 0.0,
+        "data_emissao": 0.4,
+        "produtos": 0.0,
+        "valor_total": 0.2
+      },
+      "acuracia_media": 0.15000000000000002,
+      "cer_medio": null,
+      "tempo_medio_segundos": 2.424341252234573,
+      "fotos_ruins_recusadas": 2,
+      "fotos_ruins_total": 2,
+      "recusas_indevidas": [
+        "real_03",
+        "real_12",
+        "real_13",
+        "real_14",
+        "real_15"
+      ],
+      "casos_com_erro": [],
+      "matriz_qualidade_foto": {
+        "classes": [
+          "legivel",
+          "ilegivel",
+          "aceitou",
+          "recusou"
+        ],
+        "contagens": {
+          "legivel": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "aceitou": 10,
+            "recusou": 5
+          },
+          "ilegivel": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "aceitou": 0,
+            "recusou": 2
+          },
+          "aceitou": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "aceitou": 0,
+            "recusou": 0
+          },
+          "recusou": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "aceitou": 0,
+            "recusou": 0
+          }
+        }
+      },
+      "matriz_resultados": {
+        "estabelecimento": {
+          "contagens": {
+            "correto": 0,
+            "incorreto": 10,
+            "nao_extraido": 0,
+            "foto_recusada": 5
+          }
+        },
+        "data_emissao": {
+          "contagens": {
+            "correto": 6,
+            "incorreto": 2,
+            "nao_extraido": 2,
+            "foto_recusada": 5
+          }
+        },
+        "produtos": {
+          "contagens": {
+            "correto": 0,
+            "incorreto": 0,
+            "nao_extraido": 10,
+            "foto_recusada": 5
+          }
+        },
+        "valor_total": {
+          "contagens": {
+            "correto": 3,
+            "incorreto": 4,
+            "nao_extraido": 3,
+            "foto_recusada": 5
+          }
+        },
+        "TOTAL": {
+          "contagens": {
+            "correto": 9,
+            "incorreto": 16,
+            "nao_extraido": 15,
+            "foto_recusada": 20
+          }
+        }
+      }
+    }
+  }
+}

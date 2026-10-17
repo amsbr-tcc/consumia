@@ -1,0 +1,209 @@
+arquivo_de_casos: tests/casos/casos.json
+data_execucao: 2026-10-16T16:41:51
+extratores: ['tesseract', 'multimodal:gemini-2.5-flash']
+checagem_de_qualidade: True
+
+=== tesseract ===
+Tempo médio por imagem: 2.40s
+Fotos ruins recusadas (pedindo nova foto): 2/2
+Checagem da foto (linhas = gabarito, colunas = sistema):
+  gabarito \ sistema       aceitou   recusou
+  legivel                       10         5
+  ilegivel                       0         2
+Fotos boas recusadas indevidamente (5): real_03, real_12, real_13, real_14, real_15
+Acurácia por campo:
+  estabelecimento      0%
+  data_emissao         40%
+  produtos             0%
+  valor_total          20%
+Matriz de resultados (notas com foto boa; linhas = campo):
+  campo                     correto      incorreto   não extraído  foto recusada  precisão  revocação     F1
+  estabelecimento                 0             10              0              5        0%         0%   0.00
+  data_emissao                    6              2              2              5       75%        40%   0.52
+  produtos                        0              0             10              5        0%         0%   0.00
+  valor_total                     3              4              3              5       43%        20%   0.27
+  TOTAL                           9             16             15             20       36%        15%   0.21
+Erros por caso (extraído ≠ esperado):
+  real_01 estabelecimento: JURDIAI 3E 13215900 ≠ Outback Steakhouse Restaurantes Brasil S A
+  real_01 produtos: [] ≠ [TEA CRANB; TEA REFIL; TILAPIA LM; GORJETA CONCE]
+  real_01 valor_total: — ≠ 89.98
+  real_02 estabelecimento: UNEM LE UI. 165 “UU GI HIRZ COMERCIO ≠ HR2 COMERCIO VAREJISTA DE ROUPAS EM GERAL LTDA
+  real_02 data_emissao: — ≠ 2026-10-01
+  real_02 produtos: [] ≠ [CALCA FEM HLHSN 040]
+  real_02 valor_total: 269.99 ≠ 289.99
+  real_03 estabelecimento: — ≠ DROGARIA SAO PAULO SA
+  real_03 data_emissao: — ≠ 2026-10-01
+  real_03 produtos: — ≠ [CR CALMING CREAM 40G; AP DEP SUAVE SENS 2UNI]
+  real_03 valor_total: — ≠ 83.98
+  real_04 estabelecimento: CENTRO = SAO PAULO - ≠ ARMARINHOS FERNANDO LTDA
+  real_04 produtos: [] ≠ [PINCEL CONDOR ARTISTICO; BLOCO STARCOLOR 65FLS R; ALCOOL GEL GIOVANNA BAB; MINI DICIONARIO ESCOLAR]
+  real_04 valor_total: 8.28 ≠ 18.29
+  real_05 estabelecimento: CENTRO - SAO PAULO - ≠ ARMARINHOS FERNANDO LTDA
+  real_05 produtos: [] ≠ [PINCEL CONDOR ARTISTICO; BLOCO STARCOLOR 65FLS R; ALCOOL GEL GIOVANNA BAB; MINI DICIONARIO ESCOLAR]
+  real_05 valor_total: 8.98 ≠ 18.29
+  real_06 estabelecimento: Razao Social: Lojas Riachuelo SA ≠ Lojas Riachuelo SA
+  real_06 data_emissao: 2026-11-05 ≠ 2026-10-01
+  real_06 produtos: [] ≠ [Polo feminina canelada - rosa; Camiseta baby look estampada feminina - Azul Claro; Garrafa squeeze de metal 1L - vinho]
+  real_06 valor_total: 229.91 ≠ 229.97
+  real_07 estabelecimento: Brasil ≠ C&A MODAS S.A.
+  real_07 produtos: [] ≠ [MINDSET- SLIM FIT INTERLOCK:BRANCO:P; CALÇA WIDE LEG SLIM CINTURA SUPER ALTA:VINHO ESCU]
+  real_07 valor_total: — ≠ 249.98
+  real_08 estabelecimento: Joaquia: Buena Neto, 9999 Na - $P ≠ PUMA SPORTS LTDA
+  real_08 data_emissao: — ≠ 2026-10-15
+  real_08 produtos: [] ≠ [CALCADOSPUMA WIRED RUN SLIPON INF BDP Puma BlackCASTLEROCK 21]
+  real_09 estabelecimento: Razao Social: Lojas Riachuelo SÁ ≠ Lojas Riachuelo SA
+  real_09 produtos: [] ≠ [Sutiã base triângulo Daily alças reguláveis | Trif; Kit calcinha tradicional 3 peças estampada - multi]
+  real_10 estabelecimento: CHRJ:07.013.199/0007-77 Supermercado e Restaurante Jua ≠ Supermercado e Restaurante Jva
+  real_10 produtos: [] ≠ [Iogurte Atilatt 448g; Bisc Pol Cassini 100; Pao Qjo Forno Minas; Uva Passa 200g Preta; Laranja Pera; Pera Willian s Kg]
+  real_10 valor_total: — ≠ 68.02
+  real_11 estabelecimento: Lindt é Sprongl: Brazil Covercio de Al ≠ Lindt & Sprungli Brazil Comercio de Al
+  real_11 data_emissao: 9096-06-28 ≠ 2026-06-28
+  real_11 produtos: [] ≠ [GENERICO PICK AND MIX]
+  real_12 estabelecimento: — ≠ JOTACE COMERCIO DE SALGADOS LTDA
+  real_12 data_emissao: — ≠ 2026-06-24
+  real_12 produtos: — ≠ [KIT COPA - TORCIDA; ITALIANINHO DE CALABRESA COM REQUEIJÃO FRITO/CONGE; CROQUETE DE JAMON FRITO/CONGE 400G]
+  real_12 valor_total: — ≠ 136.8
+  real_13 estabelecimento: — ≠ INFANGER E CIA. LTDA.
+  real_13 data_emissao: — ≠ 2026-08-22
+  real_13 produtos: — ≠ [TOMATE ITALIANO KG; L PIRACANJUBA 1L C T; CAFE MELITTA 500G VA; DET YPE 500ML COCO; MOLHO TOM QUERO 240G; CR LEITE PIRACANJUBA; SABAO PO OMO 700G CX; GELEIA ARCOR 454G PE; PAO PANCO FORMA 500G; MACA GALA KG; SAB DOVE 90G ORIGINA; LIMAO KG; SALG DORITOS 183G NA; OVOS CALDANA PVC BCO; PERNIL C OSSO KG; LING SADIA TOSCANA K; LING SADIA CALAB DEF; BIFE ANCHO DI PRIMA; REQUEIJAO CRIOULO 40; REF FEBRASP 2L TURBA; H2OH 500ML LIMONETO; QJO LA SERENISSIMA M; PRES SAD COZ S CAPA]
+  real_13 valor_total: — ≠ 349.55
+  real_14 estabelecimento: — ≠ SUPERMERCADO SARTORATO XAVIER LTDA EPP
+  real_14 data_emissao: — ≠ 2026-08-13
+  real_14 produtos: — ≠ [QJO RALA VALE CA; ENERG MONSTER JU; AZEITO D PEPE VE; QJO MUSSAR LA PA; PRESUN PERDIGAO; AGUA MIN PONPEIA]
+  real_14 valor_total: — ≠ 53.27
+  real_15 estabelecimento: — ≠ PAULO AUGUSTO KIGIATO DROGARIA LTDA
+  real_15 data_emissao: — ≠ 2026-07-20
+  real_15 produtos: — ≠ [BISSULFATO DE CLOPIDOGREL 75 CPR 28; TAXA ENTREGA]
+  real_15 valor_total: — ≠ 34.67
+
+=== multimodal:gemini-2.5-flash ===
+Tempo médio por imagem: 10.52s
+Fotos ruins recusadas (pedindo nova foto): 0/2
+Checagem da foto (linhas = gabarito, colunas = sistema):
+  gabarito \ sistema          erro
+  legivel                       15
+  ilegivel                       2
+Casos com erro (17): real_01, real_02, real_03, real_04, real_05, real_06, real_07, real_08, real_09, real_10, real_11, real_12, real_13, real_14, real_15, real_16, real_17
+  real_01: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_02: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_03: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_04: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_05: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_06: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_07: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_08: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_09: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_10: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_11: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_12: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_13: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_14: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_15: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_16: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+  real_17: ClientError: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API (https://ai.google.dev/gemini-api/docs/get-started).', 'status': 'NOT_FOUND'}}
+Acurácia por campo:
+  estabelecimento      0%
+  data_emissao         0%
+  produtos             0%
+  valor_total          0%
+Matriz de resultados (notas com foto boa; linhas = campo):
+  campo                     correto      incorreto   não extraído  foto recusada  precisão  revocação     F1
+  estabelecimento                 0              0             15              0        0%         0%   0.00
+  data_emissao                    0              0             15              0        0%         0%   0.00
+  produtos                        0              0             15              0        0%         0%   0.00
+  valor_total                     0              0             15              0        0%         0%   0.00
+  TOTAL                           0              0             60              0        0%         0%   0.00
+Erros por caso (extraído ≠ esperado):
+  real_01 estabelecimento: — ≠ Outback Steakhouse Restaurantes Brasil S A
+  real_01 data_emissao: — ≠ 2026-10-01
+  real_01 produtos: — ≠ [TEA CRANB; TEA REFIL; TILAPIA LM; GORJETA CONCE]
+  real_01 valor_total: — ≠ 89.98
+  real_02 estabelecimento: — ≠ HR2 COMERCIO VAREJISTA DE ROUPAS EM GERAL LTDA
+  real_02 data_emissao: — ≠ 2026-10-01
+  real_02 produtos: — ≠ [CALCA FEM HLHSN 040]
+  real_02 valor_total: — ≠ 289.99
+  real_03 estabelecimento: — ≠ DROGARIA SAO PAULO SA
+  real_03 data_emissao: — ≠ 2026-10-01
+  real_03 produtos: — ≠ [CR CALMING CREAM 40G; AP DEP SUAVE SENS 2UNI]
+  real_03 valor_total: — ≠ 83.98
+  real_04 estabelecimento: — ≠ ARMARINHOS FERNANDO LTDA
+  real_04 data_emissao: — ≠ 2026-07-11
+  real_04 produtos: — ≠ [PINCEL CONDOR ARTISTICO; BLOCO STARCOLOR 65FLS R; ALCOOL GEL GIOVANNA BAB; MINI DICIONARIO ESCOLAR]
+  real_04 valor_total: — ≠ 18.29
+  real_05 estabelecimento: — ≠ ARMARINHOS FERNANDO LTDA
+  real_05 data_emissao: — ≠ 2026-07-11
+  real_05 produtos: — ≠ [PINCEL CONDOR ARTISTICO; BLOCO STARCOLOR 65FLS R; ALCOOL GEL GIOVANNA BAB; MINI DICIONARIO ESCOLAR]
+  real_05 valor_total: — ≠ 18.29
+  real_06 estabelecimento: — ≠ Lojas Riachuelo SA
+  real_06 data_emissao: — ≠ 2026-10-01
+  real_06 produtos: — ≠ [Polo feminina canelada - rosa; Camiseta baby look estampada feminina - Azul Claro; Garrafa squeeze de metal 1L - vinho]
+  real_06 valor_total: — ≠ 229.97
+  real_07 estabelecimento: — ≠ C&A MODAS S.A.
+  real_07 data_emissao: — ≠ 2026-10-01
+  real_07 produtos: — ≠ [MINDSET- SLIM FIT INTERLOCK:BRANCO:P; CALÇA WIDE LEG SLIM CINTURA SUPER ALTA:VINHO ESCU]
+  real_07 valor_total: — ≠ 249.98
+  real_08 estabelecimento: — ≠ PUMA SPORTS LTDA
+  real_08 data_emissao: — ≠ 2026-10-15
+  real_08 produtos: — ≠ [CALCADOSPUMA WIRED RUN SLIPON INF BDP Puma BlackCASTLEROCK 21]
+  real_08 valor_total: — ≠ 100.0
+  real_09 estabelecimento: — ≠ Lojas Riachuelo SA
+  real_09 data_emissao: — ≠ 2026-10-15
+  real_09 produtos: — ≠ [Sutiã base triângulo Daily alças reguláveis | Trif; Kit calcinha tradicional 3 peças estampada - multi]
+  real_09 valor_total: — ≠ 109.98
+  real_10 estabelecimento: — ≠ Supermercado e Restaurante Jva
+  real_10 data_emissao: — ≠ 2026-10-15
+  real_10 produtos: — ≠ [Iogurte Atilatt 448g; Bisc Pol Cassini 100; Pao Qjo Forno Minas; Uva Passa 200g Preta; Laranja Pera; Pera Willian s Kg]
+  real_10 valor_total: — ≠ 68.02
+  real_11 estabelecimento: — ≠ Lindt & Sprungli Brazil Comercio de Al
+  real_11 data_emissao: — ≠ 2026-06-28
+  real_11 produtos: — ≠ [GENERICO PICK AND MIX]
+  real_11 valor_total: — ≠ 45.89
+  real_12 estabelecimento: — ≠ JOTACE COMERCIO DE SALGADOS LTDA
+  real_12 data_emissao: — ≠ 2026-06-24
+  real_12 produtos: — ≠ [KIT COPA - TORCIDA; ITALIANINHO DE CALABRESA COM REQUEIJÃO FRITO/CONGE; CROQUETE DE JAMON FRITO/CONGE 400G]
+  real_12 valor_total: — ≠ 136.8
+  real_13 estabelecimento: — ≠ INFANGER E CIA. LTDA.
+  real_13 data_emissao: — ≠ 2026-08-22
+  real_13 produtos: — ≠ [TOMATE ITALIANO KG; L PIRACANJUBA 1L C T; CAFE MELITTA 500G VA; DET YPE 500ML COCO; MOLHO TOM QUERO 240G; CR LEITE PIRACANJUBA; SABAO PO OMO 700G CX; GELEIA ARCOR 454G PE; PAO PANCO FORMA 500G; MACA GALA KG; SAB DOVE 90G ORIGINA; LIMAO KG; SALG DORITOS 183G NA; OVOS CALDANA PVC BCO; PERNIL C OSSO KG; LING SADIA TOSCANA K; LING SADIA CALAB DEF; BIFE ANCHO DI PRIMA; REQUEIJAO CRIOULO 40; REF FEBRASP 2L TURBA; H2OH 500ML LIMONETO; QJO LA SERENISSIMA M; PRES SAD COZ S CAPA]
+  real_13 valor_total: — ≠ 349.55
+  real_14 estabelecimento: — ≠ SUPERMERCADO SARTORATO XAVIER LTDA EPP
+  real_14 data_emissao: — ≠ 2026-08-13
+  real_14 produtos: — ≠ [QJO RALA VALE CA; ENERG MONSTER JU; AZEITO D PEPE VE; QJO MUSSAR LA PA; PRESUN PERDIGAO; AGUA MIN PONPEIA]
+  real_14 valor_total: — ≠ 53.27
+  real_15 estabelecimento: — ≠ PAULO AUGUSTO KIGIATO DROGARIA LTDA
+  real_15 data_emissao: — ≠ 2026-07-20
+  real_15 produtos: — ≠ [BISSULFATO DE CLOPIDOGREL 75 CPR 28; TAXA ENTREGA]
+  real_15 valor_total: — ≠ 34.67
+
+=== Comparação lado a lado ===
+campo                                   tesseract  multimodal:gemini-2.5-flash
+estabelecimento                                0%                           0%
+data_emissao                                  40%                           0%
+produtos                                       0%                           0%
+valor_total                                   20%                           0%
+MÉDIA                                         15%                           0%
+tempo médio                                 2.40s                       10.52s
+
+=== Concordância: tesseract x multimodal:gemini-2.5-flash (notas com foto boa) ===
+estabelecimento:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                      0                             0
+  tesseract errou                                        0                            15
+data_emissao:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                      0                             6
+  tesseract errou                                        0                             9
+produtos:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                      0                             0
+  tesseract errou                                        0                            15
+valor_total:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                      0                             3
+  tesseract errou                                        0                            12
+TODOS OS CAMPOS:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                      0                             9
+  tesseract errou                                        0                            51
+
+Maior acurácia média: tesseract

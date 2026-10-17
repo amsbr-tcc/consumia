@@ -1,0 +1,96 @@
+modelo: claude-sonnet-5-5
+extrator: multimodal
+
+=== Classificação (17 casos, 3 execuções cada) ===
+
+--- Tipo de vício (1ª execução) ---
+Matriz de confusão (linhas = gabarito, colunas = sistema):
+  gabarito \ sistema         aparente          oculto  fora_de_escopo           total
+  aparente                         11               0               0              11
+  oculto                            0               4               0               4
+  fora_de_escopo                    0               0               2               2
+  acertos (diagonal): 17/17 = 100%
+  categoria                   precisão  revocação     F1  suporte
+  aparente                        100%       100%   1.00       11
+  fora_de_escopo                  100%       100%   1.00        2
+  oculto                          100%       100%   1.00        4
+
+--- Durabilidade (1ª execução) ---
+Matriz de confusão (linhas = gabarito, colunas = sistema):
+  gabarito \ sistema          duravel     nao_duravel  fora_de_escopo           total
+  duravel                           6               0               0               6
+  nao_duravel                       0               9               0               9
+  fora_de_escopo                    0               0               2               2
+  acertos (diagonal): 17/17 = 100%
+  categoria                   precisão  revocação     F1  suporte
+  duravel                         100%       100%   1.00        6
+  fora_de_escopo                  100%       100%   1.00        2
+  nao_duravel                     100%       100%   1.00        9
+
+--- Classificação completa — tipo/durabilidade (1ª execução) ---
+Matriz de confusão (linhas = gabarito, colunas = sistema):
+  gabarito \ sistema          aparente/duravel  aparente/nao_duravel        oculto/duravel    oculto/nao_duravel        fora_de_escopo                 total
+  aparente/duravel                           3                     0                     0                     0                     0                     3
+  aparente/nao_duravel                       0                     8                     0                     0                     0                     8
+  oculto/duravel                             0                     0                     3                     0                     0                     3
+  oculto/nao_duravel                         0                     0                     0                     1                     0                     1
+  fora_de_escopo                             0                     0                     0                     0                     2                     2
+  acertos (diagonal): 17/17 = 100%
+  categoria                   precisão  revocação     F1  suporte
+  aparente/duravel                100%       100%   1.00        3
+  aparente/nao_duravel            100%       100%   1.00        8
+  fora_de_escopo                  100%       100%   1.00        2
+  oculto/duravel                  100%       100%   1.00        3
+  oculto/nao_duravel              100%       100%   1.00        1
+
+--- Classificação completa — todas as 3 execuções ---
+Matriz de confusão (linhas = gabarito, colunas = sistema):
+  gabarito \ sistema          aparente/duravel  aparente/nao_duravel        oculto/duravel    oculto/nao_duravel        fora_de_escopo                 total
+  aparente/duravel                           9                     0                     0                     0                     0                     9
+  aparente/nao_duravel                       0                    24                     0                     0                     0                    24
+  oculto/duravel                             0                     0                     9                     0                     0                     9
+  oculto/nao_duravel                         0                     0                     0                     3                     0                     3
+  fora_de_escopo                             0                     0                     0                     0                     6                     6
+  acertos (diagonal): 51/51 = 100%
+  categoria                   precisão  revocação     F1  suporte
+  aparente/duravel                100%       100%   1.00        9
+  aparente/nao_duravel            100%       100%   1.00       24
+  fora_de_escopo                  100%       100%   1.00        6
+  oculto/duravel                  100%       100%   1.00        9
+  oculto/nao_duravel              100%       100%   1.00        3
+
+Consistência (mesma resposta nas 3 execuções): 100%
+
+=== Prazo (classificação e datas do gabarito) ===
+  dias restantes e situação iguais ao gabarito: 15/15
+
+=== Diagnóstico completo (classificação e prazo corretos) ===
+  100% (17/17)
+
+--- Situação final do caso (gabarito x fluxo completo) ---
+Matriz de confusão (linhas = gabarito, colunas = sistema):
+  gabarito \ sistema   dentro_do_prazo    fora_do_prazo    indeterminado   fora_de_escopo            total
+  dentro_do_prazo                   12                0                0                0               12
+  fora_do_prazo                      0                2                0                0                2
+  indeterminado                      0                0                1                0                1
+  fora_de_escopo                     0                0                0                2                2
+  acertos (diagonal): 17/17 = 100%
+
+=== Por caso ===
+  real_01: esperado fora_de_escopo, obtido fora_de_escopo, fora_de_escopo, fora_de_escopo; dias restantes esperado None, fluxo None; diagnóstico OK
+  real_02: esperado aparente/duravel, obtido aparente/duravel, aparente/duravel, aparente/duravel; dias restantes esperado 75, fluxo 75; diagnóstico OK
+  real_03: esperado aparente/nao_duravel, obtido aparente/nao_duravel, aparente/nao_duravel, aparente/nao_duravel; dias restantes esperado 15, fluxo 15; diagnóstico OK
+  real_04: esperado aparente/nao_duravel, obtido aparente/nao_duravel, aparente/nao_duravel, aparente/nao_duravel; dias restantes esperado 0, fluxo 0; diagnóstico OK; fora_do_prazo: o sistema não gera carta
+  real_05: esperado aparente/duravel, obtido aparente/duravel, aparente/duravel, aparente/duravel; dias restantes esperado 9, fluxo 9; diagnóstico OK
+  real_06: esperado oculto/duravel, obtido oculto/duravel, oculto/duravel, oculto/duravel; dias restantes esperado 88, fluxo 88; diagnóstico OK
+  real_07: esperado oculto/duravel, obtido oculto/duravel, oculto/duravel, oculto/duravel; dias restantes esperado 86, fluxo 86; diagnóstico OK
+  real_08: esperado oculto/duravel, obtido oculto/duravel, oculto/duravel, oculto/duravel; dias restantes esperado 135, fluxo 135; diagnóstico OK
+  real_09: esperado aparente/duravel, obtido aparente/duravel, aparente/duravel, aparente/duravel; dias restantes esperado 43, fluxo 43; diagnóstico OK
+  real_10: esperado aparente/nao_duravel, obtido aparente/nao_duravel, aparente/nao_duravel, aparente/nao_duravel; dias restantes esperado 29, fluxo 29; diagnóstico OK
+  real_11: esperado fora_de_escopo, obtido fora_de_escopo, fora_de_escopo, fora_de_escopo; dias restantes esperado None, fluxo None; diagnóstico OK
+  real_12: esperado oculto/nao_duravel, obtido oculto/nao_duravel, oculto/nao_duravel, oculto/nao_duravel; dias restantes esperado 0, fluxo 0; diagnóstico OK; fora_do_prazo: o sistema não gera carta
+  real_13: esperado aparente/nao_duravel, obtido aparente/nao_duravel, aparente/nao_duravel, aparente/nao_duravel; dias restantes esperado 1, fluxo 1; diagnóstico OK
+  real_14: esperado aparente/nao_duravel, obtido aparente/nao_duravel, aparente/nao_duravel, aparente/nao_duravel; dias restantes esperado 0, fluxo 0; diagnóstico OK; indeterminado: o sistema não gera carta
+  real_15: esperado aparente/nao_duravel, obtido aparente/nao_duravel, aparente/nao_duravel, aparente/nao_duravel; dias restantes esperado 14, fluxo 14; diagnóstico OK
+  real_16: esperado aparente/nao_duravel, obtido aparente/nao_duravel, aparente/nao_duravel, aparente/nao_duravel; dias restantes esperado 27, fluxo 27; diagnóstico OK; foto recusada na extração (ilegivel)
+  real_17: esperado aparente/nao_duravel, obtido aparente/nao_duravel, aparente/nao_duravel, aparente/nao_duravel; dias restantes esperado 25, fluxo 25; diagnóstico OK; foto recusada na extração (ilegivel)

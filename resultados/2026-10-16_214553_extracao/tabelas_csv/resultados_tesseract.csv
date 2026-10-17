@@ -1,0 +1,6 @@
+campo;correto;incorreto;nao_extraido;foto_recusada;precisao;revocacao;f1
+estabelecimento;5;5;0;5;0.5000;0.3333;0.4000
+data_emissao;6;2;2;5;0.7500;0.4000;0.5217
+produtos;0;0;10;5;0.0000;0.0000;0.0000
+valor_total;3;4;3;5;0.4286;0.2000;0.2727
+TOTAL;14;11;15;20;0.5600;0.2333;0.3294
