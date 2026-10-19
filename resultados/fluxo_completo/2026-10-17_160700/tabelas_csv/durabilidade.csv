@@ -1,0 +1,4 @@
+esperado \ previsto;duravel;nao_duravel;fora_de_escopo
+duravel;6;0;0
+nao_duravel;0;9;0
+fora_de_escopo;0;0;2

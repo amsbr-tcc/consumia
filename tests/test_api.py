@@ -127,3 +127,12 @@ def test_api_repassa_as_datas_que_alteram_o_prazo(monkeypatch):
     assert recebido["data_reclamacao_fornecedor"] == date(2026, 4, 12)
     assert recebido["data_resposta_negativa"] is None
     assert recebido["data_fim_garantia_contratual"] == date(2027, 1, 1)
+
+
+def test_avisa_quando_o_recebimento_e_anterior_a_data_da_nota():
+    from app.api import avisos_de_datas
+
+    relato = RelatoUsuario(RELATO, data_entrega=date(2026, 9, 25), data_evidencia_defeito=date(2026, 9, 26))
+    avisos = avisos_de_datas(date(2026, 10, 1), relato)
+    assert len(avisos) == 1 and "25/09/2026" in avisos[0] and "01/10/2026" in avisos[0]
+    assert avisos_de_datas(date(2026, 9, 20), relato) == []

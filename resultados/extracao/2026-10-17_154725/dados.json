@@ -1,0 +1,1243 @@
+{
+  "metadados": {
+    "arquivo_de_casos": "/Users/amanda.brunelli/Downloads/consumia-backend/dados/casos_foto.json",
+    "extratores": [
+      "tesseract",
+      "multimodal:claude-sonnet-5-5"
+    ]
+  },
+  "extratores": {
+    "tesseract": {
+      "nome": "tesseract",
+      "resultados_por_caso": [
+        {
+          "caso_id": "real_01",
+          "duracao_segundos": 1.3441881249891594,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Qutback Steakhouse Restaurantes Brasil S À",
+              "Outback Steakhouse Restaurantes Brasil S A"
+            ],
+            "data_emissao": [
+              "2026-10-01",
+              "2026-10-01"
+            ],
+            "produtos": [
+              [],
+              [
+                "TEA CRANB",
+                "TEA REFIL",
+                "TILAPIA LM",
+                "GORJETA CONCE"
+              ]
+            ],
+            "valor_total": [
+              null,
+              89.98
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_02",
+          "duracao_segundos": 1.4989230000064708,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "UNEM LE UI. 165 “UU GI HIRZ COMERCIO",
+              "HR2 COMERCIO VAREJISTA DE ROUPAS EM GERAL LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-01"
+            ],
+            "produtos": [
+              [],
+              [
+                "CALCA FEM HLHSN 040"
+              ]
+            ],
+            "valor_total": [
+              269.99,
+              289.99
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_03",
+          "duracao_segundos": 2.4685429169912823,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "DROGARIA SAO PAULO SA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-01"
+            ],
+            "produtos": [
+              null,
+              [
+                "CR CALMING CREAM 40G",
+                "AP DEP SUAVE SENS 2UNI"
+              ]
+            ],
+            "valor_total": [
+              null,
+              83.98
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_04",
+          "duracao_segundos": 1.2930707919877023,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "ARMARINHOS FERNANDO LTDA",
+              "ARMARINHOS FERNANDO LTDA"
+            ],
+            "data_emissao": [
+              "2026-07-11",
+              "2026-07-11"
+            ],
+            "produtos": [
+              [],
+              [
+                "PINCEL CONDOR ARTISTICO",
+                "BLOCO STARCOLOR 65FLS R",
+                "ALCOOL GEL GIOVANNA BAB",
+                "MINI DICIONARIO ESCOLAR"
+              ]
+            ],
+            "valor_total": [
+              8.28,
+              18.29
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_05",
+          "duracao_segundos": 1.3139159579877742,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "ARMARINHOS FERNANDO LTDA",
+              "ARMARINHOS FERNANDO LTDA"
+            ],
+            "data_emissao": [
+              "2026-07-11",
+              "2026-07-11"
+            ],
+            "produtos": [
+              [],
+              [
+                "PINCEL CONDOR ARTISTICO",
+                "BLOCO STARCOLOR 65FLS R",
+                "ALCOOL GEL GIOVANNA BAB",
+                "MINI DICIONARIO ESCOLAR"
+              ]
+            ],
+            "valor_total": [
+              8.98,
+              18.29
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_06",
+          "duracao_segundos": 1.9002095830219332,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Lojas Riachuelo SA",
+              [
+                "Lojas Riachuelo SA",
+                "RIACHUELO"
+              ]
+            ],
+            "data_emissao": [
+              "2026-11-05",
+              "2026-10-01"
+            ],
+            "produtos": [
+              [],
+              [
+                "Polo feminina canelada - rosa",
+                "Camiseta baby look estampada feminina - Azul Claro",
+                "Garrafa squeeze de metal 1L - vinho"
+              ]
+            ],
+            "valor_total": [
+              229.91,
+              229.97
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_07",
+          "duracao_segundos": 1.8523402079881635,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "CRA MODAS S.A.",
+              "C&A MODAS S.A."
+            ],
+            "data_emissao": [
+              "2026-10-01",
+              "2026-10-01"
+            ],
+            "produtos": [
+              [],
+              [
+                "MINDSET- SLIM FIT INTERLOCK:BRANCO:P",
+                "CALÇA WIDE LEG SLIM CINTURA SUPER ALTA:VINHO ESCU"
+              ]
+            ],
+            "valor_total": [
+              null,
+              249.98
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_08",
+          "duracao_segundos": 1.4302924170042388,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "PUMA SPORTS LTDA",
+              "PUMA SPORTS LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-15"
+            ],
+            "produtos": [
+              [],
+              [
+                "CALCADOSPUMA WIRED RUN SLIPON INF BDP Puma BlackCASTLEROCK 21"
+              ]
+            ],
+            "valor_total": [
+              100.0,
+              100.0
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_09",
+          "duracao_segundos": 2.336595540982671,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Lojas Riachuelo SÁ",
+              [
+                "Lojas Riachuelo SA",
+                "RIACHUELO"
+              ]
+            ],
+            "data_emissao": [
+              "2026-10-15",
+              "2026-10-15"
+            ],
+            "produtos": [
+              [],
+              [
+                "Sutiã base triângulo Daily alças reguláveis | Trif",
+                "Kit calcinha tradicional 3 peças estampada - multi"
+              ]
+            ],
+            "valor_total": [
+              109.98,
+              109.98
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_10",
+          "duracao_segundos": 2.0458265419874806,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Supermercado e Restaurante Jua",
+              "Supermercado e Restaurante Jva"
+            ],
+            "data_emissao": [
+              "2026-10-15",
+              "2026-10-15"
+            ],
+            "produtos": [
+              [],
+              [
+                "Iogurte Atilatt 448g",
+                "Bisc Pol Cassini 100",
+                "Pao Qjo Forno Minas",
+                "Uva Passa 200g Preta",
+                "Laranja Pera",
+                "Pera Willian s Kg"
+              ]
+            ],
+            "valor_total": [
+              null,
+              68.02
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_11",
+          "duracao_segundos": 1.5581212080141995,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "LINDY CAMPINAS PARGUE DOK PEDRO SHOPP THA",
+              [
+                "Lindt & Sprungli Brazil Comercio de Al",
+                "LINDT CAMPINAS PARQUE DOM PEDRO SHOPPING"
+              ]
+            ],
+            "data_emissao": [
+              "9096-06-28",
+              "2026-06-28"
+            ],
+            "produtos": [
+              [],
+              [
+                "GENERICO PICK AND MIX"
+              ]
+            ],
+            "valor_total": [
+              45.89,
+              45.89
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_12",
+          "duracao_segundos": 3.1668212079966906,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "JOTACE COMERCIO DE SALGADOS LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-06-24"
+            ],
+            "produtos": [
+              null,
+              [
+                "KIT COPA - TORCIDA",
+                "ITALIANINHO DE CALABRESA COM REQUEIJÃO FRITO/CONGE",
+                "CROQUETE DE JAMON FRITO/CONGE 400G"
+              ]
+            ],
+            "valor_total": [
+              null,
+              136.8
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_13",
+          "duracao_segundos": 4.514918375003617,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "INFANGER E CIA. LTDA."
+            ],
+            "data_emissao": [
+              null,
+              "2026-08-22"
+            ],
+            "produtos": [
+              null,
+              [
+                "TOMATE ITALIANO KG",
+                "L PIRACANJUBA 1L C T 3",
+                "CAFE MELITTA 500G VA",
+                "DET YPE 500ML COCO",
+                "MOLHO TOM QUERO 240G",
+                "CR LEITE PIRACANJUBA",
+                "SABAO PO OMO 700G CX",
+                "GELEIA ARCOR 454G PE",
+                "PAO PANCO FORMA 500G",
+                "MACA GALA KG",
+                "SAB DOVE 90G ORIGINA",
+                "LIMAO KG",
+                "SALG DORITOS 183G NA",
+                "OVOS CALDANA PVC BCO",
+                "PERNIL C OSSO KG",
+                "LING SADIA TOSCANA K",
+                "LING SADIA CALAB DEF",
+                "BIFE ANCHO DI PRIMA",
+                "REQUEIJAO CRIOULO 40",
+                "REF FEBRASP 2L TURBA",
+                "H2OH 500ML LIMONETO",
+                "QJO LA SERENISSIMA M",
+                "PRES SAD COZ S CAPA"
+              ]
+            ],
+            "valor_total": [
+              null,
+              349.55
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_14",
+          "duracao_segundos": 7.0292272079968825,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "SUPERMERCADO SARTORATO XAVIER LTDA EPP"
+            ],
+            "data_emissao": [
+              null,
+              "2026-08-13"
+            ],
+            "produtos": [
+              null,
+              [
+                "QJO RALA VALE CA",
+                "ENERG MONSTER JU",
+                "AZEITO D PEPE VE",
+                "QJO MUSSAR LA PA",
+                "PRESUN PERDIGAO",
+                "AGUA MIN POMPEIA"
+              ]
+            ],
+            "valor_total": [
+              null,
+              53.27
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_15",
+          "duracao_segundos": 2.7601885840122122,
+          "foto_ilegivel_esperado": false,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "PAULO AUGUSTO KIGIATO DROGARIA LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-07-20"
+            ],
+            "produtos": [
+              null,
+              [
+                "BISSULFATO DE CLOPIDOGREL 75 CPR 28",
+                "TAXA ENTREGA"
+              ]
+            ],
+            "valor_total": [
+              null,
+              34.67
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_16",
+          "duracao_segundos": 1.4078385829925537,
+          "foto_ilegivel_esperado": true,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {},
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_17",
+          "duracao_segundos": 3.015738958027214,
+          "foto_ilegivel_esperado": true,
+          "recusada": true,
+          "motivo_recusa": "ilegivel: o OCR não encontrou data, valor total nem produtos no texto",
+          "erro": null,
+          "campos": {},
+          "leituras_repetidas": []
+        }
+      ],
+      "acuracia_por_campo": {
+        "estabelecimento": 0.3333333333333333,
+        "data_emissao": 0.4,
+        "produtos": 0.0,
+        "valor_total": 0.2
+      },
+      "acuracia_media": 0.23333333333333334,
+      "tempo_medio_segundos": 2.4080446592347204,
+      "fotos_ruins_recusadas": 2,
+      "fotos_ruins_total": 2,
+      "recusas_indevidas": [
+        "real_03",
+        "real_12",
+        "real_13",
+        "real_14",
+        "real_15"
+      ],
+      "casos_com_erro": [],
+      "matriz_qualidade_foto": {
+        "classes": [
+          "legivel",
+          "ilegivel",
+          "aceitou",
+          "recusou"
+        ],
+        "contagens": {
+          "legivel": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "aceitou": 10,
+            "recusou": 5
+          },
+          "ilegivel": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "aceitou": 0,
+            "recusou": 2
+          },
+          "aceitou": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "aceitou": 0,
+            "recusou": 0
+          },
+          "recusou": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "aceitou": 0,
+            "recusou": 0
+          }
+        }
+      },
+      "matriz_resultados": {
+        "estabelecimento": {
+          "contagens": {
+            "correto": 5,
+            "incorreto": 5,
+            "nao_extraido": 0,
+            "foto_recusada": 5
+          }
+        },
+        "data_emissao": {
+          "contagens": {
+            "correto": 6,
+            "incorreto": 2,
+            "nao_extraido": 2,
+            "foto_recusada": 5
+          }
+        },
+        "produtos": {
+          "contagens": {
+            "correto": 0,
+            "incorreto": 0,
+            "nao_extraido": 10,
+            "foto_recusada": 5
+          }
+        },
+        "valor_total": {
+          "contagens": {
+            "correto": 3,
+            "incorreto": 4,
+            "nao_extraido": 3,
+            "foto_recusada": 5
+          }
+        },
+        "TOTAL": {
+          "contagens": {
+            "correto": 14,
+            "incorreto": 11,
+            "nao_extraido": 15,
+            "foto_recusada": 20
+          }
+        }
+      },
+      "execucoes": 1,
+      "consistencia_por_campo": null,
+      "consistencia_recusa": null
+    },
+    "multimodal:claude-sonnet-5-5": {
+      "nome": "multimodal:claude-sonnet-5-5",
+      "resultados_por_caso": [
+        {
+          "caso_id": "real_01",
+          "duracao_segundos": 1.954534041986335,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8Jn3RCti9TchwiLkeDQ'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "Outback Steakhouse Restaurantes Brasil S A"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-01"
+            ],
+            "produtos": [
+              null,
+              [
+                "TEA CRANB",
+                "TEA REFIL",
+                "TILAPIA LM",
+                "GORJETA CONCE"
+              ]
+            ],
+            "valor_total": [
+              null,
+              89.98
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_02",
+          "duracao_segundos": 0.8172112080210354,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8Jn71WjSm4dxhavMmrg'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "HR2 COMERCIO VAREJISTA DE ROUPAS EM GERAL LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-01"
+            ],
+            "produtos": [
+              null,
+              [
+                "CALCA FEM HLHSN 040"
+              ]
+            ],
+            "valor_total": [
+              null,
+              289.99
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_03",
+          "duracao_segundos": 0.7905985419929493,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JnALgUWrs2LzcuAyhD'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "DROGARIA SAO PAULO SA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-01"
+            ],
+            "produtos": [
+              null,
+              [
+                "CR CALMING CREAM 40G",
+                "AP DEP SUAVE SENS 2UNI"
+              ]
+            ],
+            "valor_total": [
+              null,
+              83.98
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_04",
+          "duracao_segundos": 1.1946165829722304,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JnDoYPvMpgJwDSKBZB'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "ARMARINHOS FERNANDO LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-07-11"
+            ],
+            "produtos": [
+              null,
+              [
+                "PINCEL CONDOR ARTISTICO",
+                "BLOCO STARCOLOR 65FLS R",
+                "ALCOOL GEL GIOVANNA BAB",
+                "MINI DICIONARIO ESCOLAR"
+              ]
+            ],
+            "valor_total": [
+              null,
+              18.29
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_05",
+          "duracao_segundos": 0.9379034170124214,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JnJstNuKTW9cSdv5MS'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "ARMARINHOS FERNANDO LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-07-11"
+            ],
+            "produtos": [
+              null,
+              [
+                "PINCEL CONDOR ARTISTICO",
+                "BLOCO STARCOLOR 65FLS R",
+                "ALCOOL GEL GIOVANNA BAB",
+                "MINI DICIONARIO ESCOLAR"
+              ]
+            ],
+            "valor_total": [
+              null,
+              18.29
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_06",
+          "duracao_segundos": 0.7388179160188884,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JnNkoL3A4BVnBbpyQC'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              [
+                "Lojas Riachuelo SA",
+                "RIACHUELO"
+              ]
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-01"
+            ],
+            "produtos": [
+              null,
+              [
+                "Polo feminina canelada - rosa",
+                "Camiseta baby look estampada feminina - Azul Claro",
+                "Garrafa squeeze de metal 1L - vinho"
+              ]
+            ],
+            "valor_total": [
+              null,
+              229.97
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_07",
+          "duracao_segundos": 0.7359467910137028,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JnS7xG9zP5J5uGcTUN'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "C&A MODAS S.A."
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-01"
+            ],
+            "produtos": [
+              null,
+              [
+                "MINDSET- SLIM FIT INTERLOCK:BRANCO:P",
+                "CALÇA WIDE LEG SLIM CINTURA SUPER ALTA:VINHO ESCU"
+              ]
+            ],
+            "valor_total": [
+              null,
+              249.98
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_08",
+          "duracao_segundos": 0.765637374977814,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JnVA1xDWzuou6iKumo'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "PUMA SPORTS LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-15"
+            ],
+            "produtos": [
+              null,
+              [
+                "CALCADOSPUMA WIRED RUN SLIPON INF BDP Puma BlackCASTLEROCK 21"
+              ]
+            ],
+            "valor_total": [
+              null,
+              100.0
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_09",
+          "duracao_segundos": 0.956780084001366,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JnYSDpBgjC6owMwExE'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              [
+                "Lojas Riachuelo SA",
+                "RIACHUELO"
+              ]
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-15"
+            ],
+            "produtos": [
+              null,
+              [
+                "Sutiã base triângulo Daily alças reguláveis | Trif",
+                "Kit calcinha tradicional 3 peças estampada - multi"
+              ]
+            ],
+            "valor_total": [
+              null,
+              109.98
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_10",
+          "duracao_segundos": 0.8141740830033086,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JncXHV7gJtsGCJN6XU'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "Supermercado e Restaurante Jva"
+            ],
+            "data_emissao": [
+              null,
+              "2026-10-15"
+            ],
+            "produtos": [
+              null,
+              [
+                "Iogurte Atilatt 448g",
+                "Bisc Pol Cassini 100",
+                "Pao Qjo Forno Minas",
+                "Uva Passa 200g Preta",
+                "Laranja Pera",
+                "Pera Willian s Kg"
+              ]
+            ],
+            "valor_total": [
+              null,
+              68.02
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_11",
+          "duracao_segundos": 0.7386943339952268,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8Jng5qrs3whBebSaVaq'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              [
+                "Lindt & Sprungli Brazil Comercio de Al",
+                "LINDT CAMPINAS PARQUE DOM PEDRO SHOPPING"
+              ]
+            ],
+            "data_emissao": [
+              null,
+              "2026-06-28"
+            ],
+            "produtos": [
+              null,
+              [
+                "GENERICO PICK AND MIX"
+              ]
+            ],
+            "valor_total": [
+              null,
+              45.89
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_12",
+          "duracao_segundos": 1.105795917013893,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JnkZiaszztDhjfEKxG'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "JOTACE COMERCIO DE SALGADOS LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-06-24"
+            ],
+            "produtos": [
+              null,
+              [
+                "KIT COPA - TORCIDA",
+                "ITALIANINHO DE CALABRESA COM REQUEIJÃO FRITO/CONGE",
+                "CROQUETE DE JAMON FRITO/CONGE 400G"
+              ]
+            ],
+            "valor_total": [
+              null,
+              136.8
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_13",
+          "duracao_segundos": 1.3316754580009729,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8Jnq36fGSnkxecMKemL'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "INFANGER E CIA. LTDA."
+            ],
+            "data_emissao": [
+              null,
+              "2026-08-22"
+            ],
+            "produtos": [
+              null,
+              [
+                "TOMATE ITALIANO KG",
+                "L PIRACANJUBA 1L C T 3",
+                "CAFE MELITTA 500G VA",
+                "DET YPE 500ML COCO",
+                "MOLHO TOM QUERO 240G",
+                "CR LEITE PIRACANJUBA",
+                "SABAO PO OMO 700G CX",
+                "GELEIA ARCOR 454G PE",
+                "PAO PANCO FORMA 500G",
+                "MACA GALA KG",
+                "SAB DOVE 90G ORIGINA",
+                "LIMAO KG",
+                "SALG DORITOS 183G NA",
+                "OVOS CALDANA PVC BCO",
+                "PERNIL C OSSO KG",
+                "LING SADIA TOSCANA K",
+                "LING SADIA CALAB DEF",
+                "BIFE ANCHO DI PRIMA",
+                "REQUEIJAO CRIOULO 40",
+                "REF FEBRASP 2L TURBA",
+                "H2OH 500ML LIMONETO",
+                "QJO LA SERENISSIMA M",
+                "PRES SAD COZ S CAPA"
+              ]
+            ],
+            "valor_total": [
+              null,
+              349.55
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_14",
+          "duracao_segundos": 1.2324020410014782,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8JnvkPnWWZg9vqVsung'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "SUPERMERCADO SARTORATO XAVIER LTDA EPP"
+            ],
+            "data_emissao": [
+              null,
+              "2026-08-13"
+            ],
+            "produtos": [
+              null,
+              [
+                "QJO RALA VALE CA",
+                "ENERG MONSTER JU",
+                "AZEITO D PEPE VE",
+                "QJO MUSSAR LA PA",
+                "PRESUN PERDIGAO",
+                "AGUA MIN POMPEIA"
+              ]
+            ],
+            "valor_total": [
+              null,
+              53.27
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_15",
+          "duracao_segundos": 0.9502034169854596,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8Jo1uhnq3qBvpg7Btim'}",
+          "campos": {
+            "estabelecimento": [
+              null,
+              "PAULO AUGUSTO KIGIATO DROGARIA LTDA"
+            ],
+            "data_emissao": [
+              null,
+              "2026-07-20"
+            ],
+            "produtos": [
+              null,
+              [
+                "BISSULFATO DE CLOPIDOGREL 75 CPR 28",
+                "TAXA ENTREGA"
+              ]
+            ],
+            "valor_total": [
+              null,
+              34.67
+            ]
+          },
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_16",
+          "duracao_segundos": 0.9869779580039904,
+          "foto_ilegivel_esperado": true,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8Jo4r4TbCLjkHhkqsih'}",
+          "campos": {},
+          "leituras_repetidas": []
+        },
+        {
+          "caso_id": "real_17",
+          "duracao_segundos": 1.1348902499885298,
+          "foto_ilegivel_esperado": true,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cg8Jo9zsVvj3pRHiqLSbF'}",
+          "campos": {},
+          "leituras_repetidas": []
+        }
+      ],
+      "acuracia_por_campo": {
+        "estabelecimento": 0.0,
+        "data_emissao": 0.0,
+        "produtos": 0.0,
+        "valor_total": 0.0
+      },
+      "acuracia_media": 0.0,
+      "tempo_medio_segundos": 1.0109917303523295,
+      "fotos_ruins_recusadas": 0,
+      "fotos_ruins_total": 2,
+      "recusas_indevidas": [],
+      "casos_com_erro": [
+        "real_01",
+        "real_02",
+        "real_03",
+        "real_04",
+        "real_05",
+        "real_06",
+        "real_07",
+        "real_08",
+        "real_09",
+        "real_10",
+        "real_11",
+        "real_12",
+        "real_13",
+        "real_14",
+        "real_15",
+        "real_16",
+        "real_17"
+      ],
+      "matriz_qualidade_foto": {
+        "classes": [
+          "legivel",
+          "ilegivel",
+          "erro"
+        ],
+        "contagens": {
+          "legivel": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "erro": 15
+          },
+          "ilegivel": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "erro": 2
+          },
+          "erro": {
+            "legivel": 0,
+            "ilegivel": 0,
+            "erro": 0
+          }
+        }
+      },
+      "matriz_resultados": {
+        "estabelecimento": {
+          "contagens": {
+            "correto": 0,
+            "incorreto": 0,
+            "nao_extraido": 15,
+            "foto_recusada": 0
+          }
+        },
+        "data_emissao": {
+          "contagens": {
+            "correto": 0,
+            "incorreto": 0,
+            "nao_extraido": 15,
+            "foto_recusada": 0
+          }
+        },
+        "produtos": {
+          "contagens": {
+            "correto": 0,
+            "incorreto": 0,
+            "nao_extraido": 15,
+            "foto_recusada": 0
+          }
+        },
+        "valor_total": {
+          "contagens": {
+            "correto": 0,
+            "incorreto": 0,
+            "nao_extraido": 15,
+            "foto_recusada": 0
+          }
+        },
+        "TOTAL": {
+          "contagens": {
+            "correto": 0,
+            "incorreto": 0,
+            "nao_extraido": 60,
+            "foto_recusada": 0
+          }
+        }
+      },
+      "execucoes": 1,
+      "consistencia_por_campo": null,
+      "consistencia_recusa": null
+    }
+  }
+}

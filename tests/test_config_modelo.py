@@ -9,7 +9,7 @@ import pytest
 from PIL import Image
 
 from app.config import ModeloClaude, RecusaDoModeloError
-from app.extraction.ocr_multimodal import _ESQUEMA_RESPOSTA
+from app.extracao.ocr_multimodal import _ESQUEMA_RESPOSTA
 
 
 class ClienteFalso:

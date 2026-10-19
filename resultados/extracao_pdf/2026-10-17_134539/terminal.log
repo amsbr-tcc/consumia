@@ -1,0 +1,153 @@
+15 caso(s) carregados de dados/casos_pdf.json (entrada: pdf)
+Lembrete (LGPD/Metodologia): só envie ao modelo de linguagem imagens com CPF e dados pessoais já ocultados ao modelo de linguagem.
+  [tesseract] pdf_01: ok: 'DROGARIA SAO PAULO', 83.98; leituras repetidas iguais à 1ª: 2/2 (0.1s)
+  [tesseract] pdf_02: ok: 'RECEBI(EMOS) DE INTERBELLE COMÉRCIO DE PRODUTOS DE BELEZA LTDA, A(S) MERCADORIA(S) CONSTANTES DA NF-e INDICADA AO LADO: NF-E', None; leituras repetidas iguais à 1ª: 2/2 (0.0s)
+  [tesseract] pdf_03: ok: 'Recebemos de HOL LTD l indi lor Total: R NF-e', 0.0; leituras repetidas iguais à 1ª: 2/2 (0.0s)
+  [tesseract] pdf_04: ok: 'Recebemos de XIN SAN JIN BRAZIL LTDA, os produt a ao NF-e', 0.0; leituras repetidas iguais à 1ª: 2/2 (0.0s)
+  [tesseract] pdf_05: ok: 'VESTUARIO LTDA 0 - ENTRADA 1 CHAVE DE ACESSO', 0.0; leituras repetidas iguais à 1ª: 2/2 (0.0s)
+  [tesseract] pdf_06: ok: 'DROGARIA SAO PAULO', 31.97; leituras repetidas iguais à 1ª: 2/2 (0.0s)
+  [tesseract] pdf_07: ok: 'AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA', 54.45; leituras repetidas iguais à 1ª: 2/2 (0.1s)
+  [tesseract] pdf_08: ok: 'NF-e', 0.0; leituras repetidas iguais à 1ª: 2/2 (0.2s)
+  [tesseract] pdf_09: ok: 'CRISANTEMOS PRODUTOS NATURAIS LTDA', 83.52; leituras repetidas iguais à 1ª: 2/2 (0.1s)
+  [tesseract] pdf_10: ok: 'RECEBEMOS DE LOJA JUNDIAÍ L EMREORYLIN CIA BRAS. DE BRICOLOASG EP RODUTOS CONSTANTES DA NFOITSAC AL AO NF-e', 0.0; leituras repetidas iguais à 1ª: 2/2 (0.1s)
+  [tesseract] pdf_11: ok: None, 138.9; leituras repetidas iguais à 1ª: 2/2 (0.1s)
+  [tesseract] pdf_12: ok: 'LADO', 4094.8; leituras repetidas iguais à 1ª: 2/2 (0.0s)
+  [tesseract] pdf_13: ok: 'DO BRASIL LTDA', 0.0; leituras repetidas iguais à 1ª: 2/2 (0.0s)
+  [tesseract] pdf_14: ok: 'DATA DE RECEBIMENTO IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR', 0.0; leituras repetidas iguais à 1ª: 2/2 (0.0s)
+  [tesseract] pdf_15: ok: 'DO BRASIL LTDA', 57.58; leituras repetidas iguais à 1ª: 2/2 (0.0s)
+  [multimodal:claude-sonnet-5-5] pdf_01: ok: 'DROGARIA SAO PAULO SA', 83.98; leituras repetidas iguais à 1ª: 2/2 (2.6s)
+  [multimodal:claude-sonnet-5-5] pdf_02: ok: 'INTERBELLE COM.DE PRODUTOS DE BELEZA LTDA', 64.76; leituras repetidas iguais à 1ª: 2/2 (2.7s)
+  [multimodal:claude-sonnet-5-5] pdf_03: ok: 'HOLD BRASIL LTDA', 54.2; leituras repetidas iguais à 1ª: 2/2 (2.2s)
+  [multimodal:claude-sonnet-5-5] pdf_04: ok: 'XIN SAN JIN BRAZIL LTDA', 3.15; leituras repetidas iguais à 1ª: 2/2 (2.0s)
+  [multimodal:claude-sonnet-5-5] pdf_05: ok: 'USE COPACABANA INDUSTRIA E COMERCIO DE VESTUARIO LTDA', 12.8; leituras repetidas iguais à 1ª: 2/2 (1.6s)
+  [multimodal:claude-sonnet-5-5] pdf_06: ok: 'DROGARIA SAO PAULO SA', 31.97; leituras repetidas iguais à 1ª: 2/2 (1.7s)
+  [multimodal:claude-sonnet-5-5] pdf_07: ok: 'AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA', 54.45; leituras repetidas iguais à 1ª: 2/2 (1.8s)
+  [multimodal:claude-sonnet-5-5] pdf_08: ok: 'VSB TEXTIL LTDA', 319.96; leituras repetidas iguais à 1ª: 2/2 (3.2s)
+  [multimodal:claude-sonnet-5-5] pdf_09: ok: 'CRISANTEMOS PRODUTOS NATURAIS LTDA', 83.52; leituras repetidas iguais à 1ª: 2/2 (1.6s)
+  [multimodal:claude-sonnet-5-5] pdf_10: ok: 'LOJA JUNDIAÍ LEROY MERLIN CIA BRAS. DE BRICOLAGE', 35.9; leituras repetidas iguais à 1ª: 2/2 (1.5s)
+  [multimodal:claude-sonnet-5-5] pdf_11: ok: 'LOJA ELECTROLUX COM VIRTUAL DE ELET', 138.9; leituras repetidas iguais à 1ª: 2/2 (1.6s)
+  [multimodal:claude-sonnet-5-5] pdf_12: ok: 'LEROY MERLIN COMPANHIA BRASILEIRA DE BRICOLAGEM', 4094.8; leituras repetidas iguais à 1ª: 2/2 (1.5s)
+  [multimodal:claude-sonnet-5-5] pdf_13: ok: 'AMAZON SERVICOS DE VAREJO DO BRASIL LTDA', 329.1; leituras repetidas iguais à 1ª: 2/2 (2.2s)
+  [multimodal:claude-sonnet-5-5] pdf_14: ok: 'UP 2 TECH DO BRASIL S/A', 629.0; leituras repetidas iguais à 1ª: 2/2 (2.4s)
+  [multimodal:claude-sonnet-5-5] pdf_15: ok: 'AMAZON SERVICOS DE VAREJO DO BRASIL LTDA', 57.58; leituras repetidas iguais à 1ª: 2/2 (2.3s)
+
+=== tesseract ===
+Tempo médio por arquivo: 0.06s
+Consistência entre as 3 leituras de cada arquivo:
+  estabelecimento      100%
+  data_emissao         100%
+  produtos             100%
+  valor_total          100%
+  todos os campos      100%
+  aceitar/recusar      100%
+Acurácia por campo:
+  estabelecimento      13%
+  data_emissao         80%
+  produtos             0%
+  valor_total          47%
+Matriz de resultados (notas com foto boa; linhas = campo):
+  campo                     correto      incorreto   não extraído  foto recusada  precisão  revocação     F1
+  estabelecimento                 2             12              1              0       14%        13%   0.14
+  data_emissao                   12              0              3              0      100%        80%   0.89
+  produtos                        0              0             15              0        0%         0%   0.00
+  valor_total                     7              7              1              0       50%        47%   0.48
+  TOTAL                          21             19             20              0       52%        35%   0.42
+Erros por caso (extraído ≠ esperado):
+  pdf_01 estabelecimento: DROGARIA SAO PAULO ≠ DROGARIA SAO PAULO SA
+  pdf_01 produtos: [] ≠ [CR CALMING CREAM 40G; AP DEP SUAVE SENS 2UNI]
+  pdf_02 estabelecimento: RECEBI(EMOS) DE INTERBELLE COMÉRCIO DE PRODUTOS DE BELEZA LTDA, A(S) MERCADORIA(S) CONSTANTES DA NF-e INDICADA AO LADO: NF-E ≠ ('INTERBELLE COMÉRCIO DE PRODUTOS DE BELEZA LTDA', 'INTERBELLE COM.DE PRODUTOS DE BELEZA LTDA')
+  pdf_02 produtos: [] ≠ [('CUIDE-SE BEM DELEITE LOCAO HIDRATANTE DESODORANTE CORPORAL 200ML', 'CUIDE-SE BEM DELEITE LOCAO HIDRATANTE D CORPORAL 200ML'); CAIXA PARA PRESENTE TAM M ROSA; ('CUIDE-BEM SABONETE EM BARRA DUO DELEITE 2 UNIDADES DE 80 G CADA', 'CUIDE-BEM SABONETE EM BARRA DUO DELEITE DE 80 G CADA', 'CUIDE-BEM SABONETE EM BARRA DUO DELEITI DE 80 G CADA'); CUIDE-SE BEM DELEITE ALCOOL EM GEL 30G]
+  pdf_02 valor_total: — ≠ 64.76
+  pdf_03 estabelecimento: Recebemos de HOL LTD l indi lor Total: R NF-e ≠ HOLD BRASIL LTDA
+  pdf_03 produtos: [] ≠ [('Sandália Rasteira Feminina Gladiadora Tiras apliques Galega Confortável 05-Café , 39 o_15672236189512244', 'Sandália Rasteira Feminina Gladiadora Tiras apliques Galega Confortável 05-Café , 39')]
+  pdf_03 valor_total: 0.0 ≠ 54.2
+  pdf_04 estabelecimento: Recebemos de XIN SAN JIN BRAZIL LTDA, os produt a ao NF-e ≠ XIN SAN JIN BRAZIL LTDA
+  pdf_04 produtos: [] ≠ [Varal 40 Prendedores Para Roupa Intima Para Calcinha Meia Cu]
+  pdf_04 valor_total: 0.0 ≠ 3.15
+  pdf_05 estabelecimento: VESTUARIO LTDA 0 - ENTRADA 1 CHAVE DE ACESSO ≠ USE COPACABANA INDUSTRIA E COMERCIO DE VESTUARIO LTDA
+  pdf_05 produtos: [] ≠ [('Blusa Manga Longa Assimétrica Moda Gringa Suplex Modelador Tendência Outono Inverno-Preto, M o_887309665650620', 'Blusa Manga Longa Assimétrica Moda Gringa Suplex Modelador Tendência Outono Inverno-Preto, M')]
+  pdf_05 valor_total: 0.0 ≠ 12.8
+  pdf_06 estabelecimento: DROGARIA SAO PAULO ≠ DROGARIA SAO PAULO SA
+  pdf_06 produtos: [] ≠ [ENX ICE CLOSEUP SPY 35; COREGA TABS LIMP SACHE; CR DENT ELMEX SENS 30G]
+  pdf_07 produtos: [] ≠ [BALM LIPCARE PLUMP BERRIES]
+  pdf_08 estabelecimento: NF-e ≠ VSB TEXTIL LTDA
+  pdf_08 produtos: [] ≠ [Tecido Tricoline Especial Colecao Jardim de Tulipas - Tulipas ao Vento - 100% Algodao - Largura 1,50m; Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Medalhoes Florais - 100% Algodao - Largura 1,50m; Tecido Tricoline Especial Colecao Floral Toile de Jouy - Jardim Floral - 100% Algodao - Largura 1,50m; Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Listras Florais - 100% Algodao - Largura 1,50m; Tecido Sarja Impermeavel Especial Colecao Jardim de Tulipas - Arabescos de Tulipas - 100% Algodao - Largura 1,50m; Tecido Sarja Impermeavel Especial Colecao Mesa Azul - Legumes - 100% Algodao - Largura 1,50m]
+  pdf_08 valor_total: 0.0 ≠ 319.96
+  pdf_09 produtos: [] ≠ [Qdb Lap Olh Pretuco V4 1,2g; Make B Masc Cil Vol Extrm Preta V2 10g]
+  pdf_10 estabelecimento: RECEBEMOS DE LOJA JUNDIAÍ L EMREORYLIN CIA BRAS. DE BRICOLOASG EP RODUTOS CONSTANTES DA NFOITSAC AL AO NF-e ≠ ('LOJA JUNDIAÍ LEROY MERLIN CIA BRAS. DE BRICOLAGE', 'LEROY MERLIN CIA BRAS. DE BRICOLAGE')
+  pdf_10 data_emissao: — ≠ 2025-04-18
+  pdf_10 produtos: [] ≠ [('CABO DE REDE CAT.6 1,5M AZ DUAL COMP ( EAN: 7895194271571 )', 'CABO DE REDE CAT.6 1,5M AZ DUAL COMP')]
+  pdf_10 valor_total: 0.0 ≠ 35.9
+  pdf_11 estabelecimento: — ≠ LOJA ELECTROLUX COM VIRTUAL DE ELET
+  pdf_11 data_emissao: — ≠ 2026-03-05
+  pdf_11 produtos: [] ≠ [('A07672301 - FILTRO SIDE BY SIDE EXTERNO', 'FILTRO SIDE BY SIDE EXTERNO')]
+  pdf_12 estabelecimento: LADO ≠ LEROY MERLIN COMPANHIA BRASILEIRA DE BRICOLAGEM
+  pdf_12 data_emissao: — ≠ 2026-07-07
+  pdf_12 produtos: [] ≠ [('CJ 2 POLTR RETRO ALU EFEITO MAD MATERIAL ( EAN: 3276007600049 )', 'CJ 2 POLTR RETRO ALU EFEITO MAD MATERIAL', 'CJ 2 POLTR RETRO ALU EFEITO MAD NATERIAL ( EAN: 3276007600049 )', 'CJ 2 POLTR RETRO ALU EFEITO MAD NATERIAL')]
+  pdf_13 estabelecimento: DO BRASIL LTDA ≠ AMAZON SERVICOS DE VAREJO DO BRASIL LTDA
+  pdf_13 produtos: [] ≠ [Kindle 11ª Geracao (modelo 2022) - Mais leve, com resolucao de 300 ppi e o dobro de armazenamento - Cor Preta]
+  pdf_13 valor_total: 0.0 ≠ 329.1
+  pdf_14 estabelecimento: DATA DE RECEBIMENTO IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR ≠ UP 2 TECH DO BRASIL S/A
+  pdf_14 produtos: [] ≠ [('LG UltraGear Monitor Gamer 24" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto ... FNSKU:X004XKGFD5;Monitor LG UltraGear 24G411A-B 24",FHD, 144Hz, 1ms (MBR), NVIDIA G-SYNC, AMD FreeSync, HDR10', 'LG UltraGear Monitor Gamer 24" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto ...', 'LG UltraGear Monitor Gamer 24" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto')]
+  pdf_14 valor_total: 0.0 ≠ 629.0
+  pdf_15 estabelecimento: DO BRASIL LTDA ≠ AMAZON SERVICOS DE VAREJO DO BRASIL LTDA
+  pdf_15 produtos: [] ≠ [('NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom d', 'NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom d Ao aceitar essa mercadoria, voce autoriza a empresa vendedora a recuperar tributos incidentes nessa operacao, conforme legislacao tributaria aplicavel.', 'NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom')]
+
+=== multimodal:claude-sonnet-5-5 ===
+Tempo médio por arquivo: 2.07s
+Consistência entre as 3 leituras de cada arquivo:
+  estabelecimento      100%
+  data_emissao         100%
+  produtos             100%
+  valor_total          100%
+  todos os campos      100%
+  aceitar/recusar      100%
+Acurácia por campo:
+  estabelecimento      100%
+  data_emissao         100%
+  produtos             100%
+  valor_total          100%
+Matriz de resultados (notas com foto boa; linhas = campo):
+  campo                     correto      incorreto   não extraído  foto recusada  precisão  revocação     F1
+  estabelecimento                15              0              0              0      100%       100%   1.00
+  data_emissao                   15              0              0              0      100%       100%   1.00
+  produtos                       15              0              0              0      100%       100%   1.00
+  valor_total                    15              0              0              0      100%       100%   1.00
+  TOTAL                          60              0              0              0      100%       100%   1.00
+Erros por caso (extraído ≠ esperado):
+  nenhum
+
+=== Comparação lado a lado ===
+campo                                    tesseract  multimodal:claude-sonnet-5-5
+estabelecimento                                13%                          100%
+data_emissao                                   80%                          100%
+produtos                                        0%                          100%
+valor_total                                    47%                          100%
+MÉDIA                                          35%                          100%
+tempo médio                                  0.06s                         2.07s
+
+=== Concordância: tesseract x multimodal:claude-sonnet-5-5 (notas legíveis) ===
+estabelecimento:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                      2                             0
+  tesseract errou                                       13                             0
+data_emissao:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                     12                             0
+  tesseract errou                                        3                             0
+produtos:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                      0                             0
+  tesseract errou                                       15                             0
+valor_total:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                      7                             0
+  tesseract errou                                        8                             0
+TODOS OS CAMPOS:
+                                        multimodal acertou              multimodal errou
+  tesseract acertou                                     21                             0
+  tesseract errou                                       39                             0
+
+Maior acurácia média: multimodal:claude-sonnet-5-5
+
+Resultados salvos em resultados/extracao_pdf/2026-10-17_134539/ (relatorio.txt, dados.json, tabelas_csv/, figuras/)

@@ -1,5 +1,5 @@
 """
-Testes da checagem de qualidade da foto (app.extraction.qualidade_imagem):
+Testes da checagem de qualidade da foto (app.extracao.qualidade_imagem):
 fotos borradas, escuras ou pequenas demais devem ser recusadas com uma
 mensagem pedindo ao usuário que tire outra foto; as fotos reais
 legíveis dos casos de teste, mesmo com ruído de câmera, sombra ou
@@ -12,8 +12,8 @@ import numpy as np
 import pytest
 from PIL import Image, ImageFilter
 
-from app.extraction.detector import FormatoNaoSuportadoError, extrair_dados_nota_fiscal
-from app.extraction.qualidade_imagem import (
+from app.extracao.detector import FormatoNaoSuportadoError, extrair_dados_nota_fiscal
+from app.extracao.qualidade_imagem import (
     ImagemIlegivelError,
     MotivoImagemRuim,
     avaliar_qualidade,

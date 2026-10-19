@@ -24,10 +24,12 @@ class Durabilidade(str, Enum):
 
 class FonteExtracao(str, Enum):
     """
-    Qual das duas abordagens comparadas na Metodologia extraiu os dados
-    da imagem da nota fiscal.
+    Como os dados da nota fiscal foram obtidos: abordagem tradicional
+    (Tesseract na foto, ou texto embutido no PDF, com expressões
+    regulares) ou modelo de linguagem multimodal.
     """
     OCR_TESSERACT = "ocr_tesseract"
+    TEXTO_PDF = "texto_pdf"            # texto embutido no PDF, sem OCR
     OCR_MULTIMODAL = "ocr_multimodal"
 
 

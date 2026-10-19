@@ -1,5 +1,5 @@
 """
-Fotos usadas pelos testes: só as fotos REAIS de tests/casos/reais/.
+Fotos usadas pelos testes: só as fotos REAIS de dados/fotos/.
 
 As versões ruins (borrada, escura) usadas para testar a checagem de
 qualidade são geradas a partir de uma foto real, na hora, numa pasta
@@ -11,9 +11,9 @@ from pathlib import Path
 import pytest
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 
-PASTA_CASOS = Path(__file__).parent / "casos"
-ARQUIVO_CASOS = PASTA_CASOS / "casos.json"
-FOTO_REAL = PASTA_CASOS / "reais" / "real_10.jpg"  # foto nítida, de frente
+PASTA_DADOS = Path(__file__).parent.parent / "dados"
+ARQUIVO_CASOS = PASTA_DADOS / "casos_foto.json"
+FOTO_REAL = PASTA_DADOS / "fotos" / "real_10.jpg"  # foto nítida, de frente
 
 
 def ids_fotos_legiveis() -> list[str]:
@@ -22,7 +22,7 @@ def ids_fotos_legiveis() -> list[str]:
 
 
 def foto_real(caso_id: str) -> Path:
-    return PASTA_CASOS / "reais" / f"{caso_id}.jpg"
+    return PASTA_DADOS / "fotos" / f"{caso_id}.jpg"
 
 
 def _reduzida() -> Image.Image:

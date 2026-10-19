@@ -10,7 +10,8 @@ classificação e carta. Todos usam a mesma interface:
 
     modelo.gerar(conteudo, esquema=None) -> str
 
-em que `conteudo` é um texto ou uma lista com textos e imagens (PIL), e
+em que `conteudo` é um texto ou uma lista com textos, imagens (PIL) e
+documentos PDF (DocumentoPDF), e
 `esquema` (opcional) é um JSON Schema que a resposta deve seguir
 (saída estruturada). Nos testes, os módulos recebem um modelo falso com
 o mesmo método, sem chamar a API.
@@ -48,6 +49,10 @@ _LADO_MAXIMO_IMAGEM = 2576
 _TENTATIVAS_SDK = 5
 
 
+class DocumentoPDF(bytes):
+    """Conteúdo de um arquivo PDF, enviado ao modelo como documento."""
+
+
 class RecusaDoModeloError(RuntimeError):
     """O modelo recusou responder (stop_reason "refusal")."""
 
@@ -64,6 +69,19 @@ def _imagem_para_bloco(imagem) -> dict:
     return {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": dados}}
 
 
+def _pdf_para_bloco(documento: DocumentoPDF) -> dict:
+    dados = base64.standard_b64encode(bytes(documento)).decode("utf-8")
+    return {"type": "document", "source": {"type": "base64", "media_type": "application/pdf", "data": dados}}
+
+
+def _parte_para_bloco(parte) -> dict:
+    if isinstance(parte, str):
+        return {"type": "text", "text": parte}
+    if isinstance(parte, DocumentoPDF):
+        return _pdf_para_bloco(parte)
+    return _imagem_para_bloco(parte)
+
+
 class ModeloClaude:
     """Envolve o cliente do SDK `anthropic` na interface `gerar` do projeto."""
 
@@ -74,12 +92,9 @@ class ModeloClaude:
 
     def gerar(self, conteudo: Any, esquema: dict | None = None) -> str:
         partes = conteudo if isinstance(conteudo, list) else [conteudo]
-        blocos = [
-            {"type": "text", "text": parte} if isinstance(parte, str) else _imagem_para_bloco(parte)
-            for parte in partes
-        ]
-        # Imagem antes do texto, como recomendado para entradas visuais.
-        blocos.sort(key=lambda bloco: bloco["type"] != "image")
+        blocos = [_parte_para_bloco(parte) for parte in partes]
+        # Imagem ou documento antes do texto, como recomendado.
+        blocos.sort(key=lambda bloco: bloco["type"] == "text")
 
         output_config: dict[str, Any] = {"effort": ESFORCO}
         if esquema:

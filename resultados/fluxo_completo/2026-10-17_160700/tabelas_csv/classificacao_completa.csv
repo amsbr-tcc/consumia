@@ -1,0 +1,6 @@
+esperado \ previsto;aparente/duravel;aparente/nao_duravel;oculto/duravel;oculto/nao_duravel;fora_de_escopo
+aparente/duravel;3;0;0;0;0
+aparente/nao_duravel;0;8;0;0;0
+oculto/duravel;0;0;3;0;0
+oculto/nao_duravel;0;0;0;1;0
+fora_de_escopo;0;0;0;0;2

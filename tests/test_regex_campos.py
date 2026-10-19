@@ -1,13 +1,13 @@
 """
 Testes das expressões regulares que localizam os quatro campos da nota
-no texto reconhecido pelo Tesseract (app.extraction.regex_campos).
+no texto reconhecido pelo Tesseract (app.extracao.regex_campos).
 Usam texto pronto, então não exigem o Tesseract instalado.
 """
 from datetime import date
 
 import pytest
 
-from app.extraction.regex_campos import (
+from app.extracao.regex_campos import (
     extrair_data_emissao,
     extrair_estabelecimento,
     extrair_produtos,

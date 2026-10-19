@@ -1,5 +1,5 @@
 """
-Testes de app.evaluation.comparar_extracao.
+Testes de avaliacao.comparar_extracao.
 
 Usam extratores falsos (funções Python simples, sem OCR nem chamada de
 API) para testar a lógica de comparação em si: acurácia por campo,
@@ -10,15 +10,15 @@ test_comparacao_tesseract_vs_multimodal.py.
 from datetime import date
 from pathlib import Path
 
-from app.evaluation.casos import CasoDeTeste
-from app.evaluation.comparar_extracao import (
+from avaliacao.casos import CasoDeTeste
+from avaliacao.comparar_extracao import (
     comparar_extratores,
     executar_extrator_sobre_casos,
     melhor_extrator,
     montar_relatorio_texto,
     salvar_relatorio,
 )
-from app.extraction.qualidade_imagem import ImagemIlegivelError, MotivoImagemRuim
+from app.extracao.qualidade_imagem import ImagemIlegivelError, MotivoImagemRuim
 from app.models import FonteExtracao, NotaFiscalExtraida
 
 
@@ -184,7 +184,7 @@ def test_matriz_de_resultados_conta_foto_recusada():
 
 
 def test_matriz_de_concordancia_mostra_onde_so_uma_abordagem_acerta():
-    from app.evaluation.comparar_extracao import matriz_concordancia
+    from avaliacao.comparar_extracao import matriz_concordancia
 
     relatorios = comparar_extratores(CASOS, {"tesseract": extrator_perfeito, "multimodal": extrator_meio_a_meio})
     valor = matriz_concordancia(relatorios["tesseract"], relatorios["multimodal"], "valor_total")
@@ -202,7 +202,7 @@ def test_matriz_de_concordancia_mostra_onde_so_uma_abordagem_acerta():
 def test_salvar_relatorio_grava_matrizes_em_csv(tmp_path):
     relatorios = comparar_extratores(CASOS, {"tesseract": extrator_perfeito, "multimodal:x": extrator_meio_a_meio})
     salvar_relatorio(relatorios, tmp_path, {})
-    pasta = next(tmp_path.glob("*_extracao")) / "tabelas_csv"
+    pasta = next((tmp_path / "extracao").glob("*")) / "tabelas_csv"
     nomes = {p.name for p in pasta.iterdir()}
     assert {"resultados_tesseract.csv", "resultados_multimodal_x.csv",
             "concordancia_tesseract_x_multimodal_x.csv"} <= nomes
@@ -211,7 +211,7 @@ def test_salvar_relatorio_grava_matrizes_em_csv(tmp_path):
 def test_salvar_relatorio_gera_figuras_png(tmp_path):
     relatorios = comparar_extratores(CASOS + [CASO_BORRADO], {"tesseract": extrator_perfeito, "multimodal:x": extrator_meio_a_meio})
     salvar_relatorio(relatorios, tmp_path, {})
-    figuras = {p.name for p in (next(tmp_path.glob("*_extracao")) / "figuras").glob("*.png")}
+    figuras = {p.name for p in (next((tmp_path / "extracao").glob("*")) / "figuras").glob("*.png")}
     assert {"01_comparacao_acuracia.png", "02_resultados_tesseract.png", "03_checagem_foto_tesseract.png",
             "04_concordancia_tesseract_x_multimodal_x.png"} <= figuras
 

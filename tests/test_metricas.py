@@ -1,4 +1,4 @@
-from app.evaluation.metricas import (
+from avaliacao.metricas import (
     acuracia,
     acuracia_por_campo,
     precisao_revocacao_f1,
@@ -67,14 +67,14 @@ def test_proporcao_diagnostico_correto():
 
 
 def test_campo_correto_ignora_acentos_e_pontuacao():
-    from app.evaluation.metricas import campo_correto
+    from avaliacao.metricas import campo_correto
 
     assert campo_correto("Farmácia Bem-Estar Ltda.", "FARMACIA BEM ESTAR LTDA")
     assert not campo_correto("FARMACIA BOM ESTAR", "FARMACIA BEM ESTAR LTDA")
 
 
 def test_campo_correto_produtos_mesmos_itens_em_qualquer_ordem():
-    from app.evaluation.metricas import campo_correto
+    from avaliacao.metricas import campo_correto
 
     assert campo_correto(["protetor solar fps50", "Dipirona 500mg"], ["DIPIRONA 500MG", "PROTETOR SOLAR FPS50"])
     assert not campo_correto(["DIPIRONA 500MG"], ["DIPIRONA 500MG", "PROTETOR SOLAR FPS50"])
@@ -82,7 +82,7 @@ def test_campo_correto_produtos_mesmos_itens_em_qualquer_ordem():
 
 
 def test_campo_correto_valor_ate_o_centavo_e_none():
-    from app.evaluation.metricas import campo_correto
+    from avaliacao.metricas import campo_correto
 
     assert campo_correto(45.9, 45.90)
     assert not campo_correto(45.91, 45.90)
@@ -90,14 +90,14 @@ def test_campo_correto_valor_ate_o_centavo_e_none():
 
 
 def test_consistencia_das_execucoes_repetidas():
-    from app.evaluation.metricas import consistencia
+    from avaliacao.metricas import consistencia
 
     assert consistencia([["a", "a", "a"], ["a", "b", "a"]]) == 0.5
     assert consistencia([]) == 0.0
 
 
 def test_matriz_de_confusao_conta_acertos_na_diagonal_e_confusoes_fora_dela():
-    from app.evaluation.metricas import matriz_confusao
+    from avaliacao.metricas import matriz_confusao
 
     esperados = ["aparente", "aparente", "oculto", "oculto", "oculto"]
     previstos = ["aparente", "oculto", "oculto", "aparente", "aparente"]
@@ -111,7 +111,7 @@ def test_matriz_de_confusao_conta_acertos_na_diagonal_e_confusoes_fora_dela():
 
 
 def test_matriz_de_confusao_acrescenta_classes_inesperadas_ao_final():
-    from app.evaluation.metricas import matriz_confusao
+    from avaliacao.metricas import matriz_confusao
 
     matriz = matriz_confusao(["resposta_invalida"], ["aparente"], ["aparente", "oculto"])
     assert matriz.classes == ["aparente", "oculto", "resposta_invalida"]
@@ -119,7 +119,7 @@ def test_matriz_de_confusao_acrescenta_classes_inesperadas_ao_final():
 
 
 def test_matriz_de_confusao_em_texto_e_csv():
-    from app.evaluation.metricas import matriz_confusao
+    from avaliacao.metricas import matriz_confusao
 
     matriz = matriz_confusao(["a", "b"], ["a", "a"], ["a", "b"])
     assert "total" in matriz.formatar_texto()
@@ -127,7 +127,7 @@ def test_matriz_de_confusao_em_texto_e_csv():
 
 
 def test_resultado_do_campo():
-    from app.evaluation.metricas import resultado_do_campo
+    from avaliacao.metricas import resultado_do_campo
 
     assert resultado_do_campo(45.9, 45.90) == "correto"
     assert resultado_do_campo(45.1, 45.90) == "incorreto"
@@ -137,9 +137,19 @@ def test_resultado_do_campo():
 
 
 def test_alternativas_aceitas_no_gabarito_do_estabelecimento():
-    from app.evaluation.metricas import AlternativasAceitas, campo_correto
+    from avaliacao.metricas import AlternativasAceitas, campo_correto
 
     aceitos = AlternativasAceitas(["Lojas Riachuelo SA", "RIACHUELO"])
     assert campo_correto("RIACHUELO", aceitos)
     assert campo_correto("lojas riachuelo sa", aceitos)
     assert not campo_correto("C&A MODAS S.A.", aceitos)
+
+
+def test_produto_com_formas_alternativas_aceitas():
+    from avaliacao.metricas import AlternativasAceitas, campo_correto
+
+    esperado = [AlternativasAceitas(["BLUSA M o_887", "BLUSA M"]), "CAIXA ROSA"]
+    assert campo_correto(["caixa rosa", "Blusa M"], esperado)
+    assert campo_correto(["BLUSA M o_887", "CAIXA ROSA"], esperado)
+    assert not campo_correto(["BLUSA G", "CAIXA ROSA"], esperado)
+    assert not campo_correto(["BLUSA M"], esperado)

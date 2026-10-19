@@ -10,7 +10,10 @@ Consumidor (CDC).
 
 ## Entrada
 
-- **Foto da nota fiscal** (.jpg, .jpeg, .png ou .webp);
+- **Nota fiscal**, de uma de duas formas:
+  - **foto** tirada pelo usuário (.jpg, .jpeg, .png ou .webp);
+  - **PDF** da nota (DANFE), por exemplo o baixado no portal da
+    Secretaria da Fazenda pelo QR Code do cupom;
 - **relato do problema** em texto livre;
 - **data de entrega** e **data em que o defeito apareceu**, em campos
   próprios (a data impressa na nota nem sempre coincide com elas);
@@ -18,9 +21,27 @@ Consumidor (CDC).
   fornecedor** e **data da resposta negativa** (art. 26, §2º, I), e
   **data de fim da garantia contratual** (art. 50).
 
+### Foto x PDF
+
+As duas abordagens de extração aceitam os dois tipos de entrada:
+
+| | Foto | PDF |
+|---|---|---|
+| Checagem de qualidade (`qualidade_imagem.py`) | sim | não (não é foto) |
+| Tradicional (`ocr_tesseract.py`) | OCR com Tesseract + regex | texto embutido no PDF + as mesmas regex; se o PDF for escaneado, OCR com Tesseract |
+| Multimodal (`ocr_multimodal.py`) | imagem enviada ao Claude | PDF enviado ao Claude como documento |
+
+A precisão da extração é comparada **separadamente** para foto e PDF:
+os casos com foto ficam em `dados/casos_foto.json` e os com PDF em
+`dados/casos_pdf.json`, cada um com sua execução e sua pasta de
+resultados (`resultados/extracao_foto/` e `resultados/extracao_pdf/`). Cada caso em
+PDF indica, em `"mesma_nota_que"`, o caso com a foto da mesma nota, e
+usa o mesmo gabarito, para a comparação foto x PDF ser feita sobre as
+mesmas notas.
+
 ## Pipeline (as quatro etapas da Metodologia)
 
-1. **Extração da nota fiscal** (`app/extraction/`): estabelecimento,
+1. **Extração da nota fiscal** (`app/extracao/`): estabelecimento,
    data de emissão, produtos e valor total, por uma de duas abordagens
    comparadas entre si:
    - **Tesseract** (`ocr_tesseract.py`): tons de cinza + binarização,
@@ -33,7 +54,7 @@ Consumidor (CDC).
    ou pequena demais**, ou se a extração não conseguir ler nada, o
    usuário recebe uma mensagem pedindo para **tirar outra foto** (ver
    [Foto ruim](#foto-ruim-pedir-nova-foto)).
-2. **Classificação do vício** (`app/classification/`): Claude Sonnet 5.5
+2. **Classificação do vício** (`app/classificacao/`): Claude Sonnet 5.5
    com aprendizado em contexto (instrução + exemplos), resposta exigida
    em JSON, **validada** antes de seguir, com esforço baixo (o modelo não
    permite ajustar a temperatura). Indica vício
@@ -48,7 +69,7 @@ Consumidor (CDC).
    `indeterminado` (o sistema não diz que o prazo venceu e orienta
    procurar o PROCON). Situações possíveis: `dentro_do_prazo`,
    `fora_do_prazo` e `indeterminado`.
-4. **Geração da carta** (`app/letter/`): o Claude redige a carta só com
+4. **Geração da carta** (`app/carta/`): o Claude redige a carta só com
    os dados fornecidos (ausentes viram `[marcadores]`). Os artigos
    citados são **decididos pelo sistema** (`artigos_aplicaveis`), e o
    pedido segue o art. 18, §1º (30 dias para sanar; depois
@@ -116,12 +137,12 @@ reproduzíveis.
 
 ## Casos de teste
 
-Os casos ficam em `tests/casos/casos.json`, com as imagens em
-`tests/casos/imagens/`. Cada caso traz a foto, o relato, as datas e o
+Os casos ficam em `dados/casos_foto.json`, com as fotos em
+`dados/fotos/`. Cada caso traz a foto, o relato, as datas e o
 gabarito (campos da nota, classificação e dias restantes) — o formato
-completo está documentado em `app/evaluation/casos.py`.
+completo está documentado em `avaliacao/casos.py`.
 
-O arquivo tem **17 casos com fotos reais** (`tests/casos/reais/`), já
+O arquivo tem **17 casos com fotos reais** (`dados/fotos/`), já
 com CPF, nome e demais dados pessoais cobertos por tarjas pretas e sem os
 metadados da foto (GPS incluído): 15 fotos legíveis e 2 ruins que o
 sistema deve recusar (`real_16`, com o dedo na frente da nota, e
@@ -161,7 +182,7 @@ Compara as duas abordagens **sobre as mesmas imagens**:
 - **matriz da checagem da foto** (gabarito legível/ilegível × sistema
   aceitou/recusou).
 
-Cada execução fica numa pasta própria, `resultados/<AAAA-MM-DD_HHMMSS>_extracao/`:
+Cada execução fica numa pasta própria, `resultados/extracao_<foto|pdf>/<AAAA-MM-DD_HHMMSS>/`:
 
 ```
 relatorio.txt   relatório completo
@@ -179,17 +200,20 @@ python3 -m pytest tests/test_comparacao_tesseract_vs_multimodal.py -s
 Ou direto pelo terminal, com mais opções:
 
 ```bash
-# Tesseract × Claude (modelo do .env)
-python3 -m app.evaluation.comparar_extracao tests/casos/casos.json
+# Tesseract × Claude, fotos
+python3 -m avaliacao.comparar_extracao dados/casos_foto.json
+
+# Tesseract × Claude, PDFs (mesmas notas)
+python3 -m avaliacao.comparar_extracao dados/casos_pdf.json
 
 # comparando mais de um modelo multimodal
-python3 -m app.evaluation.comparar_extracao tests/casos/casos.json --modelos claude-sonnet-5-5,claude-opus-5-5
+python3 -m avaliacao.comparar_extracao dados/casos_foto.json --modelos claude-sonnet-5-5,claude-opus-5-5
 
 # só Tesseract (sem chave de API)
-python3 -m app.evaluation.comparar_extracao tests/casos/casos.json --sem-multimodal
+python3 -m avaliacao.comparar_extracao dados/casos_foto.json --sem-multimodal
 
 # sem a checagem de qualidade (mede os extratores "puros")
-python3 -m app.evaluation.comparar_extracao tests/casos/casos.json --sem-checagem-qualidade
+python3 -m avaliacao.comparar_extracao dados/casos_foto.json --sem-checagem-qualidade
 ```
 
 Exemplo do formato da saída (valores ilustrativos, não são resultados reais):
@@ -207,7 +231,7 @@ MÉDIA                           92%                         100%
 Com o resultado, configure a abordagem vencedora no `.env`
 (`EXTRATOR_IMAGEM=tesseract` ou `multimodal`).
 
-Critério de acerto de cada campo (`app/evaluation/metricas.py`):
+Critério de acerto de cada campo (`avaliacao/metricas.py`):
 estabelecimento igual ignorando maiúsculas, acentos e pontuação;
 produtos com exatamente os mesmos itens (em qualquer ordem); valor
 total igual até o centavo; data igual.
@@ -215,7 +239,7 @@ total igual até o centavo; data igual.
 ## Avaliação da classificação, do prazo, do diagnóstico e das cartas
 
 ```bash
-python3 -m app.evaluation.avaliar_casos tests/casos/casos.json --extrator multimodal
+python3 -m avaliacao.avaliar_casos dados/casos_foto.json --extrator multimodal
 ```
 
 - **Classificação**: cada relato é classificado 3 vezes. Para a 1ª
@@ -234,7 +258,7 @@ python3 -m app.evaluation.avaliar_casos tests/casos/casos.json --extrator multim
   `tabelas_csv/` e, como imagens PNG prontas para o TCC, em `figuras/`
   (entre elas a **matriz de confusão do tipo de vício**,
   `01_matriz_tipo_vicio.png`);
-- tudo numa pasta própria, `resultados/<AAAA-MM-DD_HHMMSS>_avaliacao/`;
+- tudo numa pasta própria, `resultados/fluxo_completo/<AAAA-MM-DD_HHMMSS>/`;
 - **Cartas**: salvas em `cartas/`, dentro da pasta da execução, uma por
   caso, já com a **lista de verificação** da análise qualitativa
   (identificação das partes, fatos, fundamento legal, pedido, prazo
@@ -309,41 +333,38 @@ interativa do FastAPI (dá para enviar a foto e o relato pelo navegador).
 
 ```
 consumia-backend/
-├── app/
-│   ├── models.py              # estruturas de dados compartilhadas
-│   ├── config.py              # configuração do modelo (Claude)
-│   ├── pipeline.py            # orquestra as 4 etapas
+├── app/                       # O PROTÓTIPO (o que a interface web usa)
 │   ├── api.py                 # API HTTP (FastAPI)
-│   ├── extraction/
-│   │   ├── detector.py        # checagem da foto + escolha do extrator
-│   │   ├── qualidade_imagem.py # foto borrada/escura/pequena -> pedir nova
-│   │   ├── ocr_tesseract.py   # abordagem 1: Tesseract + regex
-│   │   ├── regex_campos.py    # regex dos 4 campos
-│   │   └── ocr_multimodal.py  # abordagem 2: Claude (imagem -> JSON)
-│   ├── classification/
-│   │   ├── classifier.py      # classificação + validação da resposta
-│   │   └── prompts.py         # instrução e exemplos (few-shot)
-│   ├── prazo/
-│   │   └── calculator.py      # cálculo determinístico (art. 26 CDC)
-│   ├── letter/
-│   │   ├── generator.py       # geração da carta via Claude
-│   │   └── prompts.py         # instrução, artigos e pedido (art. 18)
-│   └── evaluation/
-│       ├── metricas.py        # acurácia, P/R/F1, consistência
-│       ├── casos.py           # carregamento dos casos de teste
-│       ├── comparar_extracao.py  # etapa 1: Tesseract × multimodal
-│       ├── avaliar_casos.py   # etapas 2-4 e diagnóstico completo
-│       └── figuras.py         # matrizes e tabelas em PNG
-├── tests/
-│   ├── casos/
-│   │   ├── casos.json         # os 17 casos reais + gabarito
-│   │   └── reais/             # fotos das notas (dados pessoais ocultados)
-│   ├── conftest.py            # fotos usadas pelos testes
-│   └── test_*.py
-├── resultados/                # uma pasta por execução da avaliação
-│   ├── <data>_extracao/       # relatorio.txt, dados.json, tabelas_csv/, figuras/
-│   ├── <data>_avaliacao/      # idem + cartas/
-│   └── antigos/               # execuções anteriores (casos sintéticos)
+│   ├── pipeline.py            # liga as 4 etapas
+│   ├── config.py              # modelo de linguagem (Claude Sonnet 5.5)
+│   ├── models.py              # estruturas de dados compartilhadas
+│   ├── extracao/              # etapa 1: dados da nota (foto ou PDF)
+│   │   ├── detector.py        #   foto ou PDF, checagem da foto, escolha do extrator
+│   │   ├── qualidade_imagem.py #  foto borrada/escura/pequena -> pedir nova
+│   │   ├── entrada_pdf.py     #   texto embutido do PDF / PDF escaneado
+│   │   ├── ocr_tesseract.py   #   abordagem tradicional: Tesseract + regex
+│   │   ├── regex_campos.py    #   expressões regulares dos 4 campos
+│   │   └── ocr_multimodal.py  #   abordagem multimodal: Claude (-> JSON)
+│   ├── classificacao/         # etapa 2: tipo de vício e durabilidade
+│   ├── prazo/                 # etapa 3: cálculo do prazo (art. 26, sem IA)
+│   └── carta/                 # etapa 4: carta de reclamação
+├── avaliacao/                 # O EXPERIMENTO DO TCC (não faz parte do app)
+│   ├── casos.py               # carrega os casos e o gabarito
+│   ├── metricas.py            # acurácia, P/R/F1, matrizes, consistência
+│   ├── comparar_extracao.py   # etapa 1: Tesseract x multimodal
+│   ├── avaliar_casos.py       # etapas 2-4 e diagnóstico completo
+│   └── figuras.py             # matrizes e tabelas em PNG
+├── dados/                     # OS CASOS DE TESTE (entrada do experimento)
+│   ├── casos_foto.json        # 17 casos com foto + gabarito
+│   ├── casos_pdf.json         # casos com PDF (mesmas notas das fotos)
+│   ├── fotos/                 # fotos das notas (dados pessoais ocultados)
+│   └── pdfs/                  # PDFs das notas
+├── resultados/                # SAÍDA DO EXPERIMENTO (uma pasta por execução)
+│   ├── extracao_foto/<data>/  # relatorio.txt, dados.json, tabelas_csv/, figuras/
+│   ├── extracao_pdf/<data>/   # idem, para os PDFs
+│   ├── fluxo_completo/<data>/ # classificação, prazo e diagnóstico + cartas/
+│   └── artigo/                # figuras e tabelas escolhidas para o TCC
+├── tests/                     # testes automatizados (pytest)
 ├── requirements.txt
 └── .env.example
 ```

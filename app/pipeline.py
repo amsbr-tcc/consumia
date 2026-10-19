@@ -8,12 +8,12 @@ e as datas de entrega e de evidência do defeito, informadas pelo
 usuário em campos próprios (a data impressa na nota nem sempre
 coincide com elas).
 
-    1. extração da nota fiscal (app.extraction.detector) — com checagem
+    1. extração da nota fiscal (app.extracao.detector) — com checagem
        de qualidade da foto; se estiver ilegível, o usuário é avisado
        para tirar outra
-    2. classificação do vício (app.classification.classifier)
+    2. classificação do vício (app.classificacao.classifier)
     3. cálculo do prazo (app.prazo.calculator) — determinístico, sem IA
-    4. geração da carta (app.letter.generator)
+    4. geração da carta (app.carta.generator)
 
 Este módulo não decide regra de negócio nenhuma por conta própria; ele
 só chama, nesta ordem, as funções já definidas nos módulos de cada
@@ -24,8 +24,8 @@ from __future__ import annotations
 from datetime import date
 from pathlib import Path
 
-from app.classification.classifier import classificar_relato
-from app.extraction.detector import EXTRATOR_DE_IMAGEM_PADRAO, extrair_dados_nota_fiscal
+from app.classificacao.classifier import classificar_relato
+from app.extracao.detector import EXTRATOR_DE_IMAGEM_PADRAO, extrair_dados_nota_fiscal
 from app.models import CasoConsumidor, RelatoUsuario
 from app.prazo.calculator import calcular_prazo
 
@@ -108,7 +108,7 @@ def processar_caso(
 
     # Etapa 4: geração da carta
     if caso.prazo.dentro_do_prazo or gerar_carta_se_vencido:
-        from app.letter.generator import gerar_carta  # import tardio: só exige
+        from app.carta.generator import gerar_carta  # import tardio: só exige
         # a chave de API do modelo quando a carta é de fato gerada
 
         caso.carta = gerar_carta(caso)

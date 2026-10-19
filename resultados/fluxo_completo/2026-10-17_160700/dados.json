@@ -1,0 +1,441 @@
+[
+  {
+    "caso_id": "real_01",
+    "rotulo_esperado": "fora_de_escopo",
+    "rotulos_obtidos": [
+      "fora_de_escopo",
+      "fora_de_escopo",
+      "fora_de_escopo"
+    ],
+    "justificativas": [
+      "O relato trata de um serviço de restaurante (demora no atendimento e cobrança de gorjeta sem consulta), e não de vício em um produto, o que foge do escopo deste sistema.",
+      "O relato trata de um serviço (atendimento em restaurante: demora e cobrança de gorjeta), não de vício em um produto, o que foge do escopo deste sistema.",
+      "O relato trata da prestação de um serviço (atendimento em restaurante, com demora e cobrança de gorjeta), e não de vício em um produto, o que foge do escopo deste sistema."
+    ],
+    "dias_restantes_esperado": null,
+    "dias_restantes_calculado_gabarito": null,
+    "dias_restantes_fluxo": null,
+    "situacao_esperada": "fora_de_escopo",
+    "situacao_fluxo": "fora_de_escopo",
+    "situacao_calculada_gabarito": "fora_de_escopo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_02",
+    "rotulo_esperado": "aparente/duravel",
+    "rotulos_obtidos": [
+      "aparente/duravel",
+      "aparente/duravel",
+      "aparente/duravel"
+    ],
+    "justificativas": [
+      "A costura aberta e o zíper que não fecha eram perceptíveis de imediato, ao tirar a calça da sacola, e roupa é um bem durável.",
+      "A costura aberta e o zíper que não fecha foram percebidos de imediato, ao tirar a calça da sacola, e roupa é um bem durável.",
+      "A costura aberta e o zíper que não fecha foram percebidos assim que a calça foi tirada da sacola, o que caracteriza vício aparente, e roupa é um bem durável."
+    ],
+    "dias_restantes_esperado": 75,
+    "dias_restantes_calculado_gabarito": 75,
+    "dias_restantes_fluxo": 75,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 16 de outubro de 2026.\n\nÀ\nHR2 COMERCIO VAREJISTA DE ROUPAS EM GERAL LTDA\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nComprei de vocês o produto CALCA FEM RLHSN 040, pelo valor total de R$ 289,99, conforme a nota fiscal emitida em 1º de outubro de 2026. Recebi o produto na mesma data, 1º de outubro de 2026.\n\nQuando tirei a calça da sacola, em casa, a costura da perna esquerda estava aberta e o zíper não fechava.\n\nPelo Código de Defesa do Consumidor (Lei nº 8.078/1990), o fornecedor é responsável pelos defeitos de qualidade do produto que vende, conforme o art. 18, caput, e o §1º. O art. 26, inciso II, dá ao consumidor 90 dias para reclamar de defeitos em produtos duráveis, e o art. 26, §1º, diz que, quando o defeito é aparente, esse prazo conta da entrega efetiva do produto. No meu caso, o prazo começou em 1º de outubro de 2026 e vai até 30 de dezembro de 2026, portanto esta reclamação está dentro do prazo.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_03",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "O lacre rompido e a alteração de cor e cheiro eram perceptíveis logo ao abrir o produto, e creme (cosmético consumível) é um bem não durável. O relato não menciona dano à saúde.",
+      "O lacre rompido e a cor e o cheiro estranhos foram percebidos logo ao abrir o produto, o que caracteriza vício aparente. Creme é um cosmético consumível, portanto bem não durável, e o relato não menciona dano à saúde.",
+      "O lacre rompido e a cor e o cheiro estranhos foram percebidos de imediato ao abrir o produto, e creme (cosmético consumível) é um bem não durável. O relato não menciona dano à saúde."
+    ],
+    "dias_restantes_esperado": 15,
+    "dias_restantes_calculado_gabarito": 15,
+    "dias_restantes_fluxo": 15,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 16 de outubro de 2026.\n\nÀ\nDROGARIA SAO PAULO SA\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nComprei na loja de vocês os produtos CR CALMING CREAM 40G e AP DEP SUAVE SENS 2UNI, em 1º de outubro de 2026, pelo valor total de R$ 83,98, conforme a nota fiscal emitida na mesma data. Recebi os produtos também em 1º de outubro de 2026.\n\nAo abrir o creme em casa, o lacre já estava rompido e o produto estava com cor e cheiro estranhos.\n\nConforme o art. 18, caput e §1º, do Código de Defesa do Consumidor (Lei nº 8.078/1990), o fornecedor é responsável pelos defeitos de qualidade dos produtos que vende, e deve corrigir o problema em até 30 dias. O art. 26, inciso I, do mesmo código estabelece que o prazo para reclamar de defeito em produto não durável é de 30 dias. Pelo art. 26, §1º, quando o defeito é aparente, esse prazo conta a partir da entrega efetiva do produto. No meu caso, o prazo começou em 1º de outubro de 2026 e vai até 31 de outubro de 2026, e por isso envio esta reclamação dentro dele.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_04",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "A tampa quebrada é um defeito perceptível de imediato, no mesmo dia da compra, e álcool gel é um produto de higiene consumido com o uso, portanto bem não durável.",
+      "A tampa quebrada é um defeito perceptível de imediato, logo no dia da compra, e álcool gel é produto de higiene consumido com o uso, portanto bem não durável. O relato não menciona dano à saúde ou à segurança.",
+      "A tampa quebrada é um defeito perceptível de imediato, já no dia da compra, e álcool gel é um produto de higiene consumido com o uso, portanto bem não durável."
+    ],
+    "dias_restantes_esperado": 0,
+    "dias_restantes_calculado_gabarito": 0,
+    "dias_restantes_fluxo": 0,
+    "situacao_esperada": "fora_do_prazo",
+    "situacao_fluxo": "fora_do_prazo",
+    "situacao_calculada_gabarito": "fora_do_prazo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "fora_do_prazo: o sistema não gera carta"
+  },
+  {
+    "caso_id": "real_05",
+    "rotulo_esperado": "aparente/duravel",
+    "rotulos_obtidos": [
+      "aparente/duravel",
+      "aparente/duravel",
+      "aparente/duravel"
+    ],
+    "justificativas": [
+      "O defeito (bloco de páginas em branco) é perceptível de imediato ao folhear o dicionário, caracterizando vício aparente, e um livro é um bem durável, pois não se consome com o primeiro uso.",
+      "O defeito (bloco de páginas em branco) é perceptível de imediato ao folhear o livro, e um dicionário é um bem durável, que não se consome com o primeiro uso.",
+      "O defeito (bloco de páginas em branco) é perceptível de imediato ao folhear o livro, caracterizando vício aparente, e um dicionário é um bem durável que não se consome com o primeiro uso."
+    ],
+    "dias_restantes_esperado": 9,
+    "dias_restantes_calculado_gabarito": 9,
+    "dias_restantes_fluxo": 9,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 16 de outubro de 2026.\n\nÀ\nARMARINHOS FERNANDO LTDA\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nComprei na loja de vocês um pincel Condor artístico, um bloco Starcolor com 65 folhas, um álcool gel Giovanna Baby e um mini dicionário escolar, no valor total de R$ 18,29, conforme a nota fiscal emitida em 11 de julho de 2026. Recebi os produtos na mesma data, 11 de julho de 2026.\n\nO mini dicionário veio com um bloco de páginas em branco, sem nada impresso. Reclamei na loja em 20 de julho de 2026 e, em 5 de agosto de 2026, recebi a resposta negativa: vocês se recusaram a trocar o produto.\n\nO art. 18, caput, do Código de Defesa do Consumidor (Lei nº 8.078/1990) diz que o fornecedor é responsável pelos problemas de qualidade dos produtos que vende. O §1º do mesmo artigo dá ao fornecedor 30 dias para resolver o problema. O art. 26, inciso II, dá ao consumidor 90 dias para reclamar de defeitos em produtos duráveis. Pelo art. 26, §1º, quando o defeito é aparente, esse prazo conta a partir da entrega do produto, que foi em 11 de julho de 2026. O art. 26, §2º, inciso I, diz que a reclamação feita ao fornecedor, quando comprovada, impede que o prazo termine até que ele dê uma resposta negativa clara. Pelos meus cálculos, o prazo para reclamar vai até 25 de outubro de 2026.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_06",
+    "rotulo_esperado": "oculto/duravel",
+    "rotulos_obtidos": [
+      "oculto/duravel",
+      "oculto/duravel",
+      "oculto/duravel"
+    ],
+    "justificativas": [
+      "O vazamento só surgiu após duas semanas de uso normal, o que caracteriza vício oculto, e uma garrafa squeeze é um bem durável, pois não se consome com o uso.",
+      "O vazamento só apareceu após duas semanas de uso normal, caracterizando vício oculto, e uma garrafa squeeze é um bem durável, pois não se consome com o uso.",
+      "O vazamento só apareceu após duas semanas de uso normal, sem como ser percebido antes, o que caracteriza vício oculto; a garrafa squeeze é um bem durável, pois não se consome com o uso."
+    ],
+    "dias_restantes_esperado": 88,
+    "dias_restantes_calculado_gabarito": 88,
+    "dias_restantes_fluxo": 88,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 16 de outubro de 2026.\n\nÀ\nRiachuelo\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nComprei na Riachuelo uma polo feminina canelada rosa, uma camiseta baby look estampada feminina azul claro e uma garrafa squeeze de metal de 1L na cor vinho. A nota fiscal foi emitida em 1º de outubro de 2026, no valor total de R$ 229,97, e recebi os produtos na mesma data.\n\nUsei a garrafa squeeze normalmente por duas semanas e ela começou a vazar pela rosca da tampa, mesmo bem fechada. O defeito apareceu em 14 de outubro de 2026.\n\nCom base no Código de Defesa do Consumidor (Lei nº 8.078/1990), o art. 18, caput e §1º, diz que o fornecedor é responsável pelos defeitos de qualidade do produto e deve corrigi-los em até 30 dias. O art. 26, inciso II, dá 90 dias para reclamar de defeitos em produtos duráveis. O art. 26, §3º, estabelece que, quando o defeito não é visível logo na compra, esse prazo conta a partir do momento em que ele aparece. Como o defeito apareceu em 14 de outubro de 2026, posso reclamar até 12 de janeiro de 2027.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_07",
+    "rotulo_esperado": "oculto/duravel",
+    "rotulos_obtidos": [
+      "oculto/duravel",
+      "oculto/duravel",
+      "oculto/duravel"
+    ],
+    "justificativas": [
+      "O defeito (costura aberta e tecido desfiado) só apareceu depois de três lavagens seguindo a etiqueta, ou seja, em uso normal e sem como ser percebido antes, e roupa é um bem durável.",
+      "O defeito (costura aberta e tecido desfiado) só apareceu após três lavagens seguindo a etiqueta, ou seja, depois de uso normal, o que caracteriza vício oculto. Roupa é um bem durável.",
+      "O defeito (costura aberta e tecido desfiado) só apareceu após três lavagens seguindo a etiqueta, ou seja, em uso normal e sem como ser percebido antes, e roupa é um bem durável."
+    ],
+    "dias_restantes_esperado": 86,
+    "dias_restantes_calculado_gabarito": 86,
+    "dias_restantes_fluxo": 86,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 16 de outubro de 2026.\n\nÀ\nC&A MODAS S.A.\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nComprei na C&A MODAS S.A. os produtos MINDSET- SLIM FIT INTERLOCK:BRANCO:P e CALÇA WIDE LEG SLIM CINTURA SUPER ALTA:VINHO ESCU, no valor total de R$ 249,98, conforme nota fiscal emitida em 1º de outubro de 2026. Recebi os produtos na mesma data, 1º de outubro de 2026.\n\nA calça parecia perfeita, mas, depois de três lavagens seguindo a etiqueta, a costura do gancho abriu e o tecido desfiou. Percebi o problema em 12 de outubro de 2026.\n\nO art. 18, caput, do Código de Defesa do Consumidor (Lei nº 8.078/1990) diz que o fornecedor é responsável pelos defeitos de qualidade dos produtos que vende. O §1º do mesmo artigo dá ao fornecedor 30 dias para resolver o problema. O art. 26, inciso II, estabelece o prazo de 90 dias para reclamar de defeitos em produtos duráveis. Pelo art. 26, §3º, quando o defeito não aparece logo de início, esse prazo conta a partir do momento em que ele ficou evidente, que no meu caso foi 12 de outubro de 2026. Por isso, posso reclamar até 10 de janeiro de 2027, e esta carta está dentro desse prazo.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_08",
+    "rotulo_esperado": "oculto/duravel",
+    "rotulos_obtidos": [
+      "oculto/duravel",
+      "oculto/duravel",
+      "oculto/duravel"
+    ],
+    "justificativas": [
+      "A sola só começou a descolar após duas semanas de uso normal, o que caracteriza vício oculto, e tênis é um bem durável.",
+      "O defeito (sola descolando) só apareceu após duas semanas de uso normal, o que caracteriza vício oculto, e tênis é um bem durável.",
+      "A sola só começou a descolar após duas semanas de uso normal, sem que o defeito fosse perceptível antes, o que caracteriza vício oculto; tênis é um bem durável."
+    ],
+    "dias_restantes_esperado": 135,
+    "dias_restantes_calculado_gabarito": 135,
+    "dias_restantes_fluxo": 135,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 1º de março de 2027.\n\nÀ\nPUMA SPORTS LTDA\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nComprei o calçado PUMA Wired Run Slipon Inf BDP Puma Black Castlerock 21, no valor total de R$ 100,00, conforme nota fiscal emitida em 15 de outubro de 2026. Recebi o produto na mesma data, 15 de outubro de 2026.\n\nMeu filho usou o tênis normalmente e, depois de duas semanas, a sola começou a descolar na ponta. O defeito apareceu em 1º de novembro de 2026. A loja me informou que o produto tem garantia de fábrica de seis meses, que vai até 15 de abril de 2027.\n\nO Código de Defesa do Consumidor (Lei nº 8.078/1990) diz, no art. 18, caput e §1º, que o fornecedor é responsável pelos defeitos de qualidade do produto e deve corrigi-los em até 30 dias. O art. 26, inciso II, dá 90 dias para reclamar de defeito em produto durável. Pelo art. 26, §3º, quando o defeito não é visível logo de início, esse prazo conta do momento em que ele aparece. O art. 50 esclarece que a garantia dada pela fábrica se soma à garantia prevista em lei. Como a garantia contratual vai até 15 de abril de 2027, o prazo de 90 dias para reclamar conta a partir dessa data e vai até 14 de julho de 2027. Esta reclamação, portanto, está dentro do prazo.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26",
+      "50"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_09",
+    "rotulo_esperado": "aparente/duravel",
+    "rotulos_obtidos": [
+      "aparente/duravel",
+      "aparente/duravel",
+      "aparente/duravel"
+    ],
+    "justificativas": [
+      "Os defeitos (alça descosturada e regulador quebrado) foram percebidos assim que o produto saiu da embalagem, o que caracteriza vício aparente, e sutiã é uma peça de vestuário, bem durável.",
+      "Os defeitos (alça descosturada e regulador quebrado) foram percebidos assim que o produto saiu da embalagem, o que caracteriza vício aparente, e sutiã é uma peça de vestuário, bem durável.",
+      "A alça descosturada e o regulador quebrado foram percebidos assim que o produto foi retirado da embalagem, o que caracteriza vício aparente, e sutiã é uma peça de roupa, bem durável."
+    ],
+    "dias_restantes_esperado": 43,
+    "dias_restantes_calculado_gabarito": 43,
+    "dias_restantes_fluxo": 43,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 1º de dezembro de 2026.\n\nÀ\nRIACHUELO\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nComprei na Riachuelo o Sutin base triÂngulo Daily altas regulÂveis | Trif e o Kit calcinha tradicional 3 pecas estampada - multi, no valor total de R$ 109,98, conforme nota fiscal emitida em 15 de outubro de 2026. Recebi os produtos na mesma data, 15 de outubro de 2026.\n\nA alça do sutiã veio descosturada e o regulador quebrado. Percebi o problema assim que tirei o produto da embalagem, mas só agora fui reclamar.\n\nPelo art. 18, caput, do Código de Defesa do Consumidor (Lei nº 8.078/1990), o fornecedor é responsável pelos defeitos de qualidade dos produtos que vende. O art. 18, §1º, dá ao fornecedor 30 dias para resolver o problema. O art. 26, inciso II, garante 90 dias para reclamar de defeitos em produtos duráveis, e o art. 26, §1º, diz que, quando o defeito é aparente, esse prazo conta da entrega do produto. Como recebi os produtos em 15 de outubro de 2026, o prazo para reclamar vai até 13 de janeiro de 2027, e esta carta está dentro dele.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_10",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "A embalagem estufada e o azedume foram percebidos logo ao abrir o produto, e iogurte é um alimento, ou seja, bem não durável. O relato não menciona que o consumidor tenha ingerido o produto ou sofrido qualquer dano à saúde.",
+      "A embalagem estufada e o azedume foram percebidos logo ao abrir o produto, e iogurte é um alimento, ou seja, um bem não durável. O relato não menciona dano à saúde, então permanece no escopo do art. 26.",
+      "A embalagem estufada e o azedume foram percebidos logo ao abrir o produto, o que caracteriza vício aparente, e iogurte é um alimento, ou seja, bem não durável. O relato não menciona dano à saúde."
+    ],
+    "dias_restantes_esperado": 29,
+    "dias_restantes_calculado_gabarito": 29,
+    "dias_restantes_fluxo": 29,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 16 de outubro de 2026.\n\nÀ\nSupermercado e Restaurante Jva\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nEm 15 de outubro de 2026, comprei no estabelecimento de vocês os seguintes produtos: Iogurte Atilatt 448g, Bisc Pol Cassini 100, Pao Qjo Forno Minas, Uva Passa 200g Preta, Laranja Pera e Pera Willian s Kg. O valor total da compra foi de R$ 68,02, conforme a nota fiscal emitida nessa mesma data. Recebi os produtos também em 15 de outubro de 2026.\n\nAo abrir o iogurte em casa, a embalagem estava estufada e o iogurte estava azedo, mesmo dentro da validade. Por isso, estou entrando em contato para pedir a solução do problema.\n\nO Código de Defesa do Consumidor (Lei nº 8.078/1990) prevê, no art. 18, caput, que o fornecedor é responsável pelos problemas de qualidade dos produtos que vende. O §1º do mesmo artigo dá ao fornecedor o prazo de 30 dias para resolver o problema. Já o art. 26, inciso I, diz que o prazo para reclamar de produtos que não são duráveis é de 30 dias. Conforme o art. 26, §1º, quando o problema é aparente, esse prazo conta da entrega efetiva do produto, que no meu caso foi em 15 de outubro de 2026. Assim, posso reclamar até 14 de novembro de 2026, e esta carta está dentro desse período.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_11",
+    "rotulo_esperado": "fora_de_escopo",
+    "rotulos_obtidos": [
+      "fora_de_escopo",
+      "fora_de_escopo",
+      "fora_de_escopo"
+    ],
+    "justificativas": [
+      "O corpo estranho (plástico) no chocolate causou lesão à saúde do consumidor (corte na gengiva e necessidade de dentista), o que configura fato do produto (arts. 12 a 17 do CDC), e não vício regido pelo art. 26.",
+      "O corpo estranho (plástico) no chocolate causou dano à saúde do consumidor (corte na gengiva e ida ao dentista), configurando fato do produto (arts. 12 a 17 do CDC) e não vício regido pelo art. 26.",
+      "O corpo estranho (plástico duro) no chocolate causou dano à saúde do consumidor (corte na gengiva e necessidade de dentista), o que configura fato do produto (arts. 12 a 17 do CDC) e não vício regido pelo art. 26."
+    ],
+    "dias_restantes_esperado": null,
+    "dias_restantes_calculado_gabarito": null,
+    "dias_restantes_fluxo": null,
+    "situacao_esperada": "fora_de_escopo",
+    "situacao_fluxo": "fora_de_escopo",
+    "situacao_calculada_gabarito": "fora_de_escopo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_12",
+    "rotulo_esperado": "oculto/nao_duravel",
+    "rotulos_obtidos": [
+      "oculto/nao_duravel",
+      "oculto/nao_duravel",
+      "oculto/nao_duravel"
+    ],
+    "justificativas": [
+      "O defeito (estragado por dentro) não era perceptível por fora e só foi notado ao fritar, semanas depois, o que caracteriza vício oculto; croquete é alimento, bem não durável.",
+      "O defeito (estragado por dentro) não era perceptível por fora e só se revelou ao fritar, semanas depois, dentro da validade, o que caracteriza vício oculto; croquete é alimento, bem não durável.",
+      "O estrago só foi percebido ao fritar, semanas depois, e o produto parecia normal por fora e estava na validade, o que caracteriza vício oculto. Croquetes são alimento, bem não durável, e o relato não menciona dano à saúde."
+    ],
+    "dias_restantes_esperado": 0,
+    "dias_restantes_calculado_gabarito": 0,
+    "dias_restantes_fluxo": 0,
+    "situacao_esperada": "fora_do_prazo",
+    "situacao_fluxo": "fora_do_prazo",
+    "situacao_calculada_gabarito": "fora_do_prazo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "fora_do_prazo: o sistema não gera carta"
+  },
+  {
+    "caso_id": "real_13",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "O furo na embalagem e a presença de insetos no pó são perceptíveis de imediato, ao abrir ou examinar o pacote, e café é um alimento, bem não durável. O relato não menciona dano à saúde.",
+      "O furo na embalagem, o pó empedrado e os insetos são perceptíveis de imediato, ao abrir ou examinar o pacote, e café é um alimento, bem não durável. O relato não menciona dano à saúde do consumidor.",
+      "O furo na embalagem, o pó empedrado e os insetos são perceptíveis logo ao abrir ou examinar o pacote, e café é um alimento, bem não durável. O relato não menciona dano à saúde do consumidor."
+    ],
+    "dias_restantes_esperado": 1,
+    "dias_restantes_calculado_gabarito": 1,
+    "dias_restantes_fluxo": 1,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 20 de setembro de 2026.\n\nÀ\nINFANGER E CIA. LTDA.\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nComprei em seu estabelecimento diversos produtos, entre eles tomate italiano, leite Piracanjuba, café Melitta 500g, detergente Ypê, molho de tomate Quero, creme de leite Piracanjuba, sabão em pó Omo, geleia Arcor, pão de forma Panco, maçã gala, sabonete Dove, limão, salgadinho Doritos, ovos Caldana, pernil com osso, linguiças Sadia, bife ancho, requeijão Crioulo, refrigerante, água H2OH, queijo La Serenissima e presunto Sadia. A nota fiscal foi emitida em 22 de agosto de 2026, no valor total de R$ 349,55. Recebi os produtos na mesma data, 22 de agosto de 2026.\n\nO pacote de café Melitta 500g veio com um furo na embalagem, e o pó estava empedrado e com insetos.\n\nSegundo o Código de Defesa do Consumidor (Lei nº 8.078/1990), o fornecedor responde pelos defeitos de qualidade dos produtos que vende (art. 18, caput e §1º). Para produtos que não são duráveis, como alimentos, o prazo para reclamar é de 30 dias (art. 26, inciso I). Quando o defeito é aparente, esse prazo conta a partir da entrega efetiva do produto (art. 26, §1º). Como recebi o produto em 22 de agosto de 2026, o prazo para reclamar vai até 21 de setembro de 2026, e esta carta está sendo enviada dentro dele.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_14",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "O mofo foi percebido assim que a embalagem foi aberta, o que caracteriza vício aparente, e queijo é um alimento, ou seja, um bem não durável.",
+      "O mofo era perceptível assim que a embalagem foi aberta, o que caracteriza vício aparente, e queijo é alimento, ou seja, bem não durável. O relato não menciona dano à saúde.",
+      "O mofo foi percebido assim que a embalagem foi aberta, o que caracteriza vício aparente, e queijo é alimento, ou seja, um bem não durável. O relato não menciona dano à saúde, então permanece no escopo do art. 26."
+    ],
+    "dias_restantes_esperado": 0,
+    "dias_restantes_calculado_gabarito": 0,
+    "dias_restantes_fluxo": 0,
+    "situacao_esperada": "indeterminado",
+    "situacao_fluxo": "indeterminado",
+    "situacao_calculada_gabarito": "indeterminado",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "indeterminado: o sistema não gera carta"
+  },
+  {
+    "caso_id": "real_15",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "A cartela violada e os comprimidos faltando são perceptíveis de imediato ao abrir a caixa, e medicamento é um bem consumido com o uso, portanto não durável. O relato não menciona dano à saúde.",
+      "A cartela violada e a falta de dois comprimidos são perceptíveis de imediato ao abrir a caixa, e medicamento é um bem consumido com o uso, portanto não durável. O relato não menciona dano à saúde.",
+      "A cartela violada e os comprimidos faltando são perceptíveis de imediato ao abrir a caixa, e remédio é um bem consumido com o uso, logo não durável. O relato não menciona dano à saúde, então permanece no âmbito do art. 26."
+    ],
+    "dias_restantes_esperado": 14,
+    "dias_restantes_calculado_gabarito": 14,
+    "dias_restantes_fluxo": 14,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": "[nome do consumidor]\n[CPF do consumidor]\n[endereço do consumidor]\n[telefone ou e-mail do consumidor]\n\n[cidade], 5 de agosto de 2026.\n\nÀ\nPAULO AUGUSTO KIGIATO DROGARIA LTDA\n[endereço do fornecedor]\n\nAssunto: Reclamação sobre defeito em produto\n\nPrezados,\n\nComprei na drogaria BISSULFATO DE CLOPIDROGUEL 75 CTX 28, com taxa de entrega, no valor total de R$ 34,67, conforme a nota fiscal emitida em 20 de julho de 2026. Recebi o produto na mesma data, 20 de julho de 2026.\n\nA caixa do remédio veio com a cartela violada e dois comprimidos faltando. Desde o recebimento, o produto está nessa condição e não pude usá-lo como deveria.\n\nPelo art. 18, caput e §1º, do Código de Defesa do Consumidor (Lei nº 8.078/1990), o fornecedor é responsável pelos defeitos de qualidade do produto que vende, e deve corrigir o problema em até 30 dias. Pelo art. 26, inciso I, o prazo para reclamar de defeito em produto que não é durável, como um remédio, é de 30 dias. Pelo art. 26, §1º, quando o defeito é aparente, esse prazo conta da entrega efetiva do produto, que foi em 20 de julho de 2026. Assim, o prazo para reclamar vai até 19 de agosto de 2026, e esta carta está dentro dele.\n\nPeço que o problema seja resolvido no prazo máximo de 30 (trinta) dias, como prevê o art. 18, §1º, do CDC. Se não for resolvido nesse prazo, poderei exigir, à minha escolha: a substituição do produto por outro da mesma espécie, em perfeitas condições de uso; a restituição imediata da quantia paga, monetariamente atualizada, sem prejuízo de eventuais perdas e danos; ou o abatimento proporcional do preço.\n\nAguardo a solução dentro desse prazo.\n\nAtenciosamente,\n\n[nome do consumidor]",
+    "artigos_citados": [
+      "18",
+      "26"
+    ],
+    "observacao": null
+  },
+  {
+    "caso_id": "real_16",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "O mofo foi percebido assim que o pacote foi aberto, no mesmo dia, e pão de forma é um alimento, ou seja, um bem não durável.",
+      "O mofo foi percebido assim que o pacote foi aberto, no mesmo dia, o que caracteriza vício aparente, e pão de forma é alimento, um bem não durável.",
+      "O mofo foi percebido assim que o pacote foi aberto, no mesmo dia, o que caracteriza vício aparente, e pão de forma é um alimento, ou seja, um bem não durável."
+    ],
+    "dias_restantes_esperado": 27,
+    "dias_restantes_calculado_gabarito": 27,
+    "dias_restantes_fluxo": 27,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "foto recusada na extração (ilegivel)"
+  },
+  {
+    "caso_id": "real_17",
+    "rotulo_esperado": "aparente/nao_duravel",
+    "rotulos_obtidos": [
+      "aparente/nao_duravel",
+      "aparente/nao_duravel",
+      "aparente/nao_duravel"
+    ],
+    "justificativas": [
+      "A validade vencida está impressa na caixa e é perceptível de imediato, e o remédio é um bem consumido com o uso, portanto não durável. O relato não menciona dano à saúde, então permanece no âmbito do art. 26.",
+      "A validade vencida está impressa na caixa e é perceptível de imediato, e o remédio é um bem consumido com o uso, portanto não durável. O relato não menciona dano à saúde, então permanece no escopo do art. 26.",
+      "A validade vencida está impressa na caixa e é perceptível de imediato, e o remédio é um bem consumido com o uso, portanto não durável. O relato não menciona que o consumidor tenha usado o produto ou sofrido dano à saúde."
+    ],
+    "dias_restantes_esperado": 25,
+    "dias_restantes_calculado_gabarito": 25,
+    "dias_restantes_fluxo": 25,
+    "situacao_esperada": "dentro_do_prazo",
+    "situacao_fluxo": "dentro_do_prazo",
+    "situacao_calculada_gabarito": "dentro_do_prazo",
+    "diagnostico_correto": true,
+    "carta": null,
+    "artigos_citados": [],
+    "observacao": "foto recusada na extração (ilegivel)"
+  }
+]

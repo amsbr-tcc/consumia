@@ -1,9 +1,9 @@
 """
-Testes da organização dos resultados em app.evaluation.avaliar_casos
+Testes da organização dos resultados em avaliacao.avaliar_casos
 (matrizes de confusão, situação final, relatório), com resultados
 montados à mão — sem chamar o modelo de linguagem.
 """
-from app.evaluation.avaliar_casos import (
+from avaliacao.avaliar_casos import (
     ResultadoAvaliacaoCaso,
     montar_matrizes,
     montar_relatorio_texto,
@@ -69,7 +69,7 @@ def test_salvar_matrizes_gera_um_csv_por_matriz(tmp_path):
 
 
 def test_salvar_figuras_gera_a_matriz_do_tipo_de_vicio_em_png(tmp_path):
-    from app.evaluation.avaliar_casos import salvar_figuras
+    from avaliacao.avaliar_casos import salvar_figuras
 
     salvar_figuras(RESULTADOS, tmp_path)
     figuras = {p.name for p in tmp_path.glob("*.png")}

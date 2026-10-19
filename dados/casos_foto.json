@@ -1,0 +1,490 @@
+[
+  {
+    "id": "real_01",
+    "imagem": "fotos/real_01.jpg",
+    "foto_original": "IMG_2448.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "Outback Steakhouse Restaurantes Brasil S A",
+      "data_emissao": "2026-10-01",
+      "produtos": [
+        "TEA CRANB",
+        "TEA REFIL",
+        "TILAPIA LM",
+        "GORJETA CONCE"
+      ],
+      "valor_total": 89.98
+    },
+    "relato": "Fui almoçar no restaurante, esperei mais de uma hora para ser atendida e o garçom ainda incluiu a gorjeta na conta sem perguntar.",
+    "data_entrega": "2026-10-01",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-10-05",
+    "esperado": {
+      "fora_de_escopo": true,
+      "tipo_vicio": null,
+      "durabilidade": null,
+      "dias_restantes": null,
+      "situacao": null
+    },
+    "observacao_gabarito": "Serviço (restaurante): fora do escopo. Valor = valor a pagar (89,98), não o 'VALOR TOTAL' antes do desconto (106,88)."
+  },
+  {
+    "id": "real_02",
+    "imagem": "fotos/real_02.jpg",
+    "foto_original": "IMG_2449.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "HR2 COMERCIO VAREJISTA DE ROUPAS EM GERAL LTDA",
+      "data_emissao": "2026-10-01",
+      "produtos": [
+        "CALCA FEM HLHSN 040"
+      ],
+      "valor_total": 289.99
+    },
+    "relato": "Quando tirei a calça da sacola em casa, a costura da perna esquerda estava aberta e o zíper não fechava.",
+    "data_entrega": "2026-10-01",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-10-16",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "duravel",
+      "dias_restantes": 75,
+      "situacao": "dentro_do_prazo"
+    },
+    "observacao_gabarito": "Descrição do item conferida na nota física (HLHSN)."
+  },
+  {
+    "id": "real_03",
+    "imagem": "fotos/real_03.jpg",
+    "foto_original": "IMG_2450.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "DROGARIA SAO PAULO SA",
+      "data_emissao": "2026-10-01",
+      "produtos": [
+        "CR CALMING CREAM 40G",
+        "AP DEP SUAVE SENS 2UNI"
+      ],
+      "valor_total": 83.98
+    },
+    "relato": "Ao abrir o creme em casa, o lacre já estava rompido e o produto estava com cor e cheiro estranhos.",
+    "data_entrega": "2026-10-01",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-10-16",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "nao_duravel",
+      "dias_restantes": 15,
+      "situacao": "dentro_do_prazo"
+    }
+  },
+  {
+    "id": "real_04",
+    "imagem": "fotos/real_04.jpg",
+    "foto_original": "IMG_2451.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "ARMARINHOS FERNANDO LTDA",
+      "data_emissao": "2026-07-11",
+      "produtos": [
+        "PINCEL CONDOR ARTISTICO",
+        "BLOCO STARCOLOR 65FLS R",
+        "ALCOOL GEL GIOVANNA BAB",
+        "MINI DICIONARIO ESCOLAR"
+      ],
+      "valor_total": 18.29
+    },
+    "relato": "O álcool gel veio com a tampa quebrada e vazou todo dentro da sacola no mesmo dia da compra.",
+    "data_entrega": "2026-07-11",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-10-16",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "nao_duravel",
+      "dias_restantes": 0,
+      "situacao": "fora_do_prazo"
+    },
+    "observacao_gabarito": "Prazo vencido."
+  },
+  {
+    "id": "real_05",
+    "imagem": "fotos/real_05.jpg",
+    "foto_original": "IMG_2452.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "ARMARINHOS FERNANDO LTDA",
+      "data_emissao": "2026-07-11",
+      "produtos": [
+        "PINCEL CONDOR ARTISTICO",
+        "BLOCO STARCOLOR 65FLS R",
+        "ALCOOL GEL GIOVANNA BAB",
+        "MINI DICIONARIO ESCOLAR"
+      ],
+      "valor_total": 18.29
+    },
+    "relato": "O mini dicionário veio com um bloco de páginas em branco, sem nada impresso. Reclamei na loja e eles se recusaram a trocar.",
+    "data_entrega": "2026-07-11",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-10-16",
+    "data_reclamacao_fornecedor": "2026-07-20",
+    "data_resposta_negativa": "2026-08-05",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "duravel",
+      "dias_restantes": 9,
+      "situacao": "dentro_do_prazo"
+    },
+    "observacao_gabarito": "Mesma nota do real_04, outro enquadramento. Reclamação anterior: 16 dias de suspensão."
+  },
+  {
+    "id": "real_06",
+    "imagem": "fotos/real_06.jpg",
+    "foto_original": "IMG_2453.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": [
+        "Lojas Riachuelo SA",
+        "RIACHUELO"
+      ],
+      "data_emissao": "2026-10-01",
+      "produtos": [
+        "Polo feminina canelada - rosa",
+        "Camiseta baby look estampada feminina - Azul Claro",
+        "Garrafa squeeze de metal 1L - vinho"
+      ],
+      "valor_total": 229.97
+    },
+    "relato": "Usei a garrafa squeeze normalmente por duas semanas e ela começou a vazar pela rosca da tampa, mesmo bem fechada.",
+    "data_entrega": "2026-10-01",
+    "data_evidencia_defeito": "2026-10-14",
+    "data_referencia": "2026-10-16",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "oculto",
+      "durabilidade": "duravel",
+      "dias_restantes": 88,
+      "situacao": "dentro_do_prazo"
+    },
+    "observacao_gabarito": "Estabelecimento: aceitos a razão social e o nome do topo da nota."
+  },
+  {
+    "id": "real_07",
+    "imagem": "fotos/real_07.jpg",
+    "foto_original": "IMG_2454.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "C&A MODAS S.A.",
+      "data_emissao": "2026-10-01",
+      "produtos": [
+        "MINDSET- SLIM FIT INTERLOCK:BRANCO:P",
+        "CALÇA WIDE LEG SLIM CINTURA SUPER ALTA:VINHO ESCU"
+      ],
+      "valor_total": 249.98
+    },
+    "relato": "A calça parecia perfeita, mas depois de três lavagens seguindo a etiqueta a costura do gancho abriu e o tecido desfiou.",
+    "data_entrega": "2026-10-01",
+    "data_evidencia_defeito": "2026-10-12",
+    "data_referencia": "2026-10-16",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "oculto",
+      "durabilidade": "duravel",
+      "dias_restantes": 86,
+      "situacao": "dentro_do_prazo"
+    }
+  },
+  {
+    "id": "real_08",
+    "imagem": "fotos/real_08.jpg",
+    "foto_original": "IMG_2455.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "PUMA SPORTS LTDA",
+      "data_emissao": "2026-10-15",
+      "produtos": [
+        "CALCADOSPUMA WIRED RUN SLIPON INF BDP Puma BlackCASTLEROCK 21"
+      ],
+      "valor_total": 100.0
+    },
+    "relato": "Meu filho usou o tênis normalmente e, depois de duas semanas, a sola começou a descolar na ponta. A loja informou que o produto tem garantia de fábrica de seis meses.",
+    "data_entrega": "2026-10-15",
+    "data_evidencia_defeito": "2026-11-01",
+    "data_referencia": "2027-03-01",
+    "data_fim_garantia_contratual": "2027-04-15",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "oculto",
+      "durabilidade": "duravel",
+      "dias_restantes": 135,
+      "situacao": "dentro_do_prazo"
+    },
+    "observacao_gabarito": "Garantia contratual: sem ela o prazo teria vencido em 30/01/2027. Valor = valor a pagar (com desconto)."
+  },
+  {
+    "id": "real_09",
+    "imagem": "fotos/real_09.jpg",
+    "foto_original": "IMG_2456.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": [
+        "Lojas Riachuelo SA",
+        "RIACHUELO"
+      ],
+      "data_emissao": "2026-10-15",
+      "produtos": [
+        "Sutiã base triângulo Daily alças reguláveis | Trif",
+        "Kit calcinha tradicional 3 peças estampada - multi"
+      ],
+      "valor_total": 109.98
+    },
+    "relato": "A alça do sutiã veio descosturada e o regulador quebrado; percebi assim que tirei da embalagem, mas só agora fui reclamar.",
+    "data_entrega": "2026-10-15",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-12-01",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "duravel",
+      "dias_restantes": 43,
+      "situacao": "dentro_do_prazo"
+    },
+    "observacao_gabarito": "A impressora da loja trocou os acentos por símbolos (ex.: 'triΓngulo'); o gabarito usa o texto correto. Estabelecimento: aceitos a razão social e o nome do topo da nota."
+  },
+  {
+    "id": "real_10",
+    "imagem": "fotos/real_10.jpg",
+    "foto_original": "IMG_2457.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "Supermercado e Restaurante Jva",
+      "data_emissao": "2026-10-15",
+      "produtos": [
+        "Iogurte Atilatt 448g",
+        "Bisc Pol Cassini 100",
+        "Pao Qjo Forno Minas",
+        "Uva Passa 200g Preta",
+        "Laranja Pera",
+        "Pera Willian s Kg"
+      ],
+      "valor_total": 68.02
+    },
+    "relato": "Ao abrir o iogurte em casa, a embalagem estava estufada e o iogurte azedo, mesmo dentro da validade.",
+    "data_entrega": "2026-10-15",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-10-16",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "nao_duravel",
+      "dias_restantes": 29,
+      "situacao": "dentro_do_prazo"
+    }
+  },
+  {
+    "id": "real_11",
+    "imagem": "fotos/real_11.jpg",
+    "foto_original": "IMG_2461.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": [
+        "Lindt & Sprungli Brazil Comercio de Al",
+        "LINDT CAMPINAS PARQUE DOM PEDRO SHOPPING"
+      ],
+      "data_emissao": "2026-06-28",
+      "produtos": [
+        "GENERICO PICK AND MIX"
+      ],
+      "valor_total": 45.89
+    },
+    "relato": "Comi um dos chocolates e havia um pedaço de plástico duro dentro, que cortou minha gengiva; precisei ir ao dentista.",
+    "data_entrega": "2026-06-28",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-07-02",
+    "esperado": {
+      "fora_de_escopo": true,
+      "tipo_vicio": null,
+      "durabilidade": null,
+      "dias_restantes": null,
+      "situacao": null
+    },
+    "observacao_gabarito": "Dano à saúde (fato do produto): fora do escopo. Estabelecimento: aceitos a razão social e o nome do topo da nota."
+  },
+  {
+    "id": "real_12",
+    "imagem": "fotos/real_12.jpg",
+    "foto_original": "IMG_2462.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "JOTACE COMERCIO DE SALGADOS LTDA",
+      "data_emissao": "2026-06-24",
+      "produtos": [
+        "KIT COPA - TORCIDA",
+        "ITALIANINHO DE CALABRESA COM REQUEIJÃO FRITO/CONGE",
+        "CROQUETE DE JAMON FRITO/CONGE 400G"
+      ],
+      "valor_total": 136.8
+    },
+    "relato": "Guardei os croquetes congelados no freezer. Semanas depois, ao fritar, estavam com cheiro de estragado por dentro, embora estivessem na validade e parecessem normais por fora.",
+    "data_entrega": "2026-06-24",
+    "data_evidencia_defeito": "2026-07-20",
+    "data_referencia": "2026-08-25",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "oculto",
+      "durabilidade": "nao_duravel",
+      "dias_restantes": 0,
+      "situacao": "fora_do_prazo"
+    },
+    "observacao_gabarito": "Prazo vencido."
+  },
+  {
+    "id": "real_13",
+    "imagem": "fotos/real_13.jpg",
+    "foto_original": "IMG_2463.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "INFANGER E CIA. LTDA.",
+      "data_emissao": "2026-08-22",
+      "produtos": [
+        "TOMATE ITALIANO KG",
+        "L PIRACANJUBA 1L C T 3",
+        "CAFE MELITTA 500G VA",
+        "DET YPE 500ML COCO",
+        "MOLHO TOM QUERO 240G",
+        "CR LEITE PIRACANJUBA",
+        "SABAO PO OMO 700G CX",
+        "GELEIA ARCOR 454G PE",
+        "PAO PANCO FORMA 500G",
+        "MACA GALA KG",
+        "SAB DOVE 90G ORIGINA",
+        "LIMAO KG",
+        "SALG DORITOS 183G NA",
+        "OVOS CALDANA PVC BCO",
+        "PERNIL C OSSO KG",
+        "LING SADIA TOSCANA K",
+        "LING SADIA CALAB DEF",
+        "BIFE ANCHO DI PRIMA",
+        "REQUEIJAO CRIOULO 40",
+        "REF FEBRASP 2L TURBA",
+        "H2OH 500ML LIMONETO",
+        "QJO LA SERENISSIMA M",
+        "PRES SAD COZ S CAPA"
+      ],
+      "valor_total": 349.55
+    },
+    "relato": "O pacote de café veio com um furo na embalagem, e o pó estava empedrado e com insetos.",
+    "data_entrega": "2026-08-22",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-09-20",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "nao_duravel",
+      "dias_restantes": 1,
+      "situacao": "dentro_do_prazo"
+    },
+    "observacao_gabarito": "Prazo perto do fim (1 dia). Produtos conferidos na nota física."
+  },
+  {
+    "id": "real_14",
+    "imagem": "fotos/real_14.jpg",
+    "foto_original": "IMG_2464.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "SUPERMERCADO SARTORATO XAVIER LTDA EPP",
+      "data_emissao": "2026-08-13",
+      "produtos": [
+        "QJO RALA VALE CA",
+        "ENERG MONSTER JU",
+        "AZEITO D PEPE VE",
+        "QJO MUSSAR LA PA",
+        "PRESUN PERDIGAO",
+        "AGUA MIN POMPEIA"
+      ],
+      "valor_total": 53.27
+    },
+    "relato": "A mussarela fatiada estava mofada quando abri a embalagem em casa. Reclamei no supermercado no dia 20/08 e, no dia 28/08, disseram que não iam trocar.",
+    "data_entrega": "2026-08-13",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-09-24",
+    "data_reclamacao_fornecedor": "2026-08-20",
+    "data_resposta_negativa": "2026-08-28",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "nao_duravel",
+      "dias_restantes": 0,
+      "situacao": "indeterminado"
+    },
+    "observacao_gabarito": "Indeterminado: como suspensão venceu em 20/09; como interrupção iria até 27/09."
+  },
+  {
+    "id": "real_15",
+    "imagem": "fotos/real_15.jpg",
+    "foto_original": "IMG_2466.HEIC",
+    "foto_ilegivel": false,
+    "nota": {
+      "estabelecimento": "PAULO AUGUSTO KIGIATO DROGARIA LTDA",
+      "data_emissao": "2026-07-20",
+      "produtos": [
+        "BISSULFATO DE CLOPIDOGREL 75 CPR 28",
+        "TAXA ENTREGA"
+      ],
+      "valor_total": 34.67
+    },
+    "relato": "A caixa do remédio veio com a cartela violada e dois comprimidos faltando.",
+    "data_entrega": "2026-07-20",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-08-05",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "nao_duravel",
+      "dias_restantes": 14,
+      "situacao": "dentro_do_prazo"
+    },
+    "observacao_gabarito": "Foto um pouco desfocada (nitidez 35, perto do limite de 25), mas considerada legível pelas autoras: caso de qualidade intermediária. Descrição do 1º item conferida na nota física (CPR)."
+  },
+  {
+    "id": "real_16",
+    "imagem": "fotos/real_16.jpg",
+    "foto_original": "IMG_2465.HEIC",
+    "foto_ilegivel": true,
+    "nota": null,
+    "relato": "O pacote de pão de forma veio mofado; percebi assim que abri, no mesmo dia.",
+    "data_entrega": "2026-08-29",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-09-01",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "nao_duravel",
+      "dias_restantes": 27,
+      "situacao": "dentro_do_prazo"
+    },
+    "observacao_gabarito": "Foto com o dedo na frente da nota (Carrefour): o sistema deve pedir nova foto."
+  },
+  {
+    "id": "real_17",
+    "imagem": "fotos/real_17.jpg",
+    "foto_original": "IMG_2467.HEIC",
+    "foto_ilegivel": true,
+    "nota": null,
+    "relato": "O remédio que comprei veio com a data de validade já vencida impressa na caixa.",
+    "data_entrega": "2026-07-20",
+    "data_evidencia_defeito": null,
+    "data_referencia": "2026-07-25",
+    "esperado": {
+      "fora_de_escopo": false,
+      "tipo_vicio": "aparente",
+      "durabilidade": "nao_duravel",
+      "dias_restantes": 25,
+      "situacao": "dentro_do_prazo"
+    },
+    "observacao_gabarito": "Foto tremida da mesma nota do real_15: o sistema deve pedir nova foto."
+  }
+]

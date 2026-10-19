@@ -29,9 +29,9 @@ from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from app.classification.classifier import RespostaInvalidaError
-from app.extraction.detector import EXTENSOES_IMAGEM, FormatoNaoSuportadoError
-from app.extraction.qualidade_imagem import ImagemIlegivelError
+from app.classificacao.classifier import RespostaInvalidaError
+from app.extracao.detector import EXTENSOES_ACEITAS, FormatoNaoSuportadoError
+from app.extracao.qualidade_imagem import ImagemIlegivelError
 from app.pipeline import AVISO_LEGAL, CasoForaDeEscopoError, processar_caso
 from app.models import PrazoResultado, RelatoUsuario, SituacaoPrazo
 from app.prazo.calculator import DadosInsuficientesError
@@ -73,9 +73,33 @@ class RespostaCaso(BaseModel):
     situacao_prazo: str | None = None   # dentro_do_prazo, fora_do_prazo ou indeterminado
     data_vencimento: str | None = None
     observacoes_prazo: list[str] = []
+    avisos: list[str] = []  # dados informados que parecem incoerentes, para o usuário conferir
     carta: str | None = None
     orientacao: str | None = None
     aviso_legal: str = AVISO_LEGAL
+
+
+def avisos_de_datas(data_emissao, relato: RelatoUsuario) -> list[str]:
+    """
+    Datas informadas que parecem incoerentes. Não impedem a análise, mas
+    o usuário deve conferir, porque elas definem o início do prazo.
+    """
+    def br(d):
+        return d.strftime("%d/%m/%Y")
+
+    avisos = []
+    if data_emissao and relato.data_entrega and relato.data_entrega < data_emissao:
+        avisos.append(
+            f"A data de recebimento informada ({br(relato.data_entrega)}) é anterior à data "
+            f"da nota fiscal ({br(data_emissao)}). Confira a data, porque ela é usada no "
+            "cálculo do prazo."
+        )
+    if relato.data_entrega and relato.data_evidencia_defeito and relato.data_evidencia_defeito < relato.data_entrega:
+        avisos.append(
+            f"A data em que o defeito apareceu ({br(relato.data_evidencia_defeito)}) é anterior "
+            f"à data de recebimento ({br(relato.data_entrega)}). Confira as duas datas."
+        )
+    return avisos
 
 
 def orientacao_prazo(prazo: PrazoResultado, relato: RelatoUsuario) -> str | None:
@@ -127,7 +151,7 @@ def checar_saude():
     },
 )
 async def criar_caso(
-    nota_fiscal: UploadFile = File(..., description="Foto da nota fiscal (.jpg, .jpeg, .png ou .webp)"),
+    nota_fiscal: UploadFile = File(..., description="Foto (.jpg, .jpeg, .png ou .webp) ou PDF da nota fiscal"),
     descricao_problema: str = Form(..., min_length=10),
     data_entrega: date | None = Form(None),
     data_evidencia_defeito: date | None = Form(None),
@@ -144,10 +168,10 @@ async def criar_caso(
     reclamação.
     """
     sufixo = Path(nota_fiscal.filename or "").suffix.lower()
-    if sufixo not in EXTENSOES_IMAGEM:
+    if sufixo not in EXTENSOES_ACEITAS:
         raise HTTPException(
             status_code=415,
-            detail=f"Envie uma foto da nota fiscal ({', '.join(sorted(EXTENSOES_IMAGEM))}).",
+            detail=f"Envie uma foto ou o PDF da nota fiscal ({', '.join(sorted(EXTENSOES_ACEITAS))}).",
         )
 
     with tempfile.NamedTemporaryFile(suffix=sufixo, delete=False) as tmp:
@@ -214,6 +238,7 @@ async def criar_caso(
         situacao_prazo=caso.prazo.situacao.value,
         data_vencimento=caso.prazo.data_vencimento.isoformat(),
         observacoes_prazo=caso.prazo.observacoes,
+        avisos=avisos_de_datas(caso.nota.data_emissao, caso.relato),
         carta=caso.carta,
         orientacao=orientacao,
     )

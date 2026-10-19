@@ -10,12 +10,12 @@ from pathlib import Path
 
 import pytest
 
-from app.classification.classifier import RespostaInvalidaError, classificar_relato, validar_resposta
-from app.classification.prompts import montar_prompt_com_exemplos
-from app.extraction.ocr_multimodal import extrair_via_modelo_multimodal
-from app.extraction.qualidade_imagem import ImagemIlegivelError, MotivoImagemRuim
-from app.letter.generator import gerar_carta, montar_dados_carta
-from app.letter.prompts import artigos_aplicaveis, montar_prompt_usuario
+from app.classificacao.classifier import RespostaInvalidaError, classificar_relato, validar_resposta
+from app.classificacao.prompts import montar_prompt_com_exemplos
+from app.extracao.ocr_multimodal import extrair_via_modelo_multimodal
+from app.extracao.qualidade_imagem import ImagemIlegivelError, MotivoImagemRuim
+from app.carta.generator import gerar_carta, montar_dados_carta
+from app.carta.prompts import artigos_aplicaveis, montar_prompt_usuario
 from app.models import (
     CasoConsumidor,
     ClassificacaoVicio,
@@ -27,7 +27,7 @@ from app.models import (
 )
 from app.prazo.calculator import calcular_prazo
 
-IMAGEM = Path(__file__).parent / "casos" / "reais" / "real_10.jpg"
+IMAGEM = Path(__file__).parent.parent / "dados" / "fotos" / "real_10.jpg"
 
 
 class ModeloFalso:
@@ -210,10 +210,23 @@ def test_prompt_da_carta_traz_pedido_do_art_18_e_prazo_para_resposta():
     assert "LOJA X" in prompt and "TV 50" in prompt
 
 
+def test_instrucao_da_carta_pede_texto_simples_primeira_pessoa_e_um_so_prazo():
+    from app.carta.prompts import INSTRUCAO_SISTEMA, PEDIDO_ART_18
+
+    assert "SEM formatação Markdown" in INSTRUCAO_SISTEMA
+    assert "primeira pessoa" in INSTRUCAO_SISTEMA
+    assert "único prazo" in INSTRUCAO_SISTEMA
+    assert INSTRUCAO_SISTEMA.count("[nome do consumidor]") == 3  # regra, cabeçalho e assinatura
+    assert PEDIDO_ART_18.startswith("Peço")
+
+
 def test_dados_ausentes_viram_marcadores():
     prompt = montar_prompt_usuario(montar_dados_carta(_caso(estabelecimento=None)))
     assert "[nome do fornecedor]" in prompt
-    assert "[nome do consumidor]" in prompt
+    # Os dados do consumidor não são coletados: a instrução fixa os marcadores.
+    assert "use os marcadores" in prompt
+    from app.carta.prompts import INSTRUCAO_SISTEMA
+    assert "[CPF do consumidor]" in INSTRUCAO_SISTEMA
 
 
 def test_gerar_carta_usa_o_texto_do_modelo():

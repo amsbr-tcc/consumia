@@ -1,7 +1,7 @@
 """
 Comparação REAL entre as duas abordagens de extração da Metodologia —
 Tesseract e modelo multimodal (Claude) — sobre as fotos reais de
-tests/casos/casos.json.
+dados/casos_foto.json.
 
 Diferente de test_comparar_extracao.py (que testa a lógica com
 extratores falsos), este teste roda o Tesseract instalado e chama a API
@@ -20,7 +20,7 @@ Para comparar mais de um modelo multimodal (ex.: Flash e Pro):
     MODELOS_COMPARACAO=claude-sonnet-5-5,claude-opus-5-5 \\
         python3 -m pytest tests/test_comparacao_tesseract_vs_multimodal.py -s
 
-Os resultados são salvos em resultados/<data>_extracao/.
+Os resultados são salvos em resultados/extracao_foto/<data>/.
 """
 from __future__ import annotations
 
@@ -31,15 +31,15 @@ from pathlib import Path
 import pytest
 
 from app.config import MODELO_LLM, modelo_configurado
-from app.evaluation.casos import carregar_casos
-from app.evaluation.comparar_extracao import (
+from avaliacao.casos import carregar_casos
+from avaliacao.comparar_extracao import (
     comparar_extratores,
     montar_extratores,
     montar_relatorio_texto,
     salvar_relatorio,
 )
 
-ARQUIVO_CASOS = Path(__file__).parent / "casos" / "casos.json"
+ARQUIVO_CASOS = Path(__file__).parent.parent / "dados" / "casos_foto.json"
 PASTA_RESULTADOS = Path(__file__).parent.parent / "resultados"
 
 pytestmark = [

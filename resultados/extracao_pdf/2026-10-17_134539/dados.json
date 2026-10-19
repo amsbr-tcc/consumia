@@ -1,0 +1,1819 @@
+{
+  "metadados": {
+    "arquivo_de_casos": "dados/casos_pdf.json",
+    "data_execucao": "2026-10-17T13:45:39",
+    "extratores": [
+      "tesseract",
+      "multimodal:claude-sonnet-5-5"
+    ],
+    "checagem_de_qualidade": true,
+    "tipo_entrada": "pdf",
+    "execucoes_por_arquivo": 3
+  },
+  "extratores": {
+    "tesseract": {
+      "nome": "tesseract",
+      "resultados_por_caso": [
+        {
+          "caso_id": "pdf_01",
+          "duracao_segundos": 0.11564891602029093,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "DROGARIA SAO PAULO",
+              "DROGARIA SAO PAULO SA"
+            ],
+            "data_emissao": [
+              "2026-10-01",
+              "2026-10-01"
+            ],
+            "produtos": [
+              [],
+              [
+                "CR CALMING CREAM 40G",
+                "AP DEP SUAVE SENS 2UNI"
+              ]
+            ],
+            "valor_total": [
+              83.98,
+              83.98
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "DROGARIA SAO PAULO",
+                "data_emissao": "2026-10-01",
+                "produtos": [],
+                "valor_total": 83.98
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "DROGARIA SAO PAULO",
+                "data_emissao": "2026-10-01",
+                "produtos": [],
+                "valor_total": 83.98
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_02",
+          "duracao_segundos": 0.0496305420238059,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "RECEBI(EMOS) DE INTERBELLE COMÉRCIO DE PRODUTOS DE BELEZA LTDA, A(S) MERCADORIA(S) CONSTANTES DA NF-e INDICADA AO LADO: NF-E",
+              [
+                "INTERBELLE COMÉRCIO DE PRODUTOS DE BELEZA LTDA",
+                "INTERBELLE COM.DE PRODUTOS DE BELEZA LTDA"
+              ]
+            ],
+            "data_emissao": [
+              "2022-09-27",
+              "2022-09-27"
+            ],
+            "produtos": [
+              [],
+              [
+                [
+                  "CUIDE-SE BEM DELEITE LOCAO HIDRATANTE DESODORANTE CORPORAL 200ML",
+                  "CUIDE-SE BEM DELEITE LOCAO HIDRATANTE D CORPORAL 200ML"
+                ],
+                "CAIXA PARA PRESENTE TAM M ROSA",
+                [
+                  "CUIDE-BEM SABONETE EM BARRA DUO DELEITE 2 UNIDADES DE 80 G CADA",
+                  "CUIDE-BEM SABONETE EM BARRA DUO DELEITE DE 80 G CADA",
+                  "CUIDE-BEM SABONETE EM BARRA DUO DELEITI DE 80 G CADA"
+                ],
+                "CUIDE-SE BEM DELEITE ALCOOL EM GEL 30G"
+              ]
+            ],
+            "valor_total": [
+              null,
+              64.76
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "RECEBI(EMOS) DE INTERBELLE COMÉRCIO DE PRODUTOS DE BELEZA LTDA, A(S) MERCADORIA(S) CONSTANTES DA NF-e INDICADA AO LADO: NF-E",
+                "data_emissao": "2022-09-27",
+                "produtos": [],
+                "valor_total": null
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "RECEBI(EMOS) DE INTERBELLE COMÉRCIO DE PRODUTOS DE BELEZA LTDA, A(S) MERCADORIA(S) CONSTANTES DA NF-e INDICADA AO LADO: NF-E",
+                "data_emissao": "2022-09-27",
+                "produtos": [],
+                "valor_total": null
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_03",
+          "duracao_segundos": 0.03573691597557627,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Recebemos de HOL LTD l indi lor Total: R NF-e",
+              "HOLD BRASIL LTDA"
+            ],
+            "data_emissao": [
+              "2026-09-10",
+              "2026-09-10"
+            ],
+            "produtos": [
+              [],
+              [
+                [
+                  "Sandália Rasteira Feminina Gladiadora Tiras apliques Galega Confortável 05-Café , 39 o_15672236189512244",
+                  "Sandália Rasteira Feminina Gladiadora Tiras apliques Galega Confortável 05-Café , 39"
+                ]
+              ]
+            ],
+            "valor_total": [
+              0.0,
+              54.2
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "Recebemos de HOL LTD l indi lor Total: R NF-e",
+                "data_emissao": "2026-09-10",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "Recebemos de HOL LTD l indi lor Total: R NF-e",
+                "data_emissao": "2026-09-10",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_04",
+          "duracao_segundos": 0.03336708399001509,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "Recebemos de XIN SAN JIN BRAZIL LTDA, os produt a ao NF-e",
+              "XIN SAN JIN BRAZIL LTDA"
+            ],
+            "data_emissao": [
+              "2026-09-18",
+              "2026-09-18"
+            ],
+            "produtos": [
+              [],
+              [
+                "Varal 40 Prendedores Para Roupa Intima Para Calcinha Meia Cu"
+              ]
+            ],
+            "valor_total": [
+              0.0,
+              3.15
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "Recebemos de XIN SAN JIN BRAZIL LTDA, os produt a ao NF-e",
+                "data_emissao": "2026-09-18",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "Recebemos de XIN SAN JIN BRAZIL LTDA, os produt a ao NF-e",
+                "data_emissao": "2026-09-18",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_05",
+          "duracao_segundos": 0.036216125008650124,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "VESTUARIO LTDA 0 - ENTRADA 1 CHAVE DE ACESSO",
+              "USE COPACABANA INDUSTRIA E COMERCIO DE VESTUARIO LTDA"
+            ],
+            "data_emissao": [
+              "2026-10-02",
+              "2026-10-02"
+            ],
+            "produtos": [
+              [],
+              [
+                [
+                  "Blusa Manga Longa Assimétrica Moda Gringa Suplex Modelador Tendência Outono Inverno-Preto, M o_887309665650620",
+                  "Blusa Manga Longa Assimétrica Moda Gringa Suplex Modelador Tendência Outono Inverno-Preto, M"
+                ]
+              ]
+            ],
+            "valor_total": [
+              0.0,
+              12.8
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "VESTUARIO LTDA 0 - ENTRADA 1 CHAVE DE ACESSO",
+                "data_emissao": "2026-10-02",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "VESTUARIO LTDA 0 - ENTRADA 1 CHAVE DE ACESSO",
+                "data_emissao": "2026-10-02",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_06",
+          "duracao_segundos": 0.014242042001569644,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "DROGARIA SAO PAULO",
+              "DROGARIA SAO PAULO SA"
+            ],
+            "data_emissao": [
+              "2026-07-22",
+              "2026-07-22"
+            ],
+            "produtos": [
+              [],
+              [
+                "ENX ICE CLOSEUP SPY 35",
+                "COREGA TABS LIMP SACHE",
+                "CR DENT ELMEX SENS 30G"
+              ]
+            ],
+            "valor_total": [
+              31.97,
+              31.97
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "DROGARIA SAO PAULO",
+                "data_emissao": "2026-07-22",
+                "produtos": [],
+                "valor_total": 31.97
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "DROGARIA SAO PAULO",
+                "data_emissao": "2026-07-22",
+                "produtos": [],
+                "valor_total": 31.97
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_07",
+          "duracao_segundos": 0.0968541250040289,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA",
+              "AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA"
+            ],
+            "data_emissao": [
+              "2025-11-08",
+              "2025-11-08"
+            ],
+            "produtos": [
+              [],
+              [
+                "BALM LIPCARE PLUMP BERRIES"
+              ]
+            ],
+            "valor_total": [
+              54.45,
+              54.45
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA",
+                "data_emissao": "2025-11-08",
+                "produtos": [],
+                "valor_total": 54.45
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA",
+                "data_emissao": "2025-11-08",
+                "produtos": [],
+                "valor_total": 54.45
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_08",
+          "duracao_segundos": 0.17970425001112744,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "NF-e",
+              "VSB TEXTIL LTDA"
+            ],
+            "data_emissao": [
+              "2026-08-13",
+              "2026-08-13"
+            ],
+            "produtos": [
+              [],
+              [
+                "Tecido Tricoline Especial Colecao Jardim de Tulipas - Tulipas ao Vento - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Medalhoes Florais - 100% Algodao - Largura 1,50m",
+                "Tecido Tricoline Especial Colecao Floral Toile de Jouy - Jardim Floral - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Listras Florais - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Jardim de Tulipas - Arabescos de Tulipas - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Mesa Azul - Legumes - 100% Algodao - Largura 1,50m"
+              ]
+            ],
+            "valor_total": [
+              0.0,
+              319.96
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "NF-e",
+                "data_emissao": "2026-08-13",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "NF-e",
+                "data_emissao": "2026-08-13",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_09",
+          "duracao_segundos": 0.07377412501955405,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "CRISANTEMOS PRODUTOS NATURAIS LTDA",
+              "CRISANTEMOS PRODUTOS NATURAIS LTDA"
+            ],
+            "data_emissao": [
+              "2026-06-27",
+              "2026-06-27"
+            ],
+            "produtos": [
+              [],
+              [
+                "Qdb Lap Olh Pretuco V4 1,2g",
+                "Make B Masc Cil Vol Extrm Preta V2 10g"
+              ]
+            ],
+            "valor_total": [
+              83.52,
+              83.52
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "CRISANTEMOS PRODUTOS NATURAIS LTDA",
+                "data_emissao": "2026-06-27",
+                "produtos": [],
+                "valor_total": 83.52
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "CRISANTEMOS PRODUTOS NATURAIS LTDA",
+                "data_emissao": "2026-06-27",
+                "produtos": [],
+                "valor_total": 83.52
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_10",
+          "duracao_segundos": 0.06543208300718106,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "RECEBEMOS DE LOJA JUNDIAÍ L EMREORYLIN CIA BRAS. DE BRICOLOASG EP RODUTOS CONSTANTES DA NFOITSAC AL AO NF-e",
+              [
+                "LOJA JUNDIAÍ LEROY MERLIN CIA BRAS. DE BRICOLAGE",
+                "LEROY MERLIN CIA BRAS. DE BRICOLAGE"
+              ]
+            ],
+            "data_emissao": [
+              null,
+              "2025-04-18"
+            ],
+            "produtos": [
+              [],
+              [
+                [
+                  "CABO DE REDE CAT.6 1,5M AZ DUAL COMP ( EAN: 7895194271571 )",
+                  "CABO DE REDE CAT.6 1,5M AZ DUAL COMP"
+                ]
+              ]
+            ],
+            "valor_total": [
+              0.0,
+              35.9
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "RECEBEMOS DE LOJA JUNDIAÍ L EMREORYLIN CIA BRAS. DE BRICOLOASG EP RODUTOS CONSTANTES DA NFOITSAC AL AO NF-e",
+                "data_emissao": null,
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "RECEBEMOS DE LOJA JUNDIAÍ L EMREORYLIN CIA BRAS. DE BRICOLOASG EP RODUTOS CONSTANTES DA NFOITSAC AL AO NF-e",
+                "data_emissao": null,
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_11",
+          "duracao_segundos": 0.05470683399471454,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              null,
+              "LOJA ELECTROLUX COM VIRTUAL DE ELET"
+            ],
+            "data_emissao": [
+              null,
+              "2026-03-05"
+            ],
+            "produtos": [
+              [],
+              [
+                [
+                  "A07672301 - FILTRO SIDE BY SIDE EXTERNO",
+                  "FILTRO SIDE BY SIDE EXTERNO"
+                ]
+              ]
+            ],
+            "valor_total": [
+              138.9,
+              138.9
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": null,
+                "data_emissao": null,
+                "produtos": [],
+                "valor_total": 138.9
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": null,
+                "data_emissao": null,
+                "produtos": [],
+                "valor_total": 138.9
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_12",
+          "duracao_segundos": 0.04143504099920392,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "LADO",
+              "LEROY MERLIN COMPANHIA BRASILEIRA DE BRICOLAGEM"
+            ],
+            "data_emissao": [
+              null,
+              "2026-07-07"
+            ],
+            "produtos": [
+              [],
+              [
+                [
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD MATERIAL ( EAN: 3276007600049 )",
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD MATERIAL",
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD NATERIAL ( EAN: 3276007600049 )",
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD NATERIAL"
+                ]
+              ]
+            ],
+            "valor_total": [
+              4094.8,
+              4094.8
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "LADO",
+                "data_emissao": null,
+                "produtos": [],
+                "valor_total": 4094.8
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "LADO",
+                "data_emissao": null,
+                "produtos": [],
+                "valor_total": 4094.8
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_13",
+          "duracao_segundos": 0.03844462501001544,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "DO BRASIL LTDA",
+              "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA"
+            ],
+            "data_emissao": [
+              "2024-07-19",
+              "2024-07-19"
+            ],
+            "produtos": [
+              [],
+              [
+                "Kindle 11ª Geracao (modelo 2022) - Mais leve, com resolucao de 300 ppi e o dobro de armazenamento - Cor Preta"
+              ]
+            ],
+            "valor_total": [
+              0.0,
+              329.1
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "DO BRASIL LTDA",
+                "data_emissao": "2024-07-19",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "DO BRASIL LTDA",
+                "data_emissao": "2024-07-19",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_14",
+          "duracao_segundos": 0.04000604199245572,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "DATA DE RECEBIMENTO IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR",
+              "UP 2 TECH DO BRASIL S/A"
+            ],
+            "data_emissao": [
+              "2026-10-02",
+              "2026-10-02"
+            ],
+            "produtos": [
+              [],
+              [
+                [
+                  "LG UltraGear Monitor Gamer 24\" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto ... FNSKU:X004XKGFD5;Monitor LG UltraGear 24G411A-B 24\",FHD, 144Hz, 1ms (MBR), NVIDIA G-SYNC, AMD FreeSync, HDR10",
+                  "LG UltraGear Monitor Gamer 24\" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto ...",
+                  "LG UltraGear Monitor Gamer 24\" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto"
+                ]
+              ]
+            ],
+            "valor_total": [
+              0.0,
+              629.0
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "DATA DE RECEBIMENTO IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR",
+                "data_emissao": "2026-10-02",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "DATA DE RECEBIMENTO IDENTIFICAÇÃO E ASSINATURA DO RECEBEDOR",
+                "data_emissao": "2026-10-02",
+                "produtos": [],
+                "valor_total": 0.0
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_15",
+          "duracao_segundos": 0.041905749996658415,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "DO BRASIL LTDA",
+              "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA"
+            ],
+            "data_emissao": [
+              "2026-01-25",
+              "2026-01-25"
+            ],
+            "produtos": [
+              [],
+              [
+                [
+                  "NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom d",
+                  "NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom d Ao aceitar essa mercadoria, voce autoriza a empresa vendedora a recuperar tributos incidentes nessa operacao, conforme legislacao tributaria aplicavel.",
+                  "NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom"
+                ]
+              ]
+            ],
+            "valor_total": [
+              57.58,
+              57.58
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "DO BRASIL LTDA",
+                "data_emissao": "2026-01-25",
+                "produtos": [],
+                "valor_total": 57.58
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "DO BRASIL LTDA",
+                "data_emissao": "2026-01-25",
+                "produtos": [],
+                "valor_total": 57.58
+              }
+            ]
+          ]
+        }
+      ],
+      "acuracia_por_campo": {
+        "estabelecimento": 0.13333333333333333,
+        "data_emissao": 0.8,
+        "produtos": 0.0,
+        "valor_total": 0.4666666666666667
+      },
+      "acuracia_media": 0.35000000000000003,
+      "tempo_medio_segundos": 0.06114030000365649,
+      "fotos_ruins_recusadas": 0,
+      "fotos_ruins_total": 0,
+      "recusas_indevidas": [],
+      "casos_com_erro": [],
+      "matriz_qualidade_foto": null,
+      "matriz_resultados": {
+        "estabelecimento": {
+          "contagens": {
+            "correto": 2,
+            "incorreto": 12,
+            "nao_extraido": 1,
+            "foto_recusada": 0
+          }
+        },
+        "data_emissao": {
+          "contagens": {
+            "correto": 12,
+            "incorreto": 0,
+            "nao_extraido": 3,
+            "foto_recusada": 0
+          }
+        },
+        "produtos": {
+          "contagens": {
+            "correto": 0,
+            "incorreto": 0,
+            "nao_extraido": 15,
+            "foto_recusada": 0
+          }
+        },
+        "valor_total": {
+          "contagens": {
+            "correto": 7,
+            "incorreto": 7,
+            "nao_extraido": 1,
+            "foto_recusada": 0
+          }
+        },
+        "TOTAL": {
+          "contagens": {
+            "correto": 21,
+            "incorreto": 19,
+            "nao_extraido": 20,
+            "foto_recusada": 0
+          }
+        }
+      },
+      "execucoes": 3,
+      "consistencia_por_campo": {
+        "estabelecimento": 1.0,
+        "data_emissao": 1.0,
+        "produtos": 1.0,
+        "valor_total": 1.0,
+        "TODOS": 1.0
+      },
+      "consistencia_recusa": 1.0
+    },
+    "multimodal:claude-sonnet-5-5": {
+      "nome": "multimodal:claude-sonnet-5-5",
+      "resultados_por_caso": [
+        {
+          "caso_id": "pdf_01",
+          "duracao_segundos": 2.647414083010517,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "DROGARIA SAO PAULO SA",
+              "DROGARIA SAO PAULO SA"
+            ],
+            "data_emissao": [
+              "2026-10-01",
+              "2026-10-01"
+            ],
+            "produtos": [
+              [
+                "CR CALMING CREAM 40G",
+                "AP DEP SUAVE SENS 2UNI"
+              ],
+              [
+                "CR CALMING CREAM 40G",
+                "AP DEP SUAVE SENS 2UNI"
+              ]
+            ],
+            "valor_total": [
+              83.98,
+              83.98
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "DROGARIA SAO PAULO SA",
+                "data_emissao": "2026-10-01",
+                "produtos": [
+                  "CR CALMING CREAM 40G",
+                  "AP DEP SUAVE SENS 2UNI"
+                ],
+                "valor_total": 83.98
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "DROGARIA SAO PAULO SA",
+                "data_emissao": "2026-10-01",
+                "produtos": [
+                  "CR CALMING CREAM 40G",
+                  "AP DEP SUAVE SENS 2UNI"
+                ],
+                "valor_total": 83.98
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_02",
+          "duracao_segundos": 2.714517207990866,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "INTERBELLE COM.DE PRODUTOS DE BELEZA LTDA",
+              [
+                "INTERBELLE COMÉRCIO DE PRODUTOS DE BELEZA LTDA",
+                "INTERBELLE COM.DE PRODUTOS DE BELEZA LTDA"
+              ]
+            ],
+            "data_emissao": [
+              "2022-09-27",
+              "2022-09-27"
+            ],
+            "produtos": [
+              [
+                "CUIDE-SE BEM DELEITE LOCAO HIDRATANTE DESODORANTE CORPORAL 200ML",
+                "CAIXA PARA PRESENTE TAM M ROSA",
+                "CUIDE-BEM SABONETE EM BARRA DUO DELEITE 2 UNIDADES DE 80 G CADA",
+                "CUIDE-SE BEM DELEITE ALCOOL EM GEL 30G"
+              ],
+              [
+                [
+                  "CUIDE-SE BEM DELEITE LOCAO HIDRATANTE DESODORANTE CORPORAL 200ML",
+                  "CUIDE-SE BEM DELEITE LOCAO HIDRATANTE D CORPORAL 200ML"
+                ],
+                "CAIXA PARA PRESENTE TAM M ROSA",
+                [
+                  "CUIDE-BEM SABONETE EM BARRA DUO DELEITE 2 UNIDADES DE 80 G CADA",
+                  "CUIDE-BEM SABONETE EM BARRA DUO DELEITE DE 80 G CADA",
+                  "CUIDE-BEM SABONETE EM BARRA DUO DELEITI DE 80 G CADA"
+                ],
+                "CUIDE-SE BEM DELEITE ALCOOL EM GEL 30G"
+              ]
+            ],
+            "valor_total": [
+              64.76,
+              64.76
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "INTERBELLE COM.DE PRODUTOS DE BELEZA LTDA",
+                "data_emissao": "2022-09-27",
+                "produtos": [
+                  "CUIDE-SE BEM DELEITE LOCAO HIDRATANTE DESODORANTE CORPORAL 200ML",
+                  "CAIXA PARA PRESENTE TAM M ROSA",
+                  "CUIDE-BEM SABONETE EM BARRA DUO DELEITE 2 UNIDADES DE 80 G CADA",
+                  "CUIDE-SE BEM DELEITE ALCOOL EM GEL 30G"
+                ],
+                "valor_total": 64.76
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "INTERBELLE COM.DE PRODUTOS DE BELEZA LTDA",
+                "data_emissao": "2022-09-27",
+                "produtos": [
+                  "CUIDE-SE BEM DELEITE LOCAO HIDRATANTE DESODORANTE CORPORAL 200ML",
+                  "CAIXA PARA PRESENTE TAM M ROSA",
+                  "CUIDE-BEM SABONETE EM BARRA DUO DELEITE 2 UNIDADES DE 80 G CADA",
+                  "CUIDE-SE BEM DELEITE ALCOOL EM GEL 30G"
+                ],
+                "valor_total": 64.76
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_03",
+          "duracao_segundos": 2.200386584008811,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "HOLD BRASIL LTDA",
+              "HOLD BRASIL LTDA"
+            ],
+            "data_emissao": [
+              "2026-09-10",
+              "2026-09-10"
+            ],
+            "produtos": [
+              [
+                "Sandália Rasteira Feminina Gladiadora Tiras apliques Galega Confortável 05-Café , 39"
+              ],
+              [
+                [
+                  "Sandália Rasteira Feminina Gladiadora Tiras apliques Galega Confortável 05-Café , 39 o_15672236189512244",
+                  "Sandália Rasteira Feminina Gladiadora Tiras apliques Galega Confortável 05-Café , 39"
+                ]
+              ]
+            ],
+            "valor_total": [
+              54.2,
+              54.2
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "HOLD BRASIL LTDA",
+                "data_emissao": "2026-09-10",
+                "produtos": [
+                  "Sandália Rasteira Feminina Gladiadora Tiras apliques Galega Confortável 05-Café , 39"
+                ],
+                "valor_total": 54.2
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "HOLD BRASIL LTDA",
+                "data_emissao": "2026-09-10",
+                "produtos": [
+                  "Sandália Rasteira Feminina Gladiadora Tiras apliques Galega Confortável 05-Café , 39"
+                ],
+                "valor_total": 54.2
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_04",
+          "duracao_segundos": 2.0476267079939134,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "XIN SAN JIN BRAZIL LTDA",
+              "XIN SAN JIN BRAZIL LTDA"
+            ],
+            "data_emissao": [
+              "2026-09-18",
+              "2026-09-18"
+            ],
+            "produtos": [
+              [
+                "Varal 40 Prendedores Para Roupa Intima Para Calcinha Meia Cu"
+              ],
+              [
+                "Varal 40 Prendedores Para Roupa Intima Para Calcinha Meia Cu"
+              ]
+            ],
+            "valor_total": [
+              3.15,
+              3.15
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "XIN SAN JIN BRAZIL LTDA",
+                "data_emissao": "2026-09-18",
+                "produtos": [
+                  "Varal 40 Prendedores Para Roupa Intima Para Calcinha Meia Cu"
+                ],
+                "valor_total": 3.15
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "XIN SAN JIN BRAZIL LTDA",
+                "data_emissao": "2026-09-18",
+                "produtos": [
+                  "Varal 40 Prendedores Para Roupa Intima Para Calcinha Meia Cu"
+                ],
+                "valor_total": 3.15
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_05",
+          "duracao_segundos": 1.62016637501074,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "USE COPACABANA INDUSTRIA E COMERCIO DE VESTUARIO LTDA",
+              "USE COPACABANA INDUSTRIA E COMERCIO DE VESTUARIO LTDA"
+            ],
+            "data_emissao": [
+              "2026-10-02",
+              "2026-10-02"
+            ],
+            "produtos": [
+              [
+                "Blusa Manga Longa Assimétrica Moda Gringa Suplex Modelador Tendência Outono Inverno-Preto, M"
+              ],
+              [
+                [
+                  "Blusa Manga Longa Assimétrica Moda Gringa Suplex Modelador Tendência Outono Inverno-Preto, M o_887309665650620",
+                  "Blusa Manga Longa Assimétrica Moda Gringa Suplex Modelador Tendência Outono Inverno-Preto, M"
+                ]
+              ]
+            ],
+            "valor_total": [
+              12.8,
+              12.8
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "USE COPACABANA INDUSTRIA E COMERCIO DE VESTUARIO LTDA",
+                "data_emissao": "2026-10-02",
+                "produtos": [
+                  "Blusa Manga Longa Assimétrica Moda Gringa Suplex Modelador Tendência Outono Inverno-Preto, M"
+                ],
+                "valor_total": 12.8
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "USE COPACABANA INDUSTRIA E COMERCIO DE VESTUARIO LTDA",
+                "data_emissao": "2026-10-02",
+                "produtos": [
+                  "Blusa Manga Longa Assimétrica Moda Gringa Suplex Modelador Tendência Outono Inverno-Preto, M"
+                ],
+                "valor_total": 12.8
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_06",
+          "duracao_segundos": 1.7101098330167588,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "DROGARIA SAO PAULO SA",
+              "DROGARIA SAO PAULO SA"
+            ],
+            "data_emissao": [
+              "2026-07-22",
+              "2026-07-22"
+            ],
+            "produtos": [
+              [
+                "ENX ICE CLOSEUP SPY 35",
+                "COREGA TABS LIMP SACHE",
+                "CR DENT ELMEX SENS 30G"
+              ],
+              [
+                "ENX ICE CLOSEUP SPY 35",
+                "COREGA TABS LIMP SACHE",
+                "CR DENT ELMEX SENS 30G"
+              ]
+            ],
+            "valor_total": [
+              31.97,
+              31.97
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "DROGARIA SAO PAULO SA",
+                "data_emissao": "2026-07-22",
+                "produtos": [
+                  "ENX ICE CLOSEUP SPY 35",
+                  "COREGA TABS LIMP SACHE",
+                  "CR DENT ELMEX SENS 30G"
+                ],
+                "valor_total": 31.97
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "DROGARIA SAO PAULO SA",
+                "data_emissao": "2026-07-22",
+                "produtos": [
+                  "ENX ICE CLOSEUP SPY 35",
+                  "COREGA TABS LIMP SACHE",
+                  "CR DENT ELMEX SENS 30G"
+                ],
+                "valor_total": 31.97
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_07",
+          "duracao_segundos": 1.8089168750157114,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA",
+              "AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA"
+            ],
+            "data_emissao": [
+              "2025-11-08",
+              "2025-11-08"
+            ],
+            "produtos": [
+              [
+                "BALM LIPCARE PLUMP BERRIES"
+              ],
+              [
+                "BALM LIPCARE PLUMP BERRIES"
+              ]
+            ],
+            "valor_total": [
+              54.45,
+              54.45
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA",
+                "data_emissao": "2025-11-08",
+                "produtos": [
+                  "BALM LIPCARE PLUMP BERRIES"
+                ],
+                "valor_total": 54.45
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "AVENUE HOCHE COMERCIO VAREJISTA DE PRODUTOS LTDA",
+                "data_emissao": "2025-11-08",
+                "produtos": [
+                  "BALM LIPCARE PLUMP BERRIES"
+                ],
+                "valor_total": 54.45
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_08",
+          "duracao_segundos": 3.1548829579842277,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "VSB TEXTIL LTDA",
+              "VSB TEXTIL LTDA"
+            ],
+            "data_emissao": [
+              "2026-08-13",
+              "2026-08-13"
+            ],
+            "produtos": [
+              [
+                "Tecido Tricoline Especial Colecao Jardim de Tulipas - Tulipas ao Vento - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Medalhoes Florais - 100% Algodao - Largura 1,50m",
+                "Tecido Tricoline Especial Colecao Floral Toile de Jouy - Jardim Floral - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Listras Florais - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Jardim de Tulipas - Arabescos de Tulipas - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Mesa Azul - Legumes - 100% Algodao - Largura 1,50m"
+              ],
+              [
+                "Tecido Tricoline Especial Colecao Jardim de Tulipas - Tulipas ao Vento - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Medalhoes Florais - 100% Algodao - Largura 1,50m",
+                "Tecido Tricoline Especial Colecao Floral Toile de Jouy - Jardim Floral - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Listras Florais - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Jardim de Tulipas - Arabescos de Tulipas - 100% Algodao - Largura 1,50m",
+                "Tecido Sarja Impermeavel Especial Colecao Mesa Azul - Legumes - 100% Algodao - Largura 1,50m"
+              ]
+            ],
+            "valor_total": [
+              319.96,
+              319.96
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "VSB TEXTIL LTDA",
+                "data_emissao": "2026-08-13",
+                "produtos": [
+                  "Tecido Tricoline Especial Colecao Jardim de Tulipas - Tulipas ao Vento - 100% Algodao - Largura 1,50m",
+                  "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Medalhoes Florais - 100% Algodao - Largura 1,50m",
+                  "Tecido Tricoline Especial Colecao Floral Toile de Jouy - Jardim Floral - 100% Algodao - Largura 1,50m",
+                  "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Listras Florais - 100% Algodao - Largura 1,50m",
+                  "Tecido Sarja Impermeavel Especial Colecao Jardim de Tulipas - Arabescos de Tulipas - 100% Algodao - Largura 1,50m",
+                  "Tecido Sarja Impermeavel Especial Colecao Mesa Azul - Legumes - 100% Algodao - Largura 1,50m"
+                ],
+                "valor_total": 319.96
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "VSB TEXTIL LTDA",
+                "data_emissao": "2026-08-13",
+                "produtos": [
+                  "Tecido Tricoline Especial Colecao Jardim de Tulipas - Tulipas ao Vento - 100% Algodao - Largura 1,50m",
+                  "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Medalhoes Florais - 100% Algodao - Largura 1,50m",
+                  "Tecido Tricoline Especial Colecao Floral Toile de Jouy - Jardim Floral - 100% Algodao - Largura 1,50m",
+                  "Tecido Sarja Impermeavel Especial Colecao Floral Toile de Jouy - Listras Florais - 100% Algodao - Largura 1,50m",
+                  "Tecido Sarja Impermeavel Especial Colecao Jardim de Tulipas - Arabescos de Tulipas - 100% Algodao - Largura 1,50m",
+                  "Tecido Sarja Impermeavel Especial Colecao Mesa Azul - Legumes - 100% Algodao - Largura 1,50m"
+                ],
+                "valor_total": 319.96
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_09",
+          "duracao_segundos": 1.5997206669999287,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "CRISANTEMOS PRODUTOS NATURAIS LTDA",
+              "CRISANTEMOS PRODUTOS NATURAIS LTDA"
+            ],
+            "data_emissao": [
+              "2026-06-27",
+              "2026-06-27"
+            ],
+            "produtos": [
+              [
+                "Qdb Lap Olh Pretuco V4 1,2g",
+                "Make B Masc Cil Vol Extrm Preta V2 10g"
+              ],
+              [
+                "Qdb Lap Olh Pretuco V4 1,2g",
+                "Make B Masc Cil Vol Extrm Preta V2 10g"
+              ]
+            ],
+            "valor_total": [
+              83.52,
+              83.52
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "CRISANTEMOS PRODUTOS NATURAIS LTDA",
+                "data_emissao": "2026-06-27",
+                "produtos": [
+                  "Qdb Lap Olh Pretuco V4 1,2g",
+                  "Make B Masc Cil Vol Extrm Preta V2 10g"
+                ],
+                "valor_total": 83.52
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "CRISANTEMOS PRODUTOS NATURAIS LTDA",
+                "data_emissao": "2026-06-27",
+                "produtos": [
+                  "Qdb Lap Olh Pretuco V4 1,2g",
+                  "Make B Masc Cil Vol Extrm Preta V2 10g"
+                ],
+                "valor_total": 83.52
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_10",
+          "duracao_segundos": 1.5357584159937687,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "LOJA JUNDIAÍ LEROY MERLIN CIA BRAS. DE BRICOLAGE",
+              [
+                "LOJA JUNDIAÍ LEROY MERLIN CIA BRAS. DE BRICOLAGE",
+                "LEROY MERLIN CIA BRAS. DE BRICOLAGE"
+              ]
+            ],
+            "data_emissao": [
+              "2025-04-18",
+              "2025-04-18"
+            ],
+            "produtos": [
+              [
+                "CABO DE REDE CAT.6 1,5M AZ DUAL COMP"
+              ],
+              [
+                [
+                  "CABO DE REDE CAT.6 1,5M AZ DUAL COMP ( EAN: 7895194271571 )",
+                  "CABO DE REDE CAT.6 1,5M AZ DUAL COMP"
+                ]
+              ]
+            ],
+            "valor_total": [
+              35.9,
+              35.9
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "LOJA JUNDIAÍ LEROY MERLIN CIA BRAS. DE BRICOLAGE",
+                "data_emissao": "2025-04-18",
+                "produtos": [
+                  "CABO DE REDE CAT.6 1,5M AZ DUAL COMP"
+                ],
+                "valor_total": 35.9
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "LOJA JUNDIAÍ LEROY MERLIN CIA BRAS. DE BRICOLAGE",
+                "data_emissao": "2025-04-18",
+                "produtos": [
+                  "CABO DE REDE CAT.6 1,5M AZ DUAL COMP"
+                ],
+                "valor_total": 35.9
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_11",
+          "duracao_segundos": 1.5530105420039035,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "LOJA ELECTROLUX COM VIRTUAL DE ELET",
+              "LOJA ELECTROLUX COM VIRTUAL DE ELET"
+            ],
+            "data_emissao": [
+              "2026-03-05",
+              "2026-03-05"
+            ],
+            "produtos": [
+              [
+                "A07672301 - FILTRO SIDE BY SIDE EXTERNO"
+              ],
+              [
+                [
+                  "A07672301 - FILTRO SIDE BY SIDE EXTERNO",
+                  "FILTRO SIDE BY SIDE EXTERNO"
+                ]
+              ]
+            ],
+            "valor_total": [
+              138.9,
+              138.9
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "LOJA ELECTROLUX COM VIRTUAL DE ELET",
+                "data_emissao": "2026-03-05",
+                "produtos": [
+                  "A07672301 - FILTRO SIDE BY SIDE EXTERNO"
+                ],
+                "valor_total": 138.9
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "LOJA ELECTROLUX COM VIRTUAL DE ELET",
+                "data_emissao": "2026-03-05",
+                "produtos": [
+                  "A07672301 - FILTRO SIDE BY SIDE EXTERNO"
+                ],
+                "valor_total": 138.9
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_12",
+          "duracao_segundos": 1.5338358750159387,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "LEROY MERLIN COMPANHIA BRASILEIRA DE BRICOLAGEM",
+              "LEROY MERLIN COMPANHIA BRASILEIRA DE BRICOLAGEM"
+            ],
+            "data_emissao": [
+              "2026-07-07",
+              "2026-07-07"
+            ],
+            "produtos": [
+              [
+                "CJ 2 POLTR RETRO ALU EFEITO MAD NATERIAL"
+              ],
+              [
+                [
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD MATERIAL ( EAN: 3276007600049 )",
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD MATERIAL",
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD NATERIAL ( EAN: 3276007600049 )",
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD NATERIAL"
+                ]
+              ]
+            ],
+            "valor_total": [
+              4094.8,
+              4094.8
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "LEROY MERLIN COMPANHIA BRASILEIRA DE BRICOLAGEM",
+                "data_emissao": "2026-07-07",
+                "produtos": [
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD NATERIAL"
+                ],
+                "valor_total": 4094.8
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "LEROY MERLIN COMPANHIA BRASILEIRA DE BRICOLAGEM",
+                "data_emissao": "2026-07-07",
+                "produtos": [
+                  "CJ 2 POLTR RETRO ALU EFEITO MAD NATERIAL"
+                ],
+                "valor_total": 4094.8
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_13",
+          "duracao_segundos": 2.187828082998749,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA",
+              "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA"
+            ],
+            "data_emissao": [
+              "2024-07-19",
+              "2024-07-19"
+            ],
+            "produtos": [
+              [
+                "Kindle 11ª Geracao (modelo 2022) - Mais leve, com resolucao de 300 ppi e o dobro de armazenamento - Cor Preta"
+              ],
+              [
+                "Kindle 11ª Geracao (modelo 2022) - Mais leve, com resolucao de 300 ppi e o dobro de armazenamento - Cor Preta"
+              ]
+            ],
+            "valor_total": [
+              329.1,
+              329.1
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA",
+                "data_emissao": "2024-07-19",
+                "produtos": [
+                  "Kindle 11ª Geracao (modelo 2022) - Mais leve, com resolucao de 300 ppi e o dobro de armazenamento - Cor Preta"
+                ],
+                "valor_total": 329.1
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA",
+                "data_emissao": "2024-07-19",
+                "produtos": [
+                  "Kindle 11ª Geracao (modelo 2022) - Mais leve, com resolucao de 300 ppi e o dobro de armazenamento - Cor Preta"
+                ],
+                "valor_total": 329.1
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_14",
+          "duracao_segundos": 2.418310874985764,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "UP 2 TECH DO BRASIL S/A",
+              "UP 2 TECH DO BRASIL S/A"
+            ],
+            "data_emissao": [
+              "2026-10-02",
+              "2026-10-02"
+            ],
+            "produtos": [
+              [
+                "LG UltraGear Monitor Gamer 24\" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto ..."
+              ],
+              [
+                [
+                  "LG UltraGear Monitor Gamer 24\" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto ... FNSKU:X004XKGFD5;Monitor LG UltraGear 24G411A-B 24\",FHD, 144Hz, 1ms (MBR), NVIDIA G-SYNC, AMD FreeSync, HDR10",
+                  "LG UltraGear Monitor Gamer 24\" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto ...",
+                  "LG UltraGear Monitor Gamer 24\" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto"
+                ]
+              ]
+            ],
+            "valor_total": [
+              629.0,
+              629.0
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "UP 2 TECH DO BRASIL S/A",
+                "data_emissao": "2026-10-02",
+                "produtos": [
+                  "LG UltraGear Monitor Gamer 24\" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto ..."
+                ],
+                "valor_total": 629.0
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "UP 2 TECH DO BRASIL S/A",
+                "data_emissao": "2026-10-02",
+                "produtos": [
+                  "LG UltraGear Monitor Gamer 24\" IPS 144Hz (O/C) 1ms (MBR) Full HD (1920x1080) HDR10 NVIDIA G-SYNC AMD FreeSync, Preto ..."
+                ],
+                "valor_total": 629.0
+              }
+            ]
+          ]
+        },
+        {
+          "caso_id": "pdf_15",
+          "duracao_segundos": 2.305772292020265,
+          "foto_ilegivel_esperado": false,
+          "recusada": false,
+          "motivo_recusa": null,
+          "erro": null,
+          "campos": {
+            "estabelecimento": [
+              "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA",
+              "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA"
+            ],
+            "data_emissao": [
+              "2026-01-25",
+              "2026-01-25"
+            ],
+            "produtos": [
+              [
+                "NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom d"
+              ],
+              [
+                [
+                  "NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom d",
+                  "NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom d Ao aceitar essa mercadoria, voce autoriza a empresa vendedora a recuperar tributos incidentes nessa operacao, conforme legislacao tributaria aplicavel.",
+                  "NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom"
+                ]
+              ]
+            ],
+            "valor_total": [
+              57.58,
+              57.58
+            ]
+          },
+          "leituras_repetidas": [
+            [
+              false,
+              {
+                "estabelecimento": "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA",
+                "data_emissao": "2026-01-25",
+                "produtos": [
+                  "NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom d"
+                ],
+                "valor_total": 57.58
+              }
+            ],
+            [
+              false,
+              {
+                "estabelecimento": "AMAZON SERVICOS DE VAREJO DO BRASIL LTDA",
+                "data_emissao": "2026-01-25",
+                "produtos": [
+                  "NIVEA Fluido Facial Protetor Cellular Luminous 630 FPS 50 40ml - Reduz e previne manchas escurecidas, uniformiza o tom d"
+                ],
+                "valor_total": 57.58
+              }
+            ]
+          ]
+        }
+      ],
+      "acuracia_por_campo": {
+        "estabelecimento": 1.0,
+        "data_emissao": 1.0,
+        "produtos": 1.0,
+        "valor_total": 1.0
+      },
+      "acuracia_media": 1.0,
+      "tempo_medio_segundos": 2.069217158269991,
+      "fotos_ruins_recusadas": 0,
+      "fotos_ruins_total": 0,
+      "recusas_indevidas": [],
+      "casos_com_erro": [],
+      "matriz_qualidade_foto": null,
+      "matriz_resultados": {
+        "estabelecimento": {
+          "contagens": {
+            "correto": 15,
+            "incorreto": 0,
+            "nao_extraido": 0,
+            "foto_recusada": 0
+          }
+        },
+        "data_emissao": {
+          "contagens": {
+            "correto": 15,
+            "incorreto": 0,
+            "nao_extraido": 0,
+            "foto_recusada": 0
+          }
+        },
+        "produtos": {
+          "contagens": {
+            "correto": 15,
+            "incorreto": 0,
+            "nao_extraido": 0,
+            "foto_recusada": 0
+          }
+        },
+        "valor_total": {
+          "contagens": {
+            "correto": 15,
+            "incorreto": 0,
+            "nao_extraido": 0,
+            "foto_recusada": 0
+          }
+        },
+        "TOTAL": {
+          "contagens": {
+            "correto": 60,
+            "incorreto": 0,
+            "nao_extraido": 0,
+            "foto_recusada": 0
+          }
+        }
+      },
+      "execucoes": 3,
+      "consistencia_por_campo": {
+        "estabelecimento": 1.0,
+        "data_emissao": 1.0,
+        "produtos": 1.0,
+        "valor_total": 1.0,
+        "TODOS": 1.0
+      },
+      "consistencia_recusa": 1.0
+    }
+  }
+}
